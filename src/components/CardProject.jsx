@@ -2,9 +2,9 @@ import React from 'react'
 
 const CardProject = ({title, content, img}) => {
   return (
-    <article className="relative group h-[200px] w-[300px] flex justify-center items-center bg-[#141c3a] text-white rounded-lg shadow-md mx-auto">
+    <article className="relative group h-[150px] w-[225px] xxs:h-[200px] xxs:w-[300px] flex justify-center items-center bg-[#141c3a] text-white rounded-lg shadow-md mx-auto">
             <div className="relative flex justify-center items-center group-hover:opacity-0 transition-opacity duration-500">
-              <h2 className="absolute font-medium text-white text-2xl text-center">
+              <h2 className="absolute font-medium text-white text-2xl text-center xxs:text-4xl">
                 {title}
               </h2>
               <img
@@ -14,12 +14,12 @@ const CardProject = ({title, content, img}) => {
               />
             </div>
             <div className="absolute top-0 left-0 w-full h- h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center p-5 px-8 gap-4">
-              <h2 className="text-center text-sm">
+              <h2 className="text-center text-sm xxs:text-lg">
               {content}
               </h2>
               <a
                 href="https://www.google.com"
-                className="rounded-sm p-2 py-1 text-sm bg-red-600 hover:bg-red-700 text-white cursor-pointer"
+                className="rounded-sm p-2 py-1 text-sm bg-red-600 hover:bg-red-700 text-white cursor-pointer xxs:text-lg xxs:px-3 xxs:py-2"
                 target="_blank"
               >
                 Ver Pagina
