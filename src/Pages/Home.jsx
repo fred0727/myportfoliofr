@@ -116,8 +116,8 @@ const Home = () => {
         </ul>
       </section>
       <section className="bg-white flex flex-col justify-center items-center p-6 gap-4">
-        <div className="flex justify-center items-center w-full gap-2 mt-5">
-          <span className="border-[1px] border-gray-200 w-[30%]"></span>
+        <div className="flex justify-between items-center w-full gap-2 mt-5">
+          <span className="border-[1px] border-gray-200 w-[80px]"></span>
           <div className="relative bg-[#1e1a4f] w-[75px] h-[75px] rounded-full">
             <img
               src="/images/avatar.png"
@@ -125,7 +125,7 @@ const Home = () => {
               className="absolute w-[100px] h-[100px] -top-[25px] object-cover rounded-full"
             />
           </div>
-          <span className="border-[1px] border-gray-200 w-[30%]"></span>
+          <span className="border-[1px] border-gray-200 w-[80px]"></span>
         </div>
         <h4 className="flex text-center font-bold text-xl">Contactame</h4>
         <form className="flex flex-col w-full py-4 gap-4">
