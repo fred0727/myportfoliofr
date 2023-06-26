@@ -12,17 +12,17 @@ const Home = () => {
   return (
     <div className="w-full">
       <section className="flex flex-col gap-4 pt-10 justify-center items-center px-4">
-        <h1 className="text-lg font-bold">Hola, mi nombre es Freddy.</h1>
-        <p className="text-center text-sm">
+        <h1 className="text-xl font-bold xxs:text-3xl">Hola, mi nombre es Freddy.</h1>
+        <p className="text-center text-sm xxs:text-lg">
           Desarrollador Web Front-End, diseño y <br /> codifico paginas web
           unicas.{" "}
         </p>
         <div className="flex flex-col pt-8 items-center gap-20">
-          <div className="relative bg-[#1e1a4f] w-[175px] h-[175px] rounded-full mt-10">
+          <div className="relative bg-[#1e1a4f] w-[175px] h-[175px] xxs:w-[200px] xxs:h-[200px] rounded-full mt-10">
             <img
               src="/images/avatar.png"
               alt=""
-              className="absolute w-[225px] h-[225px] -top-[50px] object-cover rounded-full"
+              className="absolute w-[225px] h-[225px] -top-[50px] xxs:w-[250px] xxs:h-[250px] xxs:-top-[50px] object-cover rounded-full"
             />
           </div>
           <div>
@@ -31,8 +31,8 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-[#1e1a4f] flex flex-col text-white p-6">
-        <h2 className="font-bold text-center py-2 text-2xl">Conoce de mi</h2>
-        <p className="font-light text-center text-sm pb-2">
+        <h2 className="font-bold text-center py-2 text-2xl xxs:text-4xl xxs:py-4">Conoce de mi</h2>
+        <p className="font-light text-center text-sm pb-2 xxs:text-lg xxs:pb-4">
           Me inserte a este apasionante mundo del desarrollo hace 2 años, he
           colaborado y creado proyectos con diseños adaptativos e integrando
           funcionalidades que mejore la experencia del usuario. Soy un
@@ -41,11 +41,11 @@ const Home = () => {
         </p>
       </section>
       <section className="bg-white flex flex-col p-4 py-8 gap-2 mb-6">
-        <h2 className="font-bold text-xl text-center text-black">Proyectos</h2>
-        <h3 className="text-center font-light text-sm text-black">
+        <h2 className="font-bold text-xl text-center text-black xxs:text-3xl">Proyectos</h2>
+        <h3 className="text-center font-light text-sm text-black xxs:text-lg">
           Algunos proyectos en los que he trabajado
         </h3>
-        <section className="grid grid-cols-[repeat(auto-fill,_250px)] pt-6 gap-8 w-full justify-center">
+        <section className="grid grid-cols-[repeat(auto-fill,_350px)] pt-6 gap-8 w-full justify-center">
           <CardProject
             title="Pokedex"
             content="App creada consumiendo la API de Pokemon"
@@ -118,50 +118,50 @@ const Home = () => {
       <section className="bg-white flex flex-col justify-center items-center p-6 gap-4">
         <div className="flex justify-between items-center w-full gap-2 mt-5">
           <span className="border-[1px] border-gray-200 w-[30%]"></span>
-          <div className="relative bg-[#1e1a4f] w-[75px] h-[75px] rounded-full">
+          <div className="relative bg-[#1e1a4f] w-[100px] h-[100px] rounded-full">
             <img
               src="/images/avatar.png"
               alt=""
-              className="absolute w-[100px] h-[100px] -top-[25px] object-cover rounded-full"
+              className="absolute w-[125px] h-[125px] -top-[25px] object-cover rounded-full"
             />
           </div>
           <span className="border-[1px] border-gray-200 w-[30%]"></span>
         </div>
-        <h4 className="flex text-center font-bold text-xl">Contactame</h4>
+        <h4 className="flex text-center font-bold text-xl xxs:text-3xl">Contactame</h4>
         <form className="flex flex-col w-full py-4 gap-4">
           <div>
-            <label htmlFor="name" className="flex gap-1">
+            <label htmlFor="name" className="flex gap-1 xxs:text-lg">
               Nombres y Apellidos <span className="flex text-red-500">*</span>{" "}
             </label>
             <input
               type="text"
               name="name"
               id="name"
-              className="border w-full h-10 outline-none rounded-md p-2"
+              className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6"
             />
           </div>
           <div>
-            <label htmlFor="gmail" className="flex gap-1">
+            <label htmlFor="gmail" className="flex gap-1 xxs:text-lg">
               Gmail<span className="flex text-red-500">*</span>
             </label>
             <input
               type="text"
               name="gmail"
               id="gmail"
-              className="border w-full h-10 outline-none rounded-md p-2"
+              className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6"
             />
           </div>
           <div>
-            <label htmlFor="phone">Telefono</label>
+            <label htmlFor="phone" className="xxs:text-lg">Telefono</label>
             <input
               type="text"
               name="phone"
               id="phone"
-              className="border w-full h-10 outline-none rounded-md p-2"
+              className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6"
             />
           </div>
           <div>
-            <label htmlFor="message" className="flex gap-1">
+            <label htmlFor="message" className="flex gap-1 xxs:text-lg">
               Dejame tu mensaje <span className="flex text-red-500">*</span>
             </label>
             <textarea
@@ -172,7 +172,7 @@ const Home = () => {
             />
           </div>
           <div className="w-full">
-            <button className="bg-red-600 text-white w-full py-2 rounded-md">
+            <button className="bg-red-600 text-white w-full py-2 rounded-md xxs:py-4">
               Enviar Mensaje
             </button>
           </div>
@@ -180,7 +180,7 @@ const Home = () => {
       </section>
       <section className="px-6 py-2">
         {/* <a href="mailto:freddymh07952023@gmail.com">Mi correo</a> */}
-        <h2 className="font-bold text-center text-xl">Mis Redes</h2>
+        <h2 className="font-bold text-center text-xl xxs:text-3xl mb-4">Mis Redes</h2>
         <ul className="flex flex-wrap py-4 justify-around">
           <li className="text-3xl text-gray-400 cursor-pointer hover:text-[#1e1a4f]"><BsTwitter/></li>
           <li className="text-3xl text-gray-400 cursor-pointer hover:text-[#1e1a4f]"><BsFacebook/></li>
@@ -191,7 +191,7 @@ const Home = () => {
         </ul>
       </section>
       <section className="mb-8 mt-4">
-        <h3 className="text-center text-gray-400">Hecho por &copy;
+        <h3 className="text-center text-gray-400 xxs:text-xl">Hecho por &copy;
         <span className="text-gray-600">Freddy Muñoz</span></h3>
       </section>
     </div>

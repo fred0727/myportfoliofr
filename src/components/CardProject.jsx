@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardProject = ({title, content, img}) => {
   return (
-    <article className="relative group h-[150px] w-[225px] flex justify-center items-center bg-[#141c3a] text-white rounded-lg shadow-md mx-auto">
+    <article className="relative group h-[200px] w-[300px] flex justify-center items-center bg-[#141c3a] text-white rounded-lg shadow-md mx-auto">
             <div className="relative flex justify-center items-center group-hover:opacity-0 transition-opacity duration-500">
               <h2 className="absolute font-medium text-white text-2xl text-center">
                 {title}
