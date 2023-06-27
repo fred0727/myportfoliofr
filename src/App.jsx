@@ -7,7 +7,7 @@ import Projects from './Pages/Projects'
 function App() {
 
   return (
-    <main className='min-h-screen w-full font-["Roboto_Condensed"]'>
+    <main className='min-h-screen font-["Roboto_Condensed"]'>
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>

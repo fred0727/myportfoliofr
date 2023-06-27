@@ -13,32 +13,32 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="w-full dark:bg-slate-950">
-      <section className="flex flex-col gap-4 pt-10 justify-center items-center px-4 dark:text-white">
-        <h1 className="text-xl font-bold xxs:text-3xl">
+      <section className="flex flex-col gap-4 pt-10 justify-center items-center px-4 dark:text-white xlg:pt-5">
+        <h1 className="text-xl font-bold xxs:text-3xl xmd:text-4xl xlg:text-5xl">
           Hola, mi nombre es Freddy.
         </h1>
-        <p className="text-center text-sm xxs:text-lg">
+        <p className="text-center text-sm xxs:text-lg xmd:text-xl xlg:text-2xl xlg:font-light">
           Desarrollador Web Front-End, diseño y <br /> codifico páginas web
           únicas.
         </p>
-        <div className="flex flex-col pt-8 items-center gap-20">
-          <div className="relative bg-[#1e1a4f] dark:bg-white w-[175px] h-[175px] xxs:w-[200px] xxs:h-[200px] rounded-full mt-10">
+        <div className="flex flex-col pt-8 items-center gap-20 xlg:gap-10 xlg:pt-0">
+          <div className="relative bg-[#1e1a4f] rounded-full mt-10 dark:bg-white w-[175px] h-[175px] xxs:w-[200px] xxs:h-[200px] xmd:w-[225px] xmd:h-[225px] xlg:w-[250px] xlg:h-[250px]">
             <img
               src="/images/avatar.png"
               alt=""
-              className="absolute w-[225px] h-[225px] -top-[50px] xxs:w-[250px] xxs:h-[250px] xxs:-top-[50px] object-cover rounded-full"
+              className="absolute  object-cover rounded-full w-[225px] h-[225px] -top-[50px] xxs:w-[250px] xxs:h-[250px] xmd:w-[275px] xmd:h-[275px] xlg:w-[300px] xlg:h-[300px]"
             />
           </div>
-          <div>
+          <div className="xmd:w-[600px] xlg:w-[850px]">
             <img src="/images/dev.svg" alt="" />
           </div>
         </div>
       </section>
-      <section className="bg-[#1e1a4f] flex flex-col text-white p-6">
-        <h2 className="font-bold text-center py-2 text-2xl xxs:text-4xl xxs:py-4">
+      <section className="bg-[#1e1a4f] flex flex-col text-white p-6 xlg:py-20 xlg:px-32">
+        <h2 className="font-bold text-center py-2 text-2xl xxs:text-2xl xmd:text-3xl xlg:text-4xl xxs:py-4">
           Sobre mi
         </h2>
-        <p className="font-light text-center text-sm pb-2 xxs:text-lg xxs:pb-4 dark:font-medium">
+        <p className="font-light text-center text-sm pb-2 xxs:text-lg xxs:pb-4 dark:font-medium xlg:px-40 xlg:text-xl">
           Me inserte a este apasionante mundo del desarrollo hace 2 años, he
           colaborado y creado proyectos con diseños adaptativos e integrando
           funcionalidades que mejore la experiencia del usuario. Soy un
@@ -46,183 +46,326 @@ const Home = () => {
           siempre trabajo para mejorar mis habilidades y conocimientos.
         </p>
       </section>
-      <section className="bg-white flex flex-col p-4 py-12 gap-2 dark:bg-slate-950">
-        <h2 className="font- text-2xl text-center text-black xxs:text-3xl dark:text-white font-semibold">
-          Proyectos Recientes
-        </h2>
-        <section className="grid grid-cols-[repeat(auto-fill,_275px)] xxs:grid-cols-[repeat(auto-fill,350px)] pt-6 gap-8 w-full justify-center mx-auto xlg:w-[1200px]">
-          <CardProject
-            title="Pokedex"
-            content="Consumiendo Api de Pokemon"
-            img="/captureprojects/pokeapi.png"
-          />
-          <CardProject
-            title="Weathe App"
-            content="Consumiendo la API de OpenWeather"
-            img="/captureprojects/weatherapp.png"
-          />
-          <CardProject
-            title="Frarem"
-            content="Landing Page para la empresa Frarem"
-            img="/captureprojects/frarem.png"
-          />
-          <CardProject
-            title="Shopping Cart"
-            content="Proyecto carrito de compras"
-            img="/captureprojects/weatherapp.png"
-          />
-        </section>
-        <Link to="/projects" className="w-full flex justify-center pt-12">
-          <button className="text-xl text-[#1e1a4f] bg-white border-[1px] border-[#1e1a4f] rounded-full px-4 py-1 flex justify-center items-center gap-2 hover:text-white hover:bg-[#1e1a4f] xxs:px-8 xxs:py-2 xxs:text-2xl"><TfiWorld/> Ver todos</button>
-        </Link>
+      <section className="w-full bg-white dark:bg-slate-950 xlg:py-16">
+        <div className="flex flex-col p-4 py-12 gap-2">
+          <h2 className="font- text-2xl text-center text-black xxs:text-3xl dark:text-white font-semibold xmd:text-4xl xlg:mb-10 xlg:text-5xl">
+            Proyectos Recientes
+          </h2>
+          <section className="w-full grid grid-cols-[repeat(auto-fill,_275px)] xxs:grid-cols-[repeat(auto-fill,350px)] pt-6 gap-8 justify-center mx-auto max-w-[1000px]">
+            <CardProject
+              title="Pokedex"
+              content="Consumiendo Api de Pokemon"
+              img="/captureprojects/pokeapi.png"
+              url="https://poke-apifr.netlify.app/"
+            />
+            <CardProject
+              title="Weathe App"
+              content="Consumiendo la API de OpenWeather"
+              img="/captureprojects/weatherapp.png"
+              url="https://weatherappreactfr.netlify.app/"
+            />
+            <CardProject
+              title="Frarem"
+              content="Landing Page para la empresa Frarem"
+              img="/captureprojects/frarem.png"
+              url="https://fred0727.github.io/fraremsac/"
+            />
+            <CardProject
+              title="Academlo Store"
+              content="Proyecto Store de Academlo"
+              img="/captureprojects/academlostore.png"
+              url="https://academlostorefr.netlify.app/"
+            />
+          </section>
+          <Link to="/projects" className="w-full flex justify-center pt-12">
+            <button className="text-xl text-[#1e1a4f] bg-white border-[1px] border-[#1e1a4f] rounded-full px-4 py-1 flex justify-center items-center gap-2 hover:text-white hover:bg-[#1e1a4f] xxs:px-8 xxs:py-2 xxs:text-2xl">
+              <TfiWorld /> Ver todos
+            </button>
+          </Link>
+        </div>
       </section>
-      <section className="px-6 py-12 flex flex-col gap-5 bg-[#1e1a4f]">
-        <h2 className="text-center font-bold text-xl mb-6 text-white">
-          Tecnologias y lenguajes con las que he trabajado:
-        </h2>
-        <ul className="grid grid-cols-[repeat(auto-fill,_100px)] justify-center items-center gap-6">
-          <li className="flex justify-center items-center flex-col gap-3">
-            <img src="/logos/html5.png" alt="" width={50} />
-            <span className="text-white">Html5</span>
-          </li>
-          <li className="flex justify-center items-center flex-col gap-3">
-            <img src="/logos/css3.png" alt="" width={50} />
-            <span className="text-white">Css3</span>
-          </li>
-          <li className="flex justify-center items-center flex-col gap-3">
-            <img src="/logos/js.png" alt="" width={50} />
-            <span className="text-white">Javascript</span>
-          </li>
-          <li className="flex justify-center items-center flex-col gap-3">
-            <img src="/logos/reactjs.png" alt="" width={50} />
-            <span className="text-white">React JS</span>
-          </li>
-          <li className="flex justify-center items-center flex-col gap-3">
-            <img src="/logos/php.png" alt="" width={50} />
-            <span className="text-white">PHP</span>
-          </li>
-          <li className="flex justify-center items-center flex-col gap-3">
-            <img src="/logos/mysql.png" alt="" width={50} />
-            <span className="text-white">Mysql</span>
-          </li>
-          <li className="flex justify-center items-center flex-col gap-3">
-            <img src="/logos/bootstrap.png" alt="" width={50} />
-            <span className="text-white">Bootstrap</span>
-          </li>
-          <li className="flex justify-center items-center flex-col gap-3">
-            <img src="/logos/tailwind.png" alt="" width={50} />
-            <span className="text-white text-center">Tailwind Css</span>
-          </li>
-          <li className="flex justify-center items-center flex-col gap-3">
-            <img src="/logos/git.png" alt="" width={50} />
-            <span className="text-white text-center">Git</span>
-          </li>
-          <li className="flex justify-center items-center flex-col gap-3">
-            <img src="/logos/github.png" alt="" width={50} />
-            <span className="text-white text-center">Git Hub</span>
-          </li>
-        </ul>
+      <section className="w-full bg-[#1e1a4f] xlg:py-20 xlg:px-32">
+        <div className="px-6 py-12 flex flex-col gap-5 mx-auto justify-center items-center">
+          <h2 className="text-center font-bold text-xl mb-6 text-white xxs:text-2xl xmd:text-3xl xlg:mb-10 xlg:text-4xl">
+            Tecnologias y lenguajes con las que he trabajado:
+          </h2>
+          <ul className="w-full grid grid-cols-[repeat(auto-fill,_100px)] justify-center items-center gap-6 xlg:grid-cols-[repeat(auto-fill,_125px)] max-w-[1480px]">
+            <li className="flex justify-center items-center flex-col gap-3">
+              <img
+                src="/logos/html5.png"
+                alt=""
+                className="w-[50px] xlg:w-[75px]"
+              />
+              <span className="text-white xlg:text-xl">Html5</span>
+            </li>
+            <li className="flex justify-center items-center flex-col gap-3">
+              <img
+                src="/logos/css3.png"
+                alt=""
+                className="w-[50px] xlg:w-[75px]"
+              />
+              <span className="text-white xlg:text-xl">Css3</span>
+            </li>
+            <li className="flex justify-center items-center flex-col gap-3">
+              <img
+                src="/logos/js.png"
+                alt=""
+                className="w-[50px] xlg:w-[75px]"
+              />
+              <span className="text-white xlg:text-xl">Javascript</span>
+            </li>
+            <li className="flex justify-center items-center flex-col gap-3">
+              <img
+                src="/logos/reactjs.png"
+                alt=""
+                className="w-[50px] xlg:w-[75px]"
+              />
+              <span className="text-white xlg:text-xl">React JS</span>
+            </li>
+            <li className="flex justify-center items-center flex-col gap-3">
+              <img
+                src="/logos/php.png"
+                alt=""
+                className="w-[50px] xlg:w-[75px]"
+              />
+              <span className="text-white xlg:text-xl">PHP</span>
+            </li>
+            <li className="flex justify-center items-center flex-col gap-3">
+              <img
+                src="/logos/mysql.png"
+                alt=""
+                className="w-[50px] xlg:w-[75px]"
+              />
+              <span className="text-white xlg:text-xl">Mysql</span>
+            </li>
+            <li className="flex justify-center items-center flex-col gap-3">
+              <img
+                src="/logos/bootstrap.png"
+                alt=""
+                className="w-[50px] xlg:w-[75px]"
+              />
+              <span className="text-white xlg:text-xl">Bootstrap</span>
+            </li>
+            <li className="flex justify-center items-center flex-col gap-3">
+              <img
+                src="/logos/tailwind.png"
+                alt=""
+                className="w-[50px] xlg:w-[75px]"
+              />
+              <span className="text-white xlg:text-xl text-center">
+                Tailwind Css
+              </span>
+            </li>
+            <li className="flex justify-center items-center flex-col gap-3">
+              <img
+                src="/logos/git.png"
+                alt=""
+                className="w-[50px] xlg:w-[75px]"
+              />
+              <span className="text-white xlg:text-xl text-center">Git</span>
+            </li>
+            <li className="flex justify-center items-center flex-col gap-3">
+              <img
+                src="/logos/github.png"
+                alt=""
+                className="w-[50px] xlg:w-[75px]"
+              />
+              <span className="text-white xlg:text-xl text-center">
+                Git Hub
+              </span>
+            </li>
+          </ul>
+        </div>
       </section>
       <section
-        id="contact"
-        className="bg-white flex flex-col justify-center items-center p-6 gap-4 dark:bg-slate-950 dark:text-white"
+        className="bg-white dark:bg-slate-950 dark:text-white xxl:flex xxl:p-10 xxl:px-10 xxl:flex-row-reverse xxl:w-[1440px] mx-auto"
       >
-        <div className="flex justify-between items-center w-full gap-2 mt-5">
-          <span className="border-[1px] border-gray-200 w-[30%]"></span>
-          <div className="relative bg-[#1e1a4f] w-[100px] h-[100px] rounded-full">
-            <img
-              src="/images/avatar.png"
-              alt=""
-              className="absolute w-[125px] h-[125px] -top-[25px] object-cover rounded-full"
-            />
+        <div className="flex flex-col justify-center items-center p-6 gap-4 xmd:w-[650px] mx-auto">
+          <div className="flex justify-between items-center w-full gap-2 mt-5">
+            <span className="border-[1px] border-gray-200 w-[30%] xmd:w-[35%]"></span>
+            <div className="relative rounded-full bg-[#1e1a4f] w-[100px] h-[100px] xmd:w-[125px] xmd:h-[125px]">
+              <img
+                src="/images/avatar.png"
+                alt=""
+                className="absolute w-[125px] h-[125px] -top-[25px] xmd:w-[150px] xmd:h-[150px] object-cover rounded-full"
+              />
+            </div>
+            <span className="border-[1px] border-gray-200 w-[30%] xmd:w-[35%]"></span>
           </div>
-          <span className="border-[1px] border-gray-200 w-[30%]"></span>
+          <h4 className="flex text-center font-bold text-xl xxs:text-3xl xmd:text-4xl">
+            Contactame
+          </h4>
+          <form className="flex flex-col w-full py-4 gap-4">
+            <div>
+              <label
+                htmlFor="name"
+                className="flex gap-1 xxs:text-lg xmd:text-xl"
+              >
+                Nombres y Apellidos <span className="flex text-red-500">*</span>{" "}
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6 xmd:text-xl text-gray-600 xmd:px-3"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="gmail"
+                className="flex gap-1 xxs:text-lg xmd:text-xl"
+              >
+                Gmail<span className="flex text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                name="gmail"
+                id="gmail"
+                className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6 xmd:text-xl text-gray-600 xmd:px-3"
+              />
+            </div>
+            <div>
+              <label htmlFor="phone" className="xxs:text-lg xmd:text-xl">
+                Telefono
+              </label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6 xmd:text-xl text-gray-600 xmd:px-3"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="message"
+                className="flex gap-1 xxs:text-lg xmd:text-xl"
+              >
+                Dejame tu mensaje <span className="flex text-red-500">*</span>
+              </label>
+              <textarea
+                type="text"
+                name="message"
+                id="message"
+                className="border w-full h-40 outline-none rounded-md p-2 xmd:text-xl text-gray-600 xmd:px-3"
+              />
+            </div>
+            <div className="w-full">
+              <button className="bg-[#1e1a4f] text-white w-full py-2 rounded-md xxs:py-4 xxs:text-xl ">
+                Enviar Mensaje
+              </button>
+            </div>
+          </form>
         </div>
-        <h4 className="flex text-center font-bold text-xl xxs:text-3xl">
-          Contactame
-        </h4>
-        <form className="flex flex-col w-full py-4 gap-4">
-          <div>
-            <label htmlFor="name" className="flex gap-1 xxs:text-lg">
-              Nombres y Apellidos <span className="flex text-red-500">*</span>{" "}
-            </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6"
-            />
+        <div className="hidden xxl:flex pr-20 pl-10">
+          <div className="w-full px-10 py-10 flex flex-col items-start justify-end gap-2">
+            <h2 className="text-4xl pb-6">Mis Redes</h2>
+            <ul className="flex flex-col gap-4 pb-4">
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-green-600 dark:hover:text-green-600">
+                <a
+                  href="https://api.whatsapp.com/send?phone=51924471461&text=Hola!%20Quiero%20contactarme%20contigo!"
+                  target="_blank"
+                  className="flex items-center gap-2"
+                >
+                  <BsWhatsapp />
+                  <span className="text-2xl text-black dark:text-white">
+                    +51 924471461
+                  </span>
+                </a>
+              </li>
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-slate-600 dark:hover:text-slate-600">
+                <a
+                  href="mailto:freddymh07952023@gmail.com"
+                  className="flex items-center gap-2"
+                >
+                  <HiMail />
+                  <span className="text-2xl text-black dark:text-white">
+                    freddymh07952023@gmail.com
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <ul className="flex py-4 gap-6">
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-blue-400 dark:hover:text-blue-400 xmd:text-4xl">
+                <a href="https://twitter.com/freddy_mh95" target="_blank">
+                  <BsTwitter />
+                </a>
+              </li>
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-blue-600 dark:hover:text-blue-600 xmd:text-4xl">
+                <a
+                  href="https://www.facebook.com/freddy.munoz.338658"
+                  target="_blank"
+                >
+                  <BsFacebook />
+                </a>
+              </li>
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-blue-950 dark:hover:text-blue-950 xmd:text-4xl">
+                <a
+                  href="https://www.linkedin.com/in/freddy-mh/"
+                  target="_blank"
+                >
+                  <BsLinkedin />
+                </a>
+              </li>
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-black dark:hover:text-black xmd:text-4xl">
+                <a href="https://github.com/fred0727" target="_blank">
+                  <BsGithub />
+                </a>
+              </li>
+            </ul>
           </div>
-          <div>
-            <label htmlFor="gmail" className="flex gap-1 xxs:text-lg">
-              Gmail<span className="flex text-red-500">*</span>
-            </label>
-            <input
-              type="text"
-              name="gmail"
-              id="gmail"
-              className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6"
-            />
-          </div>
-          <div>
-            <label htmlFor="phone" className="xxs:text-lg">
-              Telefono
-            </label>
-            <input
-              type="text"
-              name="phone"
-              id="phone"
-              className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6"
-            />
-          </div>
-          <div>
-            <label htmlFor="message" className="flex gap-1 xxs:text-lg">
-              Dejame tu mensaje <span className="flex text-red-500">*</span>
-            </label>
-            <textarea
-              type="text"
-              name="message"
-              id="message"
-              className="border w-full h-40 outline-none rounded-md p-2"
-            />
-          </div>
-          <div className="w-full">
-            <button className="bg-[#1e1a4f] text-white w-full py-2 rounded-md xxs:py-4">
-              Enviar Mensaje
-            </button>
-          </div>
-        </form>
+        </div>
       </section>
-      <section className="px-6 py-2 bg-white dark:bg-slate-950 dark:text-white">
-        {/* <a href="mailto:freddymh07952023@gmail.com">Mi correo</a> */}
-        <h2 className="font-medium text-center text-xl xxs:text-3xl mb-4">
-          Mis Redes
-        </h2>
-        <ul className="flex flex-wrap py-4 justify-around">
-          <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white">
-            <BsTwitter />
-          </li>
-          <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white">
-            <BsFacebook />
-          </li>
-          <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white">
-            <BsLinkedin />
-          </li>
-          <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white">
-            <BsGithub />
-          </li>
-          <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white">
-            <BsWhatsapp />
-          </li>
-          <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white">
-            <HiMail />
-          </li>
-        </ul>
+      <section className="bg-white dark:bg-slate-950 dark:text-white xxl:hidden">
+        <div className="px-6 py-2 xmd:w-[650px] mx-auto">
+          <h2 className="font-medium text-center text-xl xxs:text-3xl mb-4">
+            Mis Redes
+          </h2>
+          <ul className="flex flex-wrap py-4 justify-around">
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+              <a href="https://twitter.com/freddy_mh95" target="_blank">
+                <BsTwitter />
+              </a>
+            </li>
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+              <a
+                href="https://www.facebook.com/freddy.munoz.338658"
+                target="_blank"
+              >
+                <BsFacebook />
+              </a>
+            </li>
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+              <a href="https://www.linkedin.com/in/freddy-mh/" target="_blank">
+                <BsLinkedin />
+              </a>
+            </li>
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+              <a href="https://github.com/fred0727" target="_blank">
+                <BsGithub />
+              </a>
+            </li>
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+              <a
+                href="https://api.whatsapp.com/send?phone=51924471461&text=Hola!%20Quiero%20contactarme%20contigo!"
+                target="_blank"
+              >
+                <BsWhatsapp />
+              </a>
+            </li>
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+              <a href="mailto:freddymh07952023@gmail.com">
+                <HiMail />
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section className="pb-8 py-4 bg-white dark:bg-slate-950 dark:text-white">
-        <h3 className="text-center text-gray-400 xxs:text-xl dark:text-gray-300">
+      <section className="pb-8 py-4 bg-white dark:bg-slate-950 dark:text-white xlg:pb-16 xlg:mt-4">
+        <h3 className="text-center text-gray-400 xxs:text-xl dark:text-gray-300 xlg:text-2xl">
           Hecho por &copy;
-          <span className="text-gray-600 dark:text-white">Freddy Muñoz</span>
+          <span className="text-gray-600 dark:text-white xlg:text-2xl">
+            Freddy Muñoz
+          </span>
         </h3>
       </section>
     </div>
