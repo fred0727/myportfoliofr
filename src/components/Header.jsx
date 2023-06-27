@@ -33,7 +33,7 @@ const Header = () => {
       </Link>
       <span onClick={handleShowMenu}>
         {isShowMenu ? (
-          <AiFillCloseCircle className="text-2xl text-[#1e1a4f] dark:text-white" />
+          <AiFillCloseCircle className="text-2xl text-[#1e1a4f] dark:text-white cursor-pointer" />
         ) : (
           <FcMenu className="text-2xl text-[#1e1a4f] cursor-pointer xxs:text-4xl dark:text-white" />
         )}
