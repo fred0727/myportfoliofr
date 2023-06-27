@@ -6,7 +6,9 @@ import {
   BsGithub,
   BsWhatsapp,
 } from "react-icons/bs";
+import { TfiWorld } from "react-icons/tfi";
 import { HiMail } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -45,7 +47,7 @@ const Home = () => {
         </p>
       </section>
       <section className="bg-white flex flex-col p-4 py-12 gap-2 dark:bg-slate-950">
-        <h2 className="font- text-2xl text-center text-black xxs:text-3xl dark:text-white font-bold">
+        <h2 className="font- text-2xl text-center text-black xxs:text-3xl dark:text-white font-semibold">
           Proyectos Recientes
         </h2>
         <section className="grid grid-cols-[repeat(auto-fill,_275px)] xxs:grid-cols-[repeat(auto-fill,350px)] pt-6 gap-8 w-full justify-center mx-auto xlg:w-[1200px]">
@@ -70,6 +72,9 @@ const Home = () => {
             img="/captureprojects/weatherapp.png"
           />
         </section>
+        <Link to="/projects" className="w-full flex justify-center pt-12">
+          <button className="text-xl text-[#1e1a4f] bg-white border-[1px] border-[#1e1a4f] rounded-full px-4 py-1 flex justify-center items-center gap-2 hover:text-white hover:bg-[#1e1a4f] xxs:px-8 xxs:py-2 xxs:text-2xl"><TfiWorld/> Ver todos</button>
+        </Link>
       </section>
       <section className="px-6 py-12 flex flex-col gap-5 bg-[#1e1a4f]">
         <h2 className="text-center font-bold text-xl mb-6 text-white">
@@ -182,7 +187,7 @@ const Home = () => {
             />
           </div>
           <div className="w-full">
-            <button className="bg-red-600 text-white w-full py-2 rounded-md xxs:py-4">
+            <button className="bg-[#1e1a4f] text-white w-full py-2 rounded-md xxs:py-4">
               Enviar Mensaje
             </button>
           </div>
@@ -190,7 +195,7 @@ const Home = () => {
       </section>
       <section className="px-6 py-2 bg-white dark:bg-slate-950 dark:text-white">
         {/* <a href="mailto:freddymh07952023@gmail.com">Mi correo</a> */}
-        <h2 className="font-bold text-center text-xl xxs:text-3xl mb-4">
+        <h2 className="font-medium text-center text-xl xxs:text-3xl mb-4">
           Mis Redes
         </h2>
         <ul className="flex flex-wrap py-4 justify-around">

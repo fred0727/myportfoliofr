@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <div className="w-full flex justify-between items-center p-4 relative dark:bg-slate-950">
       <Link to="/">
-        <PiDevicesFill className="text-4xl text-[#1e1a4f] xxs:text-5xl dark:text-white" />
+        <PiDevicesFill className="text-4xl text-[#5be9b9] xxs:text-5xl dark:text-white" />
       </Link>
       <span onClick={handleShowMenu}>
         {isShowMenu ? (
