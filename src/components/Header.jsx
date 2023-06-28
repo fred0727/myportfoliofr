@@ -34,7 +34,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-between items-center dark:bg-slate-950 relative p-4 xmd:px-10 xlg:px-20">
+    <div className="w-full flex justify-between items-center dark:bg-slate-950 relative p-4 xmd:px-10 xlg:px-20 xxl:-mb-1">
       <Link to="/">
         <PiDevicesFill className="text-4xl text-[#5be9b9] xxs:text-5xl dark:text-white xmd:text-6xl xlg:text-7xl" />
       </Link>
@@ -67,7 +67,7 @@ const Header = () => {
         </ul>
       </nav>
       <div
-        className={`absolute z-50 dark:bg-slate-950 dark:shadow-md dark:text-white dark:border-b-[1px] dark:border-white/20 flex flex-col justify-end items-end w-full gap-2 p-4 top-[68px] xmd:top-[92px] right-0 bg-white shadow-md ${
+        className={`absolute z-50 dark:bg-slate-950 dark:shadow-md dark:text-white dark:border-b-[1px] dark:border-white/20 flex flex-col justify-end items-end w-full gap-2 p-4 top-[68px] xmd:top-[92px] xxl:top-[104px] right-0 bg-white shadow-md ${
           isShowMenu ? "opacity-100 visible" : "opacity-0 invisible"
         } transition-opacity-0 duration-500`}
       >

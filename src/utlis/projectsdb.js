@@ -47,4 +47,28 @@ export const projects = {
     github: "https://github.com/fred0727/fraremsac",
     codes: ["html", "js", "css3", "php"],
   },
+  moviessearch: {
+    title: "Movies App",
+    content: "Consumiendo API de peliculas",
+    img: "/captureprojects/moviessearch.png",
+    url: "https://friendly-crisp-a9c214.netlify.app/",
+    github: "https://github.com/fred0727/movies-react",
+    codes: ["html", "js", "css3", "reactjs"],
+  },
+  petblog: {
+    title: "Pet Blog",
+    content: "Creando un blog de mascotas",
+    img: "/captureprojects/petblog.png",
+    url: "https://petblogfr.netlify.app/",
+    github: "https://github.com/fred0727/pet-blog-academlo",
+    codes: ["html", "js", "css3"],
+  },
+  cruduser: {
+    title: "Crud User",
+    content: "Creando Crud de usuarios APP",
+    img: "/captureprojects/cruduser.png",
+    url: "https://app.netlify.com/sites/crud-usersfr/overview",
+    github: "https://github.com/fred0727/crud-users-app",
+    codes: ["html", "js", "css3","reactjs","tailwind"],
+  },
 };

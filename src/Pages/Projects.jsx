@@ -38,19 +38,16 @@ const Projects = () => {
           <CardProjectDetail project="fraremsac"/>
         </div>
         <div data-aos="slide-up">
-          <CardProjectDetail project="pokedex"/>
+          <CardProjectDetail project="moviessearch"/>
         </div>
         <div data-aos="fade-up">
-          <CardProjectDetail project="pokedex"/>
+          <CardProjectDetail project="petblog"/>
         </div>
         <div data-aos="fade-up">
-          <CardProjectDetail project="pokedex"/>
+          <CardProjectDetail project="cruduser"/>
         </div>
         <div data-aos="zoom-in">
-          <CardProjectDetail project="pokedex"/>
-        </div>
-        <div data-aos="zoom-out">
-          <CardProjectDetail project="pokedex"/>
+          <CardProjectDetail project="cruduser"/>
         </div>
       </section>
       <Footer/>

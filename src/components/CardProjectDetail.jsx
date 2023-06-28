@@ -24,7 +24,7 @@ const CardProjectDetail = ({ project }) => {
         <img
           src={projects[project].img}
           alt=""
-          className="w-full h-full object-cover hover:scale-125 transition-all duration-500 opacity-50 hover:opacity-100"
+          className="w-full h-full object-cover hover:scale-125 transition-all duration-500"
         />
       </div>
       <div className="flex flex-col gap-2 justify-center xxl:justify-between py-2">
