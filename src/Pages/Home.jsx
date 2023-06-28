@@ -9,8 +9,35 @@ import {
 import { TfiWorld } from "react-icons/tfi";
 import { HiMail } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { BiMailSend } from "react-icons/bi";
+import Footer from "../components/Footer";
 
 const Home = () => {
+  const [isPopUp, setIsPopUp] = useState(false);
+
+  // Iniciando servicio de EmailJS
+  emailjs.init("ujmGZzSK1SqYSUYPp");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const serviceID = "default_service";
+    const templateID = "template_qn9ez4e";
+
+    setIsPopUp(true);
+
+    emailjs
+      .sendForm(serviceID, templateID, e.target)
+      .then(() => {
+        document.getElementById("messagesend").innerHTML = "Mensaje Enviado";
+        setTimeout(() => {
+          setIsPopUp(false);
+          e.target.reset();
+        }, 3000);
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className="w-full dark:bg-slate-950">
       <section className="flex flex-col gap-4 pt-10 justify-center items-center px-4 dark:text-white xlg:pt-5">
@@ -51,31 +78,11 @@ const Home = () => {
           <h2 className="font- text-2xl text-center text-black xxs:text-3xl dark:text-white font-semibold xmd:text-4xl xlg:mb-10 xlg:text-5xl">
             Proyectos Recientes
           </h2>
-          <section className="w-full grid grid-cols-[repeat(auto-fill,_275px)] xxs:grid-cols-[repeat(auto-fill,350px)] pt-6 gap-8 justify-center mx-auto max-w-[1000px]">
-            <CardProject
-              title="Pokedex"
-              content="Consumiendo Api de Pokemon"
-              img="/captureprojects/pokeapi.png"
-              url="https://poke-apifr.netlify.app/"
-            />
-            <CardProject
-              title="Weathe App"
-              content="Consumiendo la API de OpenWeather"
-              img="/captureprojects/weatherapp.png"
-              url="https://weatherappreactfr.netlify.app/"
-            />
-            <CardProject
-              title="Frarem"
-              content="Landing Page para la empresa Frarem"
-              img="/captureprojects/frarem.png"
-              url="https://fred0727.github.io/fraremsac/"
-            />
-            <CardProject
-              title="Academlo Store"
-              content="Proyecto Store de Academlo"
-              img="/captureprojects/academlostore.png"
-              url="https://academlostorefr.netlify.app/"
-            />
+          <section className="w-full grid grid-cols-[repeat(auto-fill,_275px)] xxs:grid-cols-[repeat(auto-fill,350px)] xlg:grid-cols-[repeat(auto-fill,425px)] pt-6 gap-8 justify-center mx-auto max-w-[1000px]">
+            <CardProject project="weatherapp" />
+            <CardProject project="rickandmorty" />
+            <CardProject project="pokedex" />
+            <CardProject project="academlostore" />
           </section>
           <Link to="/projects" className="w-full flex justify-center pt-12">
             <button className="text-xl text-[#1e1a4f] bg-white border-[1px] border-[#1e1a4f] rounded-full px-4 py-1 flex justify-center items-center gap-2 hover:text-white hover:bg-[#1e1a4f] xxs:px-8 xxs:py-2 xxs:text-2xl">
@@ -177,9 +184,7 @@ const Home = () => {
           </ul>
         </div>
       </section>
-      <section
-        className="bg-white dark:bg-slate-950 dark:text-white xxl:flex xxl:p-10 xxl:px-10 xxl:flex-row-reverse xxl:w-[1440px] mx-auto"
-      >
+      <section className="bg-white dark:bg-slate-950 dark:text-white xxl:flex xxl:p-10 xxl:px-10 xxl:flex-row-reverse xxl:w-[1440px] mx-auto">
         <div className="flex flex-col justify-center items-center p-6 gap-4 xmd:w-[650px] mx-auto">
           <div className="flex justify-between items-center w-full gap-2 mt-5">
             <span className="border-[1px] border-gray-200 w-[30%] xmd:w-[35%]"></span>
@@ -195,58 +200,67 @@ const Home = () => {
           <h4 className="flex text-center font-bold text-xl xxs:text-3xl xmd:text-4xl">
             Contactame
           </h4>
-          <form className="flex flex-col w-full py-4 gap-4">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col w-full py-4 gap-4"
+          >
             <div>
               <label
-                htmlFor="name"
+                htmlFor="emailjs_name"
                 className="flex gap-1 xxs:text-lg xmd:text-xl"
               >
                 Nombres y Apellidos <span className="flex text-red-500">*</span>{" "}
               </label>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="emailjs_name"
+                id="emailjs_name"
                 className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6 xmd:text-xl text-gray-600 xmd:px-3"
+                required
               />
             </div>
             <div>
               <label
-                htmlFor="gmail"
+                htmlFor="emailjs_email"
                 className="flex gap-1 xxs:text-lg xmd:text-xl"
               >
-                Gmail<span className="flex text-red-500">*</span>
+                Correo<span className="flex text-red-500">*</span>
               </label>
               <input
-                type="text"
-                name="gmail"
-                id="gmail"
+                type="email"
+                name="emailjs_email"
+                id="emailjs_email"
                 className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6 xmd:text-xl text-gray-600 xmd:px-3"
+                required
               />
             </div>
             <div>
-              <label htmlFor="phone" className="xxs:text-lg xmd:text-xl">
+              <label
+                htmlFor="emailjs_phone"
+                className="xxs:text-lg xmd:text-xl"
+              >
                 Telefono
               </label>
               <input
                 type="text"
-                name="phone"
-                id="phone"
+                name="emailjs_phone"
+                id="emailjs_phone"
                 className="border w-full h-10 outline-none rounded-md p-2 xxs:py-6 xmd:text-xl text-gray-600 xmd:px-3"
               />
             </div>
             <div>
               <label
-                htmlFor="message"
+                htmlFor="emailjs_message"
                 className="flex gap-1 xxs:text-lg xmd:text-xl"
               >
                 Dejame tu mensaje <span className="flex text-red-500">*</span>
               </label>
               <textarea
                 type="text"
-                name="message"
-                id="message"
+                name="emailjs_message"
+                id="emailjs_message"
                 className="border w-full h-40 outline-none rounded-md p-2 xmd:text-xl text-gray-600 xmd:px-3"
+                required
               />
             </div>
             <div className="w-full">
@@ -360,14 +374,18 @@ const Home = () => {
           </ul>
         </div>
       </section>
-      <section className="pb-8 py-4 bg-white dark:bg-slate-950 dark:text-white xlg:pb-16 xlg:mt-4">
-        <h3 className="text-center text-gray-400 xxs:text-xl dark:text-gray-300 xlg:text-2xl">
-          Hecho por &copy;
-          <span className="text-gray-600 dark:text-white xlg:text-2xl">
-            Freddy Muñoz
-          </span>
-        </h3>
-      </section>
+
+      <Footer />
+      {isPopUp && (
+        <div className="fixed min-h-screen bg-black/50 w-screen z-50 top-0 flex justify-center items-center">
+          <section className="w-[300px] h-[250px] rounded-md bg-white p-5 flex flex-col justify-center items-center gap-3">
+            <BiMailSend className="text-8xl text-[#1e1a4f]" />
+            <div className="text-2xl" id="messagesend">
+              Enviando Mensaje..
+            </div>
+          </section>
+        </div>
+      )}
     </div>
   );
 };

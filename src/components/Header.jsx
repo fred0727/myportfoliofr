@@ -37,7 +37,7 @@ const Header = () => {
         )}
       </span>
       <nav className="hidden xlg:flex">
-        <ul className="flex items-center gap-10 dark:text-white">
+        <ul className="flex items-center gap-6 xxl:gap-10 dark:text-white">
           <Link to="/">
             <li className="w-full text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl">
               Inicio
@@ -48,7 +48,7 @@ const Header = () => {
               Proyectos
             </li>
           </Link>
-          <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer xxs:text-xl xmd:text-2xl xlg:text-3xl">
+          <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer xxs:text-2xl xmd:text-3xl xlg:text-4xl">
             {isDarkShow ? (
               <BsToggleOn onClick={handleChangeTheme} />
             ) : (
@@ -58,7 +58,7 @@ const Header = () => {
         </ul>
       </nav>
       <div
-        className={`absolute dark:bg-slate-950 dark:shadow-md dark:text-white dark:border-b-[1px] dark:border-white/20 flex flex-col justify-end items-end w-full gap-2 p-4 top-[68px] xmd:top-[92px] right-0 bg-white shadow-md ${
+        className={`absolute z-50 dark:bg-slate-950 dark:shadow-md dark:text-white dark:border-b-[1px] dark:border-white/20 flex flex-col justify-end items-end w-full gap-2 p-4 top-[68px] xmd:top-[92px] right-0 bg-white shadow-md ${
           isShowMenu ? "opacity-100 visible" : "opacity-0 invisible"
         } transition-opacity-0 duration-500`}
       >
@@ -73,7 +73,7 @@ const Header = () => {
               Proyectos
             </li>
           </Link>
-          <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer xxs:text-xl xmd:text-3xl">
+          <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer xxs:text-2xl xmd:text-3xl">
             {isDarkShow ? (
               <BsToggleOn onClick={handleChangeTheme} />
             ) : (
