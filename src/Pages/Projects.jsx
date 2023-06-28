@@ -46,9 +46,6 @@ const Projects = () => {
         <div data-aos="fade-up">
           <CardProjectDetail project="cruduser"/>
         </div>
-        <div data-aos="zoom-in">
-          <CardProjectDetail project="cruduser"/>
-        </div>
       </section>
       <Footer/>
     </div>

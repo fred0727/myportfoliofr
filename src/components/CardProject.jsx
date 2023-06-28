@@ -13,7 +13,7 @@ const CardProject = ({ project }) => {
         />
       </div>
       <div className="flex flex-col gap-2 justify-center">
-        <h3 className="text-md font-semibold text-[#1e1a4f] dark:text-white xmd:text-xl">
+        <h3 className="text-md font-semibold text-[#1e1a4f] dark:text-white xmd:text-xl xlg:text-2xl">
         {projects[project].title}
         </h3>
         <p className="text-sm dark:text-white xmd:text-lg">{projects[project].content}</p>
