@@ -8,8 +8,11 @@ const Header = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isDarkShow, setisDarkShow] = useState(false);
 
+  const theme = JSON.parse(localStorage.getItem("Theme")) || false;
+
   const handleChangeTheme = () => {
     setisDarkShow(!isDarkShow);
+    localStorage.setItem("Theme", Boolean(!isDarkShow));
   };
 
   const handleShowMenu = () => {
@@ -23,6 +26,12 @@ const Header = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [isDarkShow]);
+
+  useEffect(() => {
+    if (theme) {
+      setisDarkShow(theme)
+    } 
+  }, []);
 
   return (
     <div className="w-full flex justify-between items-center dark:bg-slate-950 relative p-4 xmd:px-10 xlg:px-20">

@@ -1,10 +1,16 @@
-import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useLocation } from "react-router-dom";
 import CardProjectDetail from "../components/CardProjectDetail";
 import Footer from "../components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Projects = () => {
+  const routePath = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [routePath]);
+
   AOS.init({
     duration: 1500,
   });
@@ -26,10 +32,10 @@ const Projects = () => {
           <CardProjectDetail project="weatherapp"/>
         </div>
         <div data-aos="fade-up">
-          <CardProjectDetail project="pokedex"/>
+          <CardProjectDetail project="pharserandom"/>
         </div>
         <div data-aos="zoom-out">
-          <CardProjectDetail project="pokedex"/>
+          <CardProjectDetail project="fraremsac"/>
         </div>
         <div data-aos="slide-up">
           <CardProjectDetail project="pokedex"/>

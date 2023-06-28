@@ -13,6 +13,7 @@ const CardProjectDetail = ({ project }) => {
     php: "/logos/php.png",
     reactjs: "/logos/reactjs.png",
     tailwind: "/logos/tailwind.png",
+    vite: "/logos/vite.svg",
   };
 
   console.log(projects[project]);
@@ -37,7 +38,7 @@ const CardProjectDetail = ({ project }) => {
         </div>
         <div className="flex gap-2 py-2">
           {projects[project].codes.map((img) => (
-            <img src={imagescode[img]} alt="" className="w-[24px] xxs:w-[32px] xmd:w-[40px]"/>
+            <img src={imagescode[img]} alt="" className="w-[24px] xxs:w-[32px] opacity-60 hover:opacity-100 transition-opacity duration-200"/>
           ))}
         </div>
         <div className="flex gap-2 justify-end items-center xxl:gap-3">
