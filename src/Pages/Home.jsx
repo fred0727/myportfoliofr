@@ -65,7 +65,7 @@ const Home = () => {
         <h2 className="font-bold text-center py-2 text-2xl xxs:text-2xl xmd:text-3xl xlg:text-4xl xxs:py-4">
           Sobre mi
         </h2>
-        <p className="font-light text-center text-sm pb-2 xxs:text-lg xxs:pb-4 dark:font-medium xlg:px-40 xlg:text-xl">
+        <p className="font-light text-center text-sm pb-2 xxs:text-lg xxs:pb-4 dark:font-medium xlg:px-32 xlg:text-xl xxl:px-60">
           Me inserte a este apasionante mundo del desarrollo hace 2 años, he
           colaborado y creado proyectos con diseños adaptativos e integrando
           funcionalidades que mejore la experiencia del usuario. Soy un
