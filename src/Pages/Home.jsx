@@ -336,7 +336,7 @@ const Home = () => {
           </h2>
           <ul className="flex flex-wrap py-4 justify-around">
             <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
-              <a href="https://twitter.com/freddy_mh95" target="_blank">
+              <a href="https://twitter.com/freddy_mh95" target="_blank" title="Twitter">
                 <BsTwitter />
               </a>
             </li>
@@ -344,17 +344,18 @@ const Home = () => {
               <a
                 href="https://www.facebook.com/freddy.munoz.338658"
                 target="_blank"
+                title="Facebook"
               >
                 <BsFacebook />
               </a>
             </li>
             <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
-              <a href="https://www.linkedin.com/in/freddy-mh/" target="_blank">
+              <a href="https://www.linkedin.com/in/freddy-mh/" target="_blank" title="Linkedin">
                 <BsLinkedin />
               </a>
             </li>
             <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
-              <a href="https://github.com/fred0727" target="_blank">
+              <a href="https://github.com/fred0727" target="_blank" title="Git Hub">
                 <BsGithub />
               </a>
             </li>
@@ -362,12 +363,13 @@ const Home = () => {
               <a
                 href="https://api.whatsapp.com/send?phone=51924471461&text=Hola!%20Quiero%20contactarme%20contigo!"
                 target="_blank"
+                title="Whastapp"
               >
                 <BsWhatsapp />
               </a>
             </li>
             <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
-              <a href="mailto:freddymh07952023@gmail.com">
+              <a href="mailto:freddymh07952023@gmail.com" title="Enviar Correo">
                 <HiMail />
               </a>
             </li>
