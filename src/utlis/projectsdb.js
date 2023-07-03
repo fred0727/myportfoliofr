@@ -71,4 +71,12 @@ export const projects = {
     github: "https://github.com/fred0727/crud-users-app",
     codes: ["html", "js", "css3","reactjs","tailwind"],
   },
+  ecomercereact: {
+    title: "Ecommerce React",
+    content: "Ecomerce web creado con React y Tailwind CSS",
+    img: "/captureprojects/ecomerce.png",
+    url: "https://ecomercefr.netlify.app/",
+    github: "https://github.com/fred0727/e-comercefr",
+    codes: ["html", "js","reactjs","tailwind","vite"],
+  },
 };
