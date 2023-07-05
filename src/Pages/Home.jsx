@@ -97,7 +97,7 @@ const Home = () => {
             Tecnologias y lenguajes con las que he trabajado:
           </h2>
           <ul className="w-full grid grid-cols-[repeat(auto-fill,_100px)] justify-center items-center gap-6 xlg:grid-cols-[repeat(auto-fill,_125px)] max-w-[1480px]">
-            <li className="flex justify-center items-center flex-col gap-3">
+            <li className="flex justify-between items-center flex-col gap-3 h-[90px] xlg:h-[120px]">
               <img
                 src="/logos/html5.png"
                 alt=""
@@ -105,7 +105,7 @@ const Home = () => {
               />
               <span className="text-white xlg:text-xl">Html5</span>
             </li>
-            <li className="flex justify-center items-center flex-col gap-3">
+            <li className="flex justify-between items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
               <img
                 src="/logos/css3.png"
                 alt=""
@@ -113,7 +113,7 @@ const Home = () => {
               />
               <span className="text-white xlg:text-xl">Css3</span>
             </li>
-            <li className="flex justify-center items-center flex-col gap-3">
+            <li className="flex justify-between items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
               <img
                 src="/logos/js.png"
                 alt=""
@@ -121,7 +121,7 @@ const Home = () => {
               />
               <span className="text-white xlg:text-xl">Javascript</span>
             </li>
-            <li className="flex justify-center items-center flex-col gap-3">
+            <li className="flex justify-between items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
               <img
                 src="/logos/reactjs.png"
                 alt=""
@@ -129,7 +129,7 @@ const Home = () => {
               />
               <span className="text-white xlg:text-xl">React JS</span>
             </li>
-            <li className="flex justify-center items-center flex-col gap-3">
+            <li className="flex justify-between items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
               <img
                 src="/logos/php.png"
                 alt=""
@@ -137,7 +137,7 @@ const Home = () => {
               />
               <span className="text-white xlg:text-xl">PHP</span>
             </li>
-            <li className="flex justify-center items-center flex-col gap-3">
+            <li className="flex justify-between items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
               <img
                 src="/logos/mysql.png"
                 alt=""
@@ -145,7 +145,7 @@ const Home = () => {
               />
               <span className="text-white xlg:text-xl">Mysql</span>
             </li>
-            <li className="flex justify-center items-center flex-col gap-3">
+            <li className="flex justify-around items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
               <img
                 src="/logos/bootstrap.png"
                 alt=""
@@ -153,7 +153,7 @@ const Home = () => {
               />
               <span className="text-white xlg:text-xl">Bootstrap</span>
             </li>
-            <li className="flex justify-center items-center flex-col gap-3">
+            <li className="flex justify-between items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
               <img
                 src="/logos/tailwind.png"
                 alt=""
@@ -163,7 +163,7 @@ const Home = () => {
                 Tailwind Css
               </span>
             </li>
-            <li className="flex justify-center items-center flex-col gap-3">
+            <li className="flex justify-between items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
               <img
                 src="/logos/git.png"
                 alt=""
@@ -171,7 +171,7 @@ const Home = () => {
               />
               <span className="text-white xlg:text-xl text-center">Git</span>
             </li>
-            <li className="flex justify-center items-center flex-col gap-3">
+            <li className="flex justify-between items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
               <img
                 src="/logos/github.png"
                 alt=""
