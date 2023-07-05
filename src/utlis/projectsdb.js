@@ -73,7 +73,7 @@ export const projects = {
   },
   ecomercereact: {
     title: "Ecommerce React",
-    content: "Ecomerce web creado con React y Tailwind CSS",
+    content: "Ecomerce creado con React y Tailwind CSS",
     img: "/captureprojects/ecomerce.png",
     url: "https://ecomercefr.netlify.app/",
     github: "https://github.com/fred0727/e-comercefr",

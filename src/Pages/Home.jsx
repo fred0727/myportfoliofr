@@ -78,7 +78,7 @@ const Home = () => {
           <h2 className="font- text-2xl text-center text-black xxs:text-3xl dark:text-white font-semibold xmd:text-4xl xlg:mb-10 xlg:text-5xl">
             Proyectos Recientes
           </h2>
-          <section className="w-full grid grid-cols-[repeat(auto-fill,_275px)] xxs:grid-cols-[repeat(auto-fill,350px)] xlg:grid-cols-[repeat(auto-fill,425px)] pt-6 gap-8 justify-center mx-auto max-w-[1000px]">
+          <section className="w-full grid grid-cols-[repeat(auto-fill,_275px)] xxs:grid-cols-[repeat(auto-fill,325px)] xlg:grid-cols-[repeat(auto-fill,425px)] pt-6 gap-8 justify-center mx-auto max-w-[1024px] xlg:gap-12">
             <CardProject project="weatherapp" />
             <CardProject project="rickandmorty" />
             <CardProject project="pokedex" />
