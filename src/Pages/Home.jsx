@@ -145,7 +145,7 @@ const Home = () => {
               />
               <span className="text-white xlg:text-xl">Mysql</span>
             </li>
-            <li className="flex justify-around items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
+            <li className="flex justify-between items-center flex-col gap-3 h-[90px] xlg:h-[120px] ">
               <img
                 src="/logos/bootstrap.png"
                 alt=""
