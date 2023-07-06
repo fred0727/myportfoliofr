@@ -51,7 +51,7 @@ const Home = () => {
           <span>Diseño y codifico páginas web únicas.</span>
         </p>
         <div className="flex flex-col pt-8 items-center gap-28 xxs:gap-36 xmd:gap-16 xlg:gap-10 xlg:pt-0">
-          <div className="relative bg-gradient-to-t from-indigo-900 to-indigo-950  dark:bg-gradient-to-b dark:from-emerald-300 dark:to-white rounded-full mt-10 dark:bg-white w-[175px] h-[175px] xxs:w-[200px] xxs:h-[200px] xmd:w-[225px] xmd:h-[225px] xlg:w-[250px] xlg:h-[250px]">
+          <div className="relative bg-gradient-to-t from-indigo-900 to-indigo-950  dark:bg-gradient-to-b dark:from-emerald-300 dark:to-emerald-300 rounded-full mt-10 dark:bg-white w-[175px] h-[175px] xxs:w-[200px] xxs:h-[200px] xmd:w-[225px] xmd:h-[225px] xlg:w-[250px] xlg:h-[250px]">
             <img
               src="/images/avatar.png"
               alt=""
