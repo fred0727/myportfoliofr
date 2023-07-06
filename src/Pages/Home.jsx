@@ -67,6 +67,8 @@ const Home = () => {
             <a
               href="#contacto"
               className="flex justify-center items-center w-[110px] xxs:w-[120px] xlg:w-[56px] xlg:h-[56px] xxs:text-lg gap-1 bg-emerald-300 rounded-md py-2 text-slate-950 cursor-pointer shadow-md mx-auto xmd:w-[48px] xmd:h-[48px] xmd:rounded-full hover:scale-105 transition-all duration-300"
+              alt="Conctactame"
+              title="Contactame"
             >
               <span className="xmd:hidden">Contacto</span>{" "}
               <BiSolidSend className="text-lg xxs:text-xl text-slate-950" />
@@ -75,6 +77,7 @@ const Home = () => {
               className="hidden xmd:flex justify-center items-center w-[110px] xxs:w-[120px] xlg:w-[56px] xlg:h-[56px] xxs:text-lg gap-1 bg-emerald-300 rounded-md py-2 text-slate-950 cursor-pointer shadow-md mx-auto xmd:w-[48px] xmd:h-[48px] xmd:rounded-full hover:scale-105 transition-all duration-300"
               href="https://www.linkedin.com/in/freddy-mh/"
               target="_blank"
+              alt="Linkedin"
               title="Linkedin"
             >
               <BsLinkedin className="text-lg xxs:text-xl text-slate-950 " />
@@ -83,6 +86,7 @@ const Home = () => {
               className="hidden xmd:flex justify-center items-center w-[110px] xxs:w-[120px] xlg:w-[56px] xlg:h-[56px] xxs:text-lg gap-1 bg-emerald-300 rounded-md py-2 text-slate-950 cursor-pointer shadow-md mx-auto xmd:w-[48px] xmd:h-[48px] xmd:rounded-full hover:scale-105 transition-all duration-300"
               href="https://api.whatsapp.com/send?phone=51924471461&text=Hola!%20Quiero%20contactarme%20contigo!"
               target="_blank"
+              alt="Whastapp"
               title="Whastapp"
             >
               <BsWhatsapp className="text-lg xxs:text-xl text-slate-950 " />
@@ -291,6 +295,8 @@ const Home = () => {
                   href="https://api.whatsapp.com/send?phone=51924471461&text=Hola!%20Quiero%20contactarme%20contigo!"
                   target="_blank"
                   className="flex items-center gap-2"
+                  alt="Whastapp"
+                  title="Whastapp"
                 >
                   <BsWhatsapp />
                   <span className="text-2xl text-black dark:text-white">
@@ -302,6 +308,8 @@ const Home = () => {
                 <a
                   href="mailto:freddymh07952023@gmail.com"
                   className="flex items-center gap-2"
+                  alt="Correo"
+                  title="Correo"
                 >
                   <HiMail />
                   <span className="text-2xl text-black dark:text-white">
@@ -312,14 +320,14 @@ const Home = () => {
             </ul>
             <ul className="flex py-4 gap-6">
               <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-blue-400 dark:hover:text-blue-400 xmd:text-4xl">
-                <a href="https://twitter.com/freddy_mh95" target="_blank">
+                <a href="https://twitter.com/freddy_mh95" target="_blank" alt="Twitter" title="Twitter">
                   <BsTwitter />
                 </a>
               </li>
               <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-blue-600 dark:hover:text-blue-600 xmd:text-4xl">
                 <a
                   href="https://www.facebook.com/freddy.munoz.338658"
-                  target="_blank"
+                  target="_blank" alt="Facebook" title="Facebook"
                 >
                   <BsFacebook />
                 </a>
@@ -327,13 +335,13 @@ const Home = () => {
               <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-blue-950 dark:hover:text-blue-950 xmd:text-4xl">
                 <a
                   href="https://www.linkedin.com/in/freddy-mh/"
-                  target="_blank"
+                  target="_blank" alt="Linkedin" title="Linkedin"
                 >
                   <BsLinkedin />
                 </a>
               </li>
               <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-black dark:hover:text-black xmd:text-4xl">
-                <a href="https://github.com/fred0727" target="_blank">
+                <a href="https://github.com/fred0727" target="_blank" alt="Git Hub" title="Git Hub">
                   <BsGithub />
                 </a>
               </li>
@@ -352,6 +360,7 @@ const Home = () => {
                 href="https://twitter.com/freddy_mh95"
                 target="_blank"
                 title="Twitter"
+                alt="Twitter"
               >
                 <BsTwitter />
               </a>
@@ -361,6 +370,7 @@ const Home = () => {
                 href="https://www.facebook.com/freddy.munoz.338658"
                 target="_blank"
                 title="Facebook"
+                alt="Facebook"
               >
                 <BsFacebook />
               </a>
@@ -370,6 +380,7 @@ const Home = () => {
                 href="https://www.linkedin.com/in/freddy-mh/"
                 target="_blank"
                 title="Linkedin"
+                alt="Linkedin"
               >
                 <BsLinkedin />
               </a>
@@ -379,6 +390,7 @@ const Home = () => {
                 href="https://github.com/fred0727"
                 target="_blank"
                 title="Git Hub"
+                alt="Git Hub"
               >
                 <BsGithub />
               </a>
@@ -388,12 +400,13 @@ const Home = () => {
                 href="https://api.whatsapp.com/send?phone=51924471461&text=Hola!%20Quiero%20contactarme%20contigo!"
                 target="_blank"
                 title="Whastapp"
+                alt="Whastapp"
               >
                 <BsWhatsapp />
               </a>
             </li>
             <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
-              <a href="mailto:freddymh07952023@gmail.com" title="Enviar Correo">
+              <a href="mailto:freddymh07952023@gmail.com" title="Enviar Correo" alt="Correo">
                 <HiMail />
               </a>
             </li>

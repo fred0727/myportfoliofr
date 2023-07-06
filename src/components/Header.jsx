@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <div className="w-full flex justify-between items-center dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950 relative p-4 xmd:px-10 xlg:px-20 xxl:-mb-1 xxl:px-60 mx-auto">
-      <Link to="/">
+      <Link to="/" title="Inicio">
         <PiDevicesFill className="text-4xl text-indigo-950 xxs:text-5xl dark:text-emerald-300 xmd:text-6xl xlg:text-7xl" />
       </Link>
       <span onClick={handleShowMenu} className="xlg:hidden">
