@@ -16,8 +16,6 @@ const CardProjectDetail = ({ project }) => {
     vite: "/logos/vite.svg",
   };
 
-  console.log(projects[project]);
-
   return (
     <article className="flex flex-col xlg:justify-between xlg:flex-row gap-4 xlg:gap-8 justify-center shadow-lg rounded-md bg-white border-[1px] border-gray-400/30 dark:bg-[#1e1a4f] dark:shadow-white dark:shadow-none dark:border-none xlg:h-[250px] xxl:h-[275px] hover:scale-105 transition-all duration-500">
       <div className="overflow-hidden rounded-t-md xlg:rounded-none xlg:rounded-b-md xlg:rounded-r-none xlg:rounded-l-md flex justify-center items-center w-full h-[150px] xxs:h-[200px] xlg:w-[300px] xlg:h-full xxl:h-full xxl:w-[275px]">

@@ -24,7 +24,7 @@ export const projects = {
     codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
   weatherapp: {
-    title: "Weathe App",
+    title: "Weather App",
     content: "Consumiendo la API de OpenWeather",
     img: "/captureprojects/weatherapp.png",
     url: "https://weatherappreactfr.netlify.app/",
