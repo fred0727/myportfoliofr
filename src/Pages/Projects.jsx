@@ -19,16 +19,16 @@ const Projects = () => {
     <div className="w-full flex flex-col gap-6 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950 xmd::h-[400px]">
       <h2 className="text-center text-2xl xlg:text-4xl mt-6 dark:text-white">Mis Proyectos</h2>
       <section className="w-full grid grid-cols-[repeat(auto-fill,_250px)] xxs:grid-cols-[repeat(auto-fill,325px)] xlg:grid-cols-[repeat(auto-fill,600px)] xlg:px-10 pt-6 pb-6 gap-8 justify-center mx-auto xlg:max-w-[1000px] xxl:grid-cols-[repeat(auto-fill,550px)] xxl:max-w-[1240px]">
-        <div data-aos="fade-up">
+        <div data-aos="fade-right">
           <CardProjectDetail project="ecomercereact"/>
         </div>
-        <div data-aos="fade-down">
+        <div data-aos="fade-left">
           <CardProjectDetail project="pokedex"/>
         </div>
-        <div data-aos="fade-down">
+        <div data-aos="fade-right">
           <CardProjectDetail project="academlostore"/>
         </div>
-        <div data-aos="fade-up">
+        <div data-aos="fade-left">
           <CardProjectDetail project="rickandmorty"/>
         </div>
         <div data-aos="fade-up">

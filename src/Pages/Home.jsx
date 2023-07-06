@@ -44,7 +44,7 @@ const Home = () => {
     <div className="w-full dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950">
       <section className="flex flex-col gap-4 pt-10 justify-center items-center px-4 dark:text-white xlg:pt-5 relative">
         <h1 className="text-2xl font-bold xxs:text-3xl xmd:text-4xl xlg:text-5xl text-typing">
-          Hola, mi nombre es Freddy
+          Hola, Soy Freddy
         </h1>
         <p className="text-center text-sm xxs:text-lg xmd:text-xl xlg:text-2xl xlg:font-light">
           Desarrollador Web Front-End <br />

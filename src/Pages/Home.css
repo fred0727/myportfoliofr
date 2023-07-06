@@ -2,8 +2,8 @@
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 21.5ch;
-  animation: typing 4s steps(20), blink 0.5s infinite step-end alternate;
+  width: 13.8ch;
+  animation: typing 4s steps(13), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
