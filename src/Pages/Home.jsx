@@ -204,7 +204,7 @@ const Home = () => {
         <div className="flex flex-col justify-center items-center p-6 gap-4 xmd:w-[650px] mx-auto">
           <div className="flex justify-between items-center w-full gap-2 mt-5">
             <span className="border-[1px] border-gray-200 w-[30%] xmd:w-[35%]"></span>
-            <div className="relative rounded-full bg-indigo-950 w-[100px] h-[100px] xmd:w-[125px] xmd:h-[125px]">
+            <div className="relative rounded-full bg-indigo-950 dark:bg-emerald-300 w-[100px] h-[100px] xmd:w-[125px] xmd:h-[125px]">
               <img
                 src="/images/avatar.png"
                 alt=""
@@ -280,7 +280,7 @@ const Home = () => {
               />
             </div>
             <div className="w-full">
-              <button className="bg-indigo-950 dark:bg-slate-950 text-white w-full py-2 rounded-md xxs:py-4 xxs:text-xl ">
+              <button className="bg-indigo-950 dark:bg-emerald-300 text-white dark:text-black w-full py-2 rounded-md xxs:py-4 xxs:text-xl ">
                 Enviar Mensaje
               </button>
             </div>
@@ -290,7 +290,7 @@ const Home = () => {
           <div className="w-full px-10 py-10 flex flex-col items-start justify-end gap-2">
             <h2 className="text-4xl pb-6">Mis Redes</h2>
             <ul className="flex flex-col gap-4 pb-4">
-              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-green-600 dark:hover:text-green-600">
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300">
                 <a
                   href="https://api.whatsapp.com/send?phone=51924471461&text=Hola!%20Quiero%20contactarme%20contigo!"
                   target="_blank"
@@ -304,7 +304,7 @@ const Home = () => {
                   </span>
                 </a>
               </li>
-              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-slate-600 dark:hover:text-slate-600">
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300">
                 <a
                   href="mailto:freddymh07952023@gmail.com"
                   className="flex items-center gap-2"
@@ -319,12 +319,12 @@ const Home = () => {
               </li>
             </ul>
             <ul className="flex py-4 gap-6">
-              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-blue-400 dark:hover:text-blue-400 xmd:text-4xl">
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300 xmd:text-4xl">
                 <a href="https://twitter.com/freddy_mh95" target="_blank" alt="Twitter" title="Twitter">
                   <BsTwitter />
                 </a>
               </li>
-              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-blue-600 dark:hover:text-blue-600 xmd:text-4xl">
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300 xmd:text-4xl">
                 <a
                   href="https://www.facebook.com/freddy.munoz.338658"
                   target="_blank" alt="Facebook" title="Facebook"
@@ -332,7 +332,7 @@ const Home = () => {
                   <BsFacebook />
                 </a>
               </li>
-              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-blue-950 dark:hover:text-blue-950 xmd:text-4xl">
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300 xmd:text-4xl">
                 <a
                   href="https://www.linkedin.com/in/freddy-mh/"
                   target="_blank" alt="Linkedin" title="Linkedin"
@@ -340,7 +340,7 @@ const Home = () => {
                   <BsLinkedin />
                 </a>
               </li>
-              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-black dark:hover:text-black xmd:text-4xl">
+              <li className="text-4xl text-gray-400 dark:text-white cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300 xmd:text-4xl">
                 <a href="https://github.com/fred0727" target="_blank" alt="Git Hub" title="Git Hub">
                   <BsGithub />
                 </a>
@@ -355,7 +355,7 @@ const Home = () => {
             Mis Redes
           </h2>
           <ul className="flex flex-wrap py-4 justify-around">
-            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300 xmd:text-4xl">
               <a
                 href="https://twitter.com/freddy_mh95"
                 target="_blank"
@@ -365,7 +365,7 @@ const Home = () => {
                 <BsTwitter />
               </a>
             </li>
-            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300 xmd:text-4xl">
               <a
                 href="https://www.facebook.com/freddy.munoz.338658"
                 target="_blank"
@@ -375,7 +375,7 @@ const Home = () => {
                 <BsFacebook />
               </a>
             </li>
-            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300 xmd:text-4xl">
               <a
                 href="https://www.linkedin.com/in/freddy-mh/"
                 target="_blank"
@@ -385,7 +385,7 @@ const Home = () => {
                 <BsLinkedin />
               </a>
             </li>
-            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300 xmd:text-4xl">
               <a
                 href="https://github.com/fred0727"
                 target="_blank"
@@ -395,7 +395,7 @@ const Home = () => {
                 <BsGithub />
               </a>
             </li>
-            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300 xmd:text-4xl">
               <a
                 href="https://api.whatsapp.com/send?phone=51924471461&text=Hola!%20Quiero%20contactarme%20contigo!"
                 target="_blank"
@@ -405,7 +405,7 @@ const Home = () => {
                 <BsWhatsapp />
               </a>
             </li>
-            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-[#1e1a4f] dark:hover:text-white xmd:text-4xl">
+            <li className="text-3xl text-gray-400 dark:text-gray-500 cursor-pointer hover:text-emerald-300 dark:hover:text-emerald-300 xmd:text-4xl">
               <a href="mailto:freddymh07952023@gmail.com" title="Enviar Correo" alt="Correo">
                 <HiMail />
               </a>
