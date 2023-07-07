@@ -94,7 +94,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-col text-white p-6 py-8 xlg:py-20 bg-indigo-950 xmd:px-6 xlg:px-32 xxl:px-80 xxl:py-24">
+      <section className="flex flex-col text-white p-6 py-8 xlg:py-20 bg-indigo-950 dark:bg-slate-950 xmd:px-6 xlg:px-32 xxl:px-80 xxl:py-24">
         <h2 className="font-bold text-center py-3 text-2xl xxs:text-2xl xmd:text-3xl xlg:text-4xl xxl:text-5xl xxs:py-4">
           Sobre mi
         </h2>
@@ -126,13 +126,13 @@ const Home = () => {
             <CardProject project="academlostore" />
           </section>
           <Link to="/projects" className="w-full flex justify-center pt-12">
-            <button className="text-xl text-indigo-950 bg-white border-[1px] border-indigo-950 rounded-full px-4 py-1 flex justify-center items-center gap-2 hover:text-white hover:bg-indigo-950 dark:hover:bg-indigo-800 xxs:px-8 xxs:py-2 xxs:text-2xl">
+            <button className="text-xl text-indigo-950 bg-white border-[1px] border-indigo-950 rounded-full px-4 py-1 flex justify-center items-center gap-2 hover:text-white hover:bg-indigo-950 dark:hover:bg-indigo-950 xxs:px-8 xxs:py-2 xxs:text-2xl">
               <TfiWorld /> Ver todos
             </button>
           </Link>
         </div>
       </section>
-      <section className="w-full py-10 xlg:py-20 xlg:px-10 bg-indigo-950">
+      <section className="w-full py-10 xlg:py-20 xlg:px-10 bg-indigo-950 dark:bg-slate-950">
         <div className="px-6 py-12 flex flex-col gap-5 xlg:gap-16 mx-auto justify-center items-center xxl:max-w-[1850px]">
           <h2 className="text-center font-bold text-2xl mb-6 text-white dark:text-white xxs:text-2xl xmd:text-3xl xlg:mb-10 xlg:text-5xl">
             Formación Profesional
@@ -280,7 +280,7 @@ const Home = () => {
               />
             </div>
             <div className="w-full">
-              <button className="bg-indigo-950 text-white w-full py-2 rounded-md xxs:py-4 xxs:text-xl ">
+              <button className="bg-indigo-950 dark:bg-slate-950 text-white w-full py-2 rounded-md xxs:py-4 xxs:text-xl ">
                 Enviar Mensaje
               </button>
             </div>

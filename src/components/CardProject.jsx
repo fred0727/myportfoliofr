@@ -4,7 +4,7 @@ import { projects } from "../utlis/projectsdb";
 const CardProject = ({ project }) => {
 
   return (
-    <article className="flex flex-col xlg:flex-row gap-4 xlg:gap-6 justify-center shadow-lg rounded-md bg-white border-[1px] border-gray-400/30 dark:bg-indigo-950 dark:shadow-white dark:shadow-none dark:border-none xlg:h-[225px] hover:scale-105 transition-all duration-500">
+    <article className="flex flex-col xlg:flex-row gap-4 xlg:gap-6 justify-center shadow-lg rounded-md bg-white border-[1px] border-gray-400/30 dark:bg-slate-950 dark:shadow-white dark:shadow-none dark:border-none xlg:h-[225px] hover:scale-105 transition-all duration-500">
       <div className="overflow-hidden rounded-t-md xlg:rounded-none xlg:rounded-b-md xlg:rounded-r-none xlg:rounded-l-md flex justify-center items-center w-full h-[150px] xxs:h-[200px] xlg:w-[275px] xlg:h-full xlg:shadow-md">
         <img
           src={projects[project].img}
@@ -20,7 +20,7 @@ const CardProject = ({ project }) => {
         <a
           href={projects[project].url}
           target="_blank"
-          className="text-black cursor-pointer p-2 border rounded-md bg-white hover:bg-gray-100 text-sm w-[85px] text-center transition-all duration-300 dark:hover:bg-indigo-700 dark:border-none dark:hover:text-white xxs:text-base xmd:text-lg xxs:w-[95px] xmd:w-[110px]"
+          className="text-black cursor-pointer p-2 border rounded-md bg-white hover:bg-gray-100 text-sm w-[85px] text-center transition-all duration-300 dark:hover:bg-indigo-950 dark:border-none dark:hover:text-white xxs:text-base xmd:text-lg xxs:w-[95px] xmd:w-[110px]"
         >
           Ver pagina
         </a>

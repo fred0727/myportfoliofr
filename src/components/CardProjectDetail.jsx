@@ -1,5 +1,5 @@
-import React from "react";
 import { projects } from "../utlis/projectsdb";
+import { BsGithub } from "react-icons/bs";
 
 const CardProjectDetail = ({ project }) => {
   const imagescode = {
@@ -17,7 +17,7 @@ const CardProjectDetail = ({ project }) => {
   };
 
   return (
-    <article className="flex flex-col xlg:justify-between xlg:flex-row gap-4 xlg:gap-8 justify-center shadow-lg rounded-md bg-white border-[1px] border-gray-400/30 dark:bg-[#1e1a4f] dark:shadow-white dark:shadow-none dark:border-none xlg:h-[250px] xxl:h-[275px] hover:scale-105 transition-all duration-500">
+    <article className="flex flex-col xlg:justify-between xlg:flex-row gap-4 xlg:gap-8 justify-center shadow-lg rounded-md bg-white border-[1px] border-gray-400/30 dark:bg-slate-950 dark:shadow-white dark:shadow-none dark:border-none xlg:h-[250px] xxl:h-[275px] hover:scale-105 transition-all duration-500">
       <div className="overflow-hidden rounded-t-md xlg:rounded-none xlg:rounded-b-md xlg:rounded-r-none xlg:rounded-l-md flex justify-center items-center w-full h-[150px] xxs:h-[200px] xlg:w-[300px] xlg:h-full xxl:h-full xxl:w-[275px]">
         <img
           src={projects[project].img}
@@ -39,17 +39,13 @@ const CardProjectDetail = ({ project }) => {
             <img
               src={imagescode[img]}
               alt=""
-              className="w-[24px] xxs:w-[32px] opacity-60 hover:opacity-100 transition-opacity duration-200"
+              className="w-[24px] xxs:w-[32px] opacity-60 dark:opacity-100 hover:opacity-100 transition-opacity duration-200"
             />
           ))}
         </div>
-        <div className="flex gap-2 justify-end items-center xxl:gap-3">
+        <div className="flex gap-3 justify-end items-center xxl:gap-3">
           <a href={projects[project].github} target="_blank">
-            <img
-              src="/logos/github.png"
-              alt=""
-              className="w-[32px] xxl:w-[50px]"
-            />
+            <BsGithub className="text-4xl xxl:text-5xl dark:text-white"/>
           </a>
           <a
             href={projects[project].url}
