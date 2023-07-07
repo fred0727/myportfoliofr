@@ -82,7 +82,7 @@ const Header = () => {
               Proyectos
             </li>
           </Link>
-          <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer xxs:text-2xl xmd:text-3xl">
+          <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer text-xl xxs:text-2xl xmd:text-3xl">
             {isDarkShow ? (
               <BsToggleOn onClick={handleChangeTheme} />
             ) : (
