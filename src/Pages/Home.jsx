@@ -204,7 +204,7 @@ const Home = () => {
         <div className="flex flex-col justify-center items-center p-6 gap-4 xmd:w-[650px] mx-auto">
           <div className="flex justify-between items-center w-full gap-2 mt-5">
             <span className="border-[1px] border-gray-200 w-[30%] xmd:w-[35%]"></span>
-            <div className="relative rounded-full bg-indigo-950 dark:bg-emerald-300 w-[100px] h-[100px] xmd:w-[125px] xmd:h-[125px]">
+            <div className="relative rounded-full bg-gradient-to-t from-indigo-900 to-indigo-950 dark:bg-gradient-to-b dark:from-emerald-300 dark:to-emerald-300 w-[100px] h-[100px] xmd:w-[125px] xmd:h-[125px]">
               <img
                 src="/images/avatar.png"
                 alt=""
