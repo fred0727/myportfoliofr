@@ -96,10 +96,10 @@ const Home = () => {
         </div>
       </section>
       <section className="flex flex-col  p-6 py-8 xlg:py-20 bg-gray-200 dark:bg-slate-950 xmd:px-6 xlg:px-32 xxl:px-80 xxl:py-24">
-        <h2 className="font-bold text-center py-3 text-2xl xxs:text-2xl xmd:text-3xl xlg:text-4xl xxl:text-5xl xxs:py-4">
+        <h2 className="font-bold text-center py-3 text-2xl xxs:text-2xl xxm:text-3xl xlg:text-4xl xxl:text-5xl xxs:py-4">
           Sobre mi
         </h2>
-        <p className="font-light dark:font-medium text-justify px-4 text-sm pb-2 xxs:text-lg xmd:px-16 xxs:pb-4 xlg:text-xl xxl:py-6">
+        <p className="font-light dark:font-medium text-justify px-4 text-sm pb-2 xxs:text-lg xxm:text-xl xmd:px-16 xxs:pb-4 xlg:text-xl xxl:py-6">
           Me apasiona el mundo del desarrollo, he colaborado y creado proyectos
           front-end con Javascript, React, Redux y Tailwind CSS, así como en el
           desarrollo back-end con Node.js, Express, PHP, MySQL y PostgreSQL. Soy
@@ -109,7 +109,7 @@ const Home = () => {
           y habilidades en mi entorno laboral y comunidad web.
         </p>
         <section className="flex py-10 gap-3 flex-col justify-center xlg:gap-6">
-          <h3 className="text-xl text-center xmd:text-2xl xlg:text-3xl">
+          <h3 className="text-xl text-center xxm:text-2xl xmd:text-2xl xlg:text-3xl">
             Habilidades Tecnicas
           </h3>
           <div className="px-2 py-6">
