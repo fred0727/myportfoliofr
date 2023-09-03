@@ -2,9 +2,10 @@
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 13.8ch;
+  width: 13.5ch;
   animation: typing 4s steps(13), blink 0.5s infinite step-end alternate;
   overflow: hidden;
+  align-self: center;
 }
 
 @keyframes typing {
@@ -18,3 +19,10 @@
     border-color: transparent;
   }
 }
+
+/* .home-page {
+  background-image: url("../../public/images/fondoinicio.png");
+  /* background-size: contain; */
+/* background-attachment: fixed; */
+/* background-size: cover; */
+/* } */

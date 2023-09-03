@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import { PiDevicesFill } from "react-icons/pi";
 import { AiFillCloseCircle, AiOutlineMenu } from "react-icons/ai";
-import { BsToggleOn, BsToggleOff } from "react-icons/bs";
+import {
+  BsToggleOn,
+  BsToggleOff,
+  BsSun,
+  BsMoonFill,
+  BsSunFill,
+} from "react-icons/bs";
+import { AiFillCode } from "react-icons/ai";
 import { useEffect, useState } from "react";
 
 const Header = () => {
@@ -34,9 +41,9 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-between items-center dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950 relative p-4 xmd:px-10 xlg:px-20 xxl:-mb-1 xxl:px-60 mx-auto">
+    <div className="fixed w-full flex justify-between items-center dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950 p-3 xmd:px-10 xlg:px-20 xxl:-mb-1 xxl:px-36 mx-auto z-50 bg-white">
       <Link to="/" title="Inicio">
-        <PiDevicesFill className="text-4xl text-indigo-950  xxs:text-5xl dark:text-emerald-300 xmd:text-6xl xlg:text-7xl" />
+        <AiFillCode className="text-4xl text-indigo-950  xxs:text-5xl dark:text-emerald-300 xmd:text-6xl xlg:text-7xl" />
       </Link>
       <span onClick={handleShowMenu} className="xlg:hidden">
         {isShowMenu ? (
@@ -52,6 +59,11 @@ const Header = () => {
               Inicio
             </li>
           </Link>
+          <Link to="/">
+            <li className="w-20 text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl">
+              Sobre Mí
+            </li>
+          </Link>
           <Link to="/projects">
             <li className="w-full text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl">
               Proyectos
@@ -59,15 +71,21 @@ const Header = () => {
           </Link>
           <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer xxs:text-2xl xmd:text-3xl xlg:text-4xl">
             {isDarkShow ? (
-              <BsToggleOn onClick={handleChangeTheme} />
+              <BsSunFill
+                onClick={handleChangeTheme}
+                className="text-white transition-all duration-300"
+              />
             ) : (
-              <BsToggleOff onClick={handleChangeTheme} />
+              <BsSunFill
+                onClick={handleChangeTheme}
+                className="text-black transition-all duration-300"
+              />
             )}
           </li>
         </ul>
       </nav>
       <div
-        className={`absolute z-50 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950 dark:shadow-md dark:text-white dark:border-b-[1px] dark:border-white/20 flex flex-col justify-end items-end w-full gap-2 p-4 top-[68px] xmd:top-[92px] xxl:top-[104px] right-0 bg-white shadow-md ${
+        className={`absolute z-50 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950 dark:shadow-md dark:text-white dark:border-b-[1px] dark:border-white/20 flex flex-col justify-end items-end w-full gap-2 p-4 top-[60px] xmd:top-[92px] xxl:top-[104px] right-0 bg-white shadow-md ${
           isShowMenu ? "opacity-100 visible" : "opacity-0 invisible"
         } transition-opacity-0 duration-500`}
       >
@@ -77,6 +95,11 @@ const Header = () => {
               Inicio
             </li>
           </Link>
+          <Link to="/">
+            <li className="w-full text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl">
+              Sobre Mi
+            </li>
+          </Link>
           <Link to="/projects">
             <li className="w-full text-center cursor-pointer xxs:text-xl xmd:text-2xl">
               Proyectos
@@ -84,9 +107,9 @@ const Header = () => {
           </Link>
           <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer text-xl xxs:text-2xl xmd:text-3xl">
             {isDarkShow ? (
-              <BsToggleOn onClick={handleChangeTheme} />
+              <BsSunFill onClick={handleChangeTheme} />
             ) : (
-              <BsToggleOff onClick={handleChangeTheme} />
+              <BsSunFill onClick={handleChangeTheme} />
             )}
           </li>
         </ul>
