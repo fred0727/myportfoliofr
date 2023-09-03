@@ -122,14 +122,14 @@ const Home = () => {
           <h2 className="font- text-2xl text-center text-black xxs:text-3xl dark:text-white font-semibold xmd:text-4xl xlg:mb-10 xlg:text-5xl">
             Proyectos Recientes
           </h2>
-          <section className="w-full grid grid-cols-[repeat(auto-fill,_250px)] xxs:grid-cols-[repeat(auto-fill,325px)] xlg:grid-cols-[repeat(auto-fill,425px)] pt-6 gap-8 justify-center mx-auto max-w-[1024px] xlg:gap-12">
+          <section className="w-full grid grid-cols-[repeat(auto-fill,_250px)] xxm:grid-cols-[repeat(auto-fill,_280px)] xxs:grid-cols-[repeat(auto-fill,325px)] xlg:grid-cols-[repeat(auto-fill,425px)] pt-6 gap-8 justify-center mx-auto max-w-[1024px] xlg:gap-12">
             <CardProject project="weatherapp" />
             <CardProject project="rickandmorty" />
             <CardProject project="pokedex" />
             <CardProject project="academlostore" />
           </section>
           <Link to="/projects" className="w-full flex justify-center pt-12">
-            <button className="text-xl text-indigo-950 bg-white border-[1px] border-indigo-950 rounded-full px-4 py-1 flex justify-center items-center gap-2 hover:text-white hover:bg-indigo-950 dark:hover:bg-indigo-950 xxs:px-8 xxs:py-2 xxs:text-2xl">
+            <button className="text-2xl text-indigo-950 bg-white border-[1px] border-indigo-950 rounded-full px-4 py-1 flex justify-center items-center gap-2 hover:text-white hover:bg-indigo-950 dark:hover:bg-indigo-950 xxs:px-8 xxs:py-2 xxs:text-2xl">
               <TfiWorld /> Ver todos
             </button>
           </Link>
