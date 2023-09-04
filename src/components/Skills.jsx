@@ -49,9 +49,9 @@ const Skills = () => {
         </div>
       </li>
       <li className="flex gap-2 w-full items-center">
-        <FaNodeJs className="text-4xl xxm:text-5xl xmd:text-6xl" />
+        <BiLogoGit className="text-4xl xxm:text-5xl xmd:text-6xl" />
         <div className="flex flex-col w-full xxm:text-xl">
-          <span>Node JS</span>
+          <span>Git</span>
         </div>
       </li>
       <li className="flex gap-2 w-full items-center">
