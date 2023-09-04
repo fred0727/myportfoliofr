@@ -125,7 +125,7 @@ const Home = () => {
           <section className="w-full grid grid-cols-[repeat(auto-fill,_250px)] xxm:grid-cols-[repeat(auto-fill,_280px)] xxs:grid-cols-[repeat(auto-fill,325px)] xlg:grid-cols-[repeat(auto-fill,425px)] pt-6 gap-8 justify-center mx-auto max-w-[1024px] xlg:gap-12">
             <CardProject project="weatherapp" />
             <CardProject project="rickandmorty" />
-            <CardProject project="pokedex" />
+            <CardProject project="ecomercereact" />
             <CardProject project="academlostore" />
           </section>
           <Link to="/projects" className="w-full flex justify-center pt-12">
@@ -274,7 +274,7 @@ const Home = () => {
             <div>
               <label
                 htmlFor="emailjs_name"
-                className="flex gap-1 xxs:text-lg xmd:text-xl"
+                className="flex gap-1 xxm:text-lg xxs:text-xl xmd:text-2xl"
               >
                 Nombres y Apellidos <span className="flex text-red-500">*</span>{" "}
               </label>
@@ -289,7 +289,7 @@ const Home = () => {
             <div>
               <label
                 htmlFor="emailjs_email"
-                className="flex gap-1 xxs:text-lg xmd:text-xl"
+                className="flex gap-1 xxm:text-lg xxs:text-xl xmd:text-2xl"
               >
                 Correo<span className="flex text-red-500">*</span>
               </label>
@@ -304,7 +304,7 @@ const Home = () => {
             <div>
               <label
                 htmlFor="emailjs_phone"
-                className="xxs:text-lg xmd:text-xl"
+                className="xxm:text-lg xxs:text-xl xmd:text-2xl"
               >
                 Telefono
               </label>
@@ -318,7 +318,7 @@ const Home = () => {
             <div>
               <label
                 htmlFor="emailjs_message"
-                className="flex gap-1 xxs:text-lg xmd:text-xl"
+                className="flex gap-1 xxm:text-lg xxs:text-xl xmd:text-2xl"
               >
                 Dejame tu mensaje <span className="flex text-red-500">*</span>
               </label>
