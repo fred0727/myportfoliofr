@@ -15,7 +15,7 @@ const CardProject = ({ project }) => {
         <h3 className="text-md font-semibold text-indigo-950 dark:text-white xxm:text-2xl xmd:text-3xl xlg:text-4xl">
           {projects[project].title}
         </h3>
-        <p className="text-sm dark:text-white xxm:text-lg xmd:text-lg">
+        <p className="text-sm dark:text-white xxm:text-lg xmd:text-lg truncate">
           {projects[project].content}
         </p>
         <a

@@ -11,7 +11,7 @@ import { SiExpress, SiMysql, SiPostgresql } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <ul className="grid gap-6 xxm:gap-6  justify-center grid-cols-[repeat(auto-fill,_100px)] xxm:grid-cols-[repeat(auto-fill,_120px)] xxs:grid-cols-[repeat(auto-fill,325px)] xmd:gap-8 xmd:justify-between">
+    <ul className="grid gap-6 xxm:gap-6  justify-center grid-cols-[repeat(auto-fill,_100px)] xxm:grid-cols-[repeat(auto-fill,_120px)] xxs:grid-cols-[repeat(auto-fill,150px)] xmd:gap-8 xmd:justify-between xmd:px-16">
       <li className="flex gap-2 w-full items-center">
         <AiOutlineHtml5 className="text-4xl xxm:text-5xl xmd:text-6xl" />
         <div className="flex flex-col w-full xxm:text-xl">

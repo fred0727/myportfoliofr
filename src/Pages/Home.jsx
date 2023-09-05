@@ -42,33 +42,33 @@ const Home = () => {
 
   return (
     <div className="w-full dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950">
-      <section className="grid grid-rows-2 xlg:grid xlg:grid-cols-2 dark:text-white relative min-h-screen px-10 text-center xlg:px-36">
-        <div className="flex flex-col justify-center gap-6">
-          <h1 className="text-3xl font-bold xxs:text-3xl xmd:text-4xl xlg:text-8xl text-typing">
+      <section className="grid grid-rows-2 xlg:grid xlg:grid-cols-2 xlg:grid-rows-none dark:text-white relative min-h-screen px-10 text-center xlg:px-20">
+        <div className="flex flex-col justify-center gap-6 xlg:items-start">
+          <h1 className="text-3xl font-bold xxs:text-3xl xmd:text-5xl xlg:text-6xl xlg:self-start text-typing">
             Hola, Soy Freddy
           </h1>
-          <p className="text-lg xxs:text-lg xmd:text-xl xlg:text-5xl font-medium flex flex-col gap-2">
+          <p className="text-lg xxs:text-lg xmd:text-2xl xlg:text-4xl font-medium flex flex-col gap-2 xlg:text-start">
             <span>Desarrollador Web</span>
             <span>Diseño y codifico páginas web únicas.</span>
-            <span className="text-sm text-indigo-950 dark:text-emerald-300">
+            <span className="text-sm text-indigo-950 dark:text-emerald-300 xmd:text-lg xlg:text-2xl">
               Javascript | ReactJS | NodeJS | Express | PHP
             </span>
           </p>
-          <div className="hidden">
+          <div className="hidden xlg:flex">
             <a href="#contacto">
               <button className="border border-indigo-950 text-indigo-950 hover:bg-indigo-950 hover:text-white px-4 py-2 text-2xl font-medium hover:px-7 rounded-sm transition-all duration-300 dark:border-emerald-300 dark:text-emerald-300 dark:hover:bg-emerald-300 dark:hover:text-black">
                 Contactame
               </button>
             </a>
           </div>
-          <div className="flex justify-center items-center gap-2">
+          <div className="flex justify-center items-center gap-2 xlg:hidden">
             <a
               href="https://www.linkedin.com/in/freddy-mh/"
               target="_blank"
               title="Linkedin"
               alt="Linkedin"
             >
-              <BsLinkedin className="text-3xl text-indigo-950" />
+              <BsLinkedin className="text-3xl xmd:text-4xl text-indigo-950 dark:text-emerald-300" />
             </a>
             <a
               href="https://github.com/fred0727"
@@ -76,17 +76,17 @@ const Home = () => {
               title="Git Hub"
               alt="Git Hub"
             >
-              <BsGithub className="text-3xl text-indigo-950" />
+              <BsGithub className="text-3xl xmd:text-4xl text-indigo-950 dark:text-emerald-300" />
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-6 xlg:justify-center">
           <img
             src="/images/fotoopt.png"
             alt=""
-            className="rounded-full w-[200px] h-[250px]"
+            className="rounded-full w-[200px] h-[250px] xmd:w-[250px] xmd:h-[300px] xlg:w-[300px] xlg:h-[350px]"
           />
-          <div className="">
+          <div className="xlg:hidden">
             <a href="#contacto">
               <button className="border border-indigo-950 text-indigo-950 hover:bg-indigo-950 hover:text-white px-4 py-1 text-2xl font-medium hover:px-5 rounded-sm transition-all duration-300 dark:border-emerald-300 dark:text-emerald-300 dark:hover:bg-emerald-300 dark:hover:text-black">
                 Contactame
@@ -95,7 +95,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-col  p-6 py-8 xlg:py-20 bg-gray-200 dark:bg-slate-950 xmd:px-6 xlg:px-32 xxl:px-80 xxl:py-24">
+      <section className="flex flex-col  p-6 py-8 xlg:py-20 bg-gray-200 dark:bg-slate-950 xmd:px-6 xlg:px-20 xxl:px-80 xxl:py-24 dark:text-white">
         <h2 className="font-bold text-center py-3 text-2xl xxs:text-2xl xxm:text-3xl xlg:text-4xl xxl:text-5xl xxs:py-4">
           Sobre mi
         </h2>
@@ -141,7 +141,7 @@ const Home = () => {
             Formación Profesional
           </h2>
           <section className="w-full px-4 gap-8 xmd:gap-20 xlg:gap-24 justify-center grid grid-cols-[repeat(auto-fill,260px)] xxm:grid-cols-[repeat(auto-fill,300px)] xlg:grid-cols-[repeat(auto-fill,350px)]">
-            <article className="flex flex-col gap-5 bg-white hover:bg-black cursor-pointer transition-all duration-300 shadow-md px-4 py-4 rounded-md">
+            <article className="flex flex-col gap-5 bg-white hover:bg-slate-200 cursor-pointer transition-all duration-300 shadow-md px-4 py-4 rounded-md">
               <div className="flex justify-between items-center">
                 <div className="flex gap-2 justify-center items-center">
                   <img
@@ -153,22 +153,22 @@ const Home = () => {
                     Academlo
                   </h2>
                 </div>
-                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg">
+                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg xmd:text-xl">
                   Actualmente
                 </span>
               </div>
-              <p className="text-justify text-base font-thin xxs:text-base xlg:text-lg">
+              <p className="text-justify text-base font-thin xxs:text-base xlg:text-xl">
                 Escuela de Desarrollo Web Full Stack y Ciencias de Computación
                 <br />
                 Conociminentos adquiridos:
-                <ul className="text-sm">
+                <ul className="text-sm xlg:text-lg">
                   <li>- Fundamentos de Javascript</li>
                   <li>- Desarrollo web Front End con React</li>
                   <li>- Desarrollo Back End con Node JS</li>
                 </ul>
               </p>
             </article>
-            <article className="flex flex-col gap-5 bg-white hover:bg-slate-950 cursor-pointer transition-all duration-300 shadow-md px-4 py-4 rounded-md">
+            <article className="flex flex-col gap-5 bg-white hover:bg-slate-200 cursor-pointer transition-all duration-300 shadow-md px-4 py-4 rounded-md">
               <div className="flex justify-between items-center">
                 <div className="flex gap-2 justify-center items-center">
                   <img
@@ -180,22 +180,22 @@ const Home = () => {
                     Platzi
                   </h2>
                 </div>
-                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg">
+                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg xmd:text-xl">
                   Actualmente
                 </span>
               </div>
-              <p className="text-justify text-base xxs:text-base xlg:text-lg">
+              <p className="text-justify text-base xxs:text-base  font-thin xlg:text-xl">
                 Escuela de tecnologia y desarrollo
                 <br />
                 Conociminentos adquiridos:
-                <ul className="text-sm">
+                <ul className="text-sm xlg:text-lg">
                   <li>- Desarrollo web</li>
                   <li>- Desarrollo web Responsive</li>
                   <li>- Html, Javascript, React JS</li>
                 </ul>
               </p>
             </article>
-            <article className="flex flex-col gap-5 bg-white hover:bg-slate-950 cursor-pointer transition-all duration-300 shadow-md px-4 py-4 rounded-md">
+            <article className="flex flex-col gap-5 bg-white hover:bg-slate-200 cursor-pointer transition-all duration-300 shadow-md px-4 py-4 rounded-md">
               <div className="flex justify-between items-center">
                 <div className="flex gap-2 justify-center items-center">
                   <img
@@ -207,7 +207,7 @@ const Home = () => {
                     Tecsup
                   </h2>
                 </div>
-                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg">
+                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg xmd:text-xl">
                   Abril - 2021
                 </span>
               </div>
@@ -215,13 +215,13 @@ const Home = () => {
                 Curso de Desarrollo Web
                 <br />
                 Conociminentos adquiridos:
-                <ul className="text-sm">
+                <ul className="text-sm xlg:text-lg">
                   <li>- Desarrollo Web con HTML y CSS</li>
                   <li>- Javascript, Bootstrap, CSS3</li>
                 </ul>
               </p>
             </article>
-            <article className="flex flex-col gap-5 bg-white hover:bg-slate-950 cursor-pointer transition-all duration-300 shadow-md px-4 py-4 rounded-md">
+            <article className="flex flex-col gap-5 bg-white hover:bg-slate-200 cursor-pointer transition-all duration-300 shadow-md px-4 py-4 rounded-md">
               <div className="flex justify-between items-center">
                 <div className="flex gap-2  justify-center items-center">
                   <img
@@ -230,7 +230,7 @@ const Home = () => {
                     className="w-[64px] xlg:w-[64px] grayscale-[0%]"
                   />
                 </div>
-                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg">
+                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg xmd:text-xl">
                   2012 - 2014
                 </span>
               </div>
@@ -238,7 +238,7 @@ const Home = () => {
                 Carrera Tecnica de Computación e Informatica
                 <br />
                 Conociminentos adquiridos:
-                <ul className="text-sm">
+                <ul className="text-sm xlg:text-lg">
                   <li>- Soporte Hardware y Software</li>
                   <li>- Reparación y mantenimientod de equipos de computo</li>
                   <li>- Desarrollo web y aplicaciones de Escritorio</li>

@@ -45,7 +45,7 @@ const CardProjectDetail = ({ project }) => {
         </div>
         <div className="flex gap-3 justify-end items-center xxl:gap-3">
           <a href={projects[project].github} target="_blank">
-            <BsGithub className="text-4xl xxl:text-5xl dark:text-white"/>
+            <BsGithub className="text-4xl xxl:text-5xl dark:text-white" />
           </a>
           <a
             href={projects[project].url}

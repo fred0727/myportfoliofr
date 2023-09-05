@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (isDarkShow) {
+    if (!isDarkShow) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
