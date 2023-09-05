@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (!isDarkShow) {
+    if (isDarkShow) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
@@ -43,7 +43,7 @@ const Header = () => {
   return (
     <div className="fixed w-full flex justify-between items-center dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950 p-3 xmd:px-10 xlg:px-20 xxl:-mb-1 xxl:px-36 mx-auto z-50 bg-white">
       <Link to="/" title="Inicio">
-        <AiFillCode className="text-4xl text-indigo-950  xxs:text-5xl dark:text-emerald-300 xmd:text-6xl xlg:text-7xl" />
+        <AiFillCode className="text-4xl text-indigo-950  xxs:text-5xl dark:text-emerald-300 xmd:text-5xl xlg:text-6xl" />
       </Link>
       <span onClick={handleShowMenu} className="xlg:hidden">
         {isShowMenu ? (
@@ -59,11 +59,11 @@ const Header = () => {
               Inicio
             </li>
           </Link>
-          <Link to="/">
+          {/* <Link to="/">
             <li className="w-20 text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl">
               Sobre Mí
             </li>
-          </Link>
+          </Link> */}
           <Link to="/projects">
             <li className="w-full text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl">
               Proyectos
