@@ -56,7 +56,7 @@ const Home = () => {
             </span>
           </p>
           <div className="hidden xlg:flex justify-center items-center gap-4">
-            <a href="../../public/docs/FreddyMCV.pdf" target="_blank">
+            <a href="/docs/FreddyMCV.pdf" target="_blank">
               <button className="border border-indigo-950 text-indigo-950 hover:bg-indigo-950 hover:text-white px-4 py-2 text-2xl font-medium hover:px-7 rounded-sm transition-all duration-300 dark:border-emerald-300 dark:text-emerald-300 dark:hover:bg-emerald-300 dark:hover:text-black">
                 Descargar CV
               </button>
