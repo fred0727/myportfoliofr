@@ -7,10 +7,11 @@ import {
   BsWhatsapp,
 } from "react-icons/bs";
 import { TfiWorld } from "react-icons/tfi";
-import { HiMail } from "react-icons/hi";
+import { HiDocumentText, HiMail } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { BiMailSend } from "react-icons/bi";
+import { GrMail } from "react-icons/gr";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
 import "./Home.css";
@@ -42,26 +43,29 @@ const Home = () => {
 
   return (
     <div className="w-full dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950">
-      <section className="grid grid-rows-2 xlg:grid xlg:grid-cols-2 xlg:grid-rows-none dark:text-white relative min-h-screen px-10 text-center xlg:px-20">
+      <section className="grid grid-rows-2 xlg:grid xlg:grid-cols-2 xlg:grid-rows-none dark:text-white relative min-h-screen px-10 text-center xlg:px-20 xxl:px-36">
         <div className="flex flex-col justify-center gap-6 xlg:items-start">
-          <h1 className="text-3xl font-bold xxs:text-3xl xmd:text-5xl xlg:text-6xl xlg:self-start text-typing">
+          <h1 className="text-3xl xxm:text-4xl font-bold xxs:text-4xl xmd:text-5xl xlg:text-6xl xxl:text-7xl xlg:self-start text-typing">
             Hola, Soy Freddy
           </h1>
-          <p className="text-lg xxs:text-lg xmd:text-2xl xlg:text-4xl font-medium flex flex-col gap-2 xlg:text-start">
+          <p className="text-lg xxs:text-lg xmd:text-2xl xlg:text-3xl xxl:text-4xl font-medium flex flex-col gap-2 xlg:text-start">
             <span>Desarrollador Web</span>
             <span>Diseño y codifico páginas web únicas.</span>
-            <span className="text-sm text-indigo-950 dark:text-emerald-300 xmd:text-lg xlg:text-2xl">
+            <span className="text-sm text-indigo-950 dark:text-emerald-300 xmd:text-lg xlg:text-xl xxl:text-2xl">
               Javascript | ReactJS | NodeJS | Express | PHP
             </span>
           </p>
-          <div className="hidden xlg:flex">
-            <a href="#contacto">
+          <div className="hidden xlg:flex justify-center items-center gap-4">
+            <a href="../../public/docs/FreddyMCV.pdf" target="_blank">
               <button className="border border-indigo-950 text-indigo-950 hover:bg-indigo-950 hover:text-white px-4 py-2 text-2xl font-medium hover:px-7 rounded-sm transition-all duration-300 dark:border-emerald-300 dark:text-emerald-300 dark:hover:bg-emerald-300 dark:hover:text-black">
-                Contactame
+                Descargar CV
               </button>
             </a>
+            <a href="#contacto" title="Contactame" alt="Contactame">
+              <GrMail className="text-3xl xmd:text-4xl text-indigo-950 dark:text-emerald-300" />
+            </a>
           </div>
-          <div className="flex justify-center items-center gap-2 xlg:hidden">
+          <div className="flex justify-center items-center gap-3 xlg:hidden">
             <a
               href="https://www.linkedin.com/in/freddy-mh/"
               target="_blank"
@@ -78,28 +82,31 @@ const Home = () => {
             >
               <BsGithub className="text-3xl xmd:text-4xl text-indigo-950 dark:text-emerald-300" />
             </a>
+            <a href="#contacto" title="Contactame" alt="Contactame">
+              <GrMail className="text-3xl xmd:text-4xl text-indigo-950 dark:text-emerald-300" />
+            </a>
           </div>
         </div>
         <div className="flex flex-col items-center gap-6 xlg:justify-center">
           <img
             src="/images/fotoopt.png"
             alt=""
-            className="rounded-full w-[200px] h-[250px] xmd:w-[250px] xmd:h-[300px] xlg:w-[300px] xlg:h-[350px]"
+            className="rounded-full w-[200px] h-[250px] xmd:w-[250px] xmd:h-[300px] xlg:w-[400px] xlg:h-[450px] xxl:w-[500px] xxl:h-[550px]"
           />
           <div className="xlg:hidden">
-            <a href="#contacto">
-              <button className="border border-indigo-950 text-indigo-950 hover:bg-indigo-950 hover:text-white px-4 py-1 text-2xl font-medium hover:px-5 rounded-sm transition-all duration-300 dark:border-emerald-300 dark:text-emerald-300 dark:hover:bg-emerald-300 dark:hover:text-black">
-                Contactame
+            <a href="../../public/docs/FreddyMCV.pdf" target="_blank">
+              <button className="flex justify-center items-center border border-indigo-950 text-indigo-950 hover:bg-indigo-950 hover:text-white px-4 py-1 text-xl xmd:text-2xl font-medium hover:px-5 rounded-sm transition-all duration-300 dark:border-emerald-300 dark:text-emerald-300 dark:hover:bg-emerald-300 dark:hover:text-black">
+                Descargar CV
               </button>
             </a>
           </div>
         </div>
       </section>
-      <section className="flex flex-col  p-6 py-8 xlg:py-20 bg-gray-200 dark:bg-slate-950 xmd:px-6 xlg:px-20 xxl:px-80 xxl:py-24 dark:text-white">
-        <h2 className="font-bold text-center py-3 text-2xl xxs:text-2xl xxm:text-3xl xlg:text-4xl xxl:text-5xl xxs:py-4">
+      <section className="flex flex-col  p-6 py-8 xlg:py-20 bg-gray-200 dark:bg-slate-950 xmd:px-6 xlg:px-20 xxl:px-36 xxl:py-24 dark:text-white">
+        <h2 className="font-bold text-center py-3 text-2xl xxs:text-2xl xxm:text-3xl xlg:text-4xl xxl:text-6xl xxs:py-4">
           Sobre mi
         </h2>
-        <p className="font-light dark:font-medium text-justify px-4 text-sm pb-2 xxs:text-lg xxm:text-xl xmd:px-16 xxs:pb-4 xlg:text-xl xxl:py-6">
+        <p className="font-light dark:font-medium text-justify px-4 text-sm pb-2 xxs:text-lg xxm:text-xl xmd:px-16 xxs:pb-4 xlg:text-xl xxl:text-2xl xxl:py-6">
           Me apasiona el mundo del desarrollo, he colaborado y creado proyectos
           front-end con Javascript, React, Redux y Tailwind CSS, así como en el
           desarrollo back-end con Node.js, Express, PHP, MySQL y PostgreSQL. Soy
@@ -109,7 +116,7 @@ const Home = () => {
           y habilidades en mi entorno laboral y comunidad web.
         </p>
         <section className="flex py-10 gap-3 flex-col justify-center xlg:gap-6">
-          <h3 className="text-xl text-center xxm:text-2xl xmd:text-2xl xlg:text-3xl">
+          <h3 className="text-xl text-center font-medium xxm:text-2xl xmd:text-2xl xlg:text-3xl xxl:text-5xl">
             Habilidades Tecnicas
           </h3>
           <div className="px-2 py-6">
@@ -122,7 +129,7 @@ const Home = () => {
           <h2 className="font- text-2xl text-center text-black xxs:text-3xl dark:text-white font-semibold xmd:text-4xl xlg:mb-10 xlg:text-5xl">
             Proyectos Recientes
           </h2>
-          <section className="w-full grid grid-cols-[repeat(auto-fill,_250px)] xxm:grid-cols-[repeat(auto-fill,_280px)] xxs:grid-cols-[repeat(auto-fill,325px)] xlg:grid-cols-[repeat(auto-fill,425px)] pt-6 gap-8 justify-center mx-auto max-w-[1024px] xlg:gap-12">
+          <section className="w-full grid grid-cols-[repeat(auto-fill,_250px)] xxm:grid-cols-[repeat(auto-fill,_280px)] xxs:grid-cols-[repeat(auto-fill,325px)] xmd:grid-cols-[repeat(auto-fill,600px)] xlg:grid-cols-[repeat(auto-fill,425px)] xxl:grid-cols-[repeat(auto-fill,550px)] pt-6 gap-8 justify-center mx-auto xlg:gap-12">
             <CardProject project="weatherapp" />
             <CardProject project="rickandmorty" />
             <CardProject project="ecomercereact" />
@@ -153,11 +160,11 @@ const Home = () => {
                     Academlo
                   </h2>
                 </div>
-                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg xmd:text-xl">
-                  Actualmente
+                <span className="text-md font-extralight text-emerald-400 xxs:text-sm xlg:text-lg xmd:text-xl">
+                  Abril - Agosto 2023
                 </span>
               </div>
-              <p className="text-justify text-base font-thin xxs:text-base xlg:text-xl">
+              <p className="text-justify text-base xxs:text-base xlg:text-xl">
                 Escuela de Desarrollo Web Full Stack y Ciencias de Computación
                 <br />
                 Conociminentos adquiridos:
@@ -180,18 +187,18 @@ const Home = () => {
                     Platzi
                   </h2>
                 </div>
-                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg xmd:text-xl">
+                <span className="text-md font-extralight text-emerald-400 xxs:text-sm xlg:text-lg xmd:text-xl">
                   Actualmente
                 </span>
               </div>
-              <p className="text-justify text-base xxs:text-base  font-thin xlg:text-xl">
+              <p className="text-justify text-base xxs:text-base xlg:text-xl">
                 Escuela de tecnologia y desarrollo
                 <br />
                 Conociminentos adquiridos:
                 <ul className="text-sm xlg:text-lg">
                   <li>- Desarrollo web</li>
-                  <li>- Desarrollo web Responsive</li>
-                  <li>- Html, Javascript, React JS</li>
+                  <li>- Diseño web Responsive</li>
+                  <li>- Html, Javascript, React JS, PHP</li>
                 </ul>
               </p>
             </article>
@@ -207,8 +214,8 @@ const Home = () => {
                     Tecsup
                   </h2>
                 </div>
-                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg xmd:text-xl">
-                  Abril - 2021
+                <span className="text-md font-extralight text-emerald-400 xxs:text-sm xlg:text-lg xmd:text-xl">
+                  Abril - Mayo 2021
                 </span>
               </div>
               <p className="text-justify text-base xxs:text-base xlg:text-lg">
@@ -218,6 +225,7 @@ const Home = () => {
                 <ul className="text-sm xlg:text-lg">
                   <li>- Desarrollo Web con HTML y CSS</li>
                   <li>- Javascript, Bootstrap, CSS3</li>
+                  <li>- Mobile First, Diseño web Responsive</li>
                 </ul>
               </p>
             </article>
@@ -227,10 +235,10 @@ const Home = () => {
                   <img
                     src="/logos/unitek-dark.png"
                     alt=""
-                    className="w-[64px] xlg:w-[64px] grayscale-[0%]"
+                    className="w-[64px] xlg:w-[72px] xxl:w-[82px] grayscale-[0%]"
                   />
                 </div>
-                <span className="text-md font-extralight text-emerald-300 xxs:text-sm xlg:text-lg xmd:text-xl">
+                <span className="text-md font-extralight text-emerald-400 xxs:text-sm xlg:text-lg xmd:text-xl">
                   2012 - 2014
                 </span>
               </div>

@@ -2,7 +2,7 @@
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 13.5ch;
+  width: 13.3ch;
   animation: typing 4s steps(13), blink 0.5s infinite step-end alternate;
   overflow: hidden;
   align-self: center;

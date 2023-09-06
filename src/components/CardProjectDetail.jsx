@@ -1,5 +1,15 @@
+import {
+  BiLogoJavascript,
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoPhp,
+  BiLogoReact,
+  BiLogoTailwindCss,
+} from "react-icons/bi";
 import { projects } from "../utlis/projectsdb";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsBootstrapFill, BsGit } from "react-icons/bs";
+import { DiMysql } from "react-icons/di";
+import { SiVite } from "react-icons/si";
 
 const CardProjectDetail = ({ project }) => {
   const imagescode = {
@@ -25,7 +35,7 @@ const CardProjectDetail = ({ project }) => {
           className="w-full h-full object-cover transition-all duration-500"
         />
       </div>
-      <div className="flex flex-col gap-4 justify-center xxl:justify-between pb-6 py-2 px-4 xlg:w-[275px] xlg:py-12 xxl:py-6 xxl:gap-2 xxl:pr-6">
+      <div className="flex flex-col gap-4 justify-center xxl:justify-between pb-6 py-2 px-4 xlg:w-[275px] xxl:w-[325px] xlg:py-12 xxl:py-6 xxl:gap-2 xxl:pr-6 xxl:ps-0">
         <div className="flex flex-col xxl:gap-3">
           <h3 className="text-md font-semibold text-[#1e1a4f] dark:text-white xmd:text-xl xxl:text-2xl">
             {projects[project].title}
@@ -45,12 +55,12 @@ const CardProjectDetail = ({ project }) => {
         </div>
         <div className="flex gap-3 justify-end items-center xxl:gap-3">
           <a href={projects[project].github} target="_blank">
-            <BsGithub className="text-4xl xxl:text-5xl dark:text-white" />
+            <BsGithub className="text-4xl xxl:text-4xl dark:text-white" />
           </a>
           <a
             href={projects[project].url}
             target="_blank"
-            className="text-black cursor-pointer p-2 border rounded-md bg-white hover:bg-gray-100 text-sm w-[85px] text-center transition-all duration-300 dark:hover:bg-slate-950 dark:border-none dark:hover:text-white xmd:text-lg xmd:w-[110px] xxl:text-xl xxl:py-3"
+            className="text-black cursor-pointer p-2 border rounded-md bg-white hover:bg-gray-100 text-sm w-[85px] text-center transition-all duration-300 dark:hover:bg-slate-950 dark:border-none dark:hover:text-white xmd:text-lg xmd:w-[110px] xxl:text-xl xxl:py-2"
           >
             Ver pagina
           </a>

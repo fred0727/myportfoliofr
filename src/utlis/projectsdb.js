@@ -2,7 +2,7 @@ export const projects = {
   pokedex: {
     title: "Pokedex",
     content:
-      "Pagina web desarrollada consumiendo la Api de Pokemon que permite visualizarlos por tipo y buscar por su nombre.",
+      "Web desarrollada consumiendo la Api de Pokemon que permite ver por tipo y realizar busqueda por su nombre.",
     img: "/captureprojects/pokeapi.png",
     url: "https://poke-apifr.netlify.app/",
     github: "https://github.com/fred0727/pokeapi-app",
@@ -11,7 +11,7 @@ export const projects = {
   academlostore: {
     title: "Academlo Store",
     content:
-      "Proyecto Store de Academlo consumiendo una API, que nos permitira simular una pagina de compras online.",
+      "Proyecto Store de Academlo, simulacion de carrito de compras y checkout.",
     img: "/captureprojects/academlostore.png",
     url: "https://academlostorefr.netlify.app/",
     github: "https://github.com/fred0727/cart-academlo",
@@ -20,7 +20,7 @@ export const projects = {
   rickandmorty: {
     title: "Rick and Morty App",
     content:
-      "Pagina web desarrollada consumiento la API de Rick and Morty, podras visualizar los personajes de la serie y podemos filtrar por universos.",
+      "Pagina web donde podras visualizar los personajes de la serie Rick and Morty y permite filtrar por universos.",
     img: "/captureprojects/rickandmortyapp.png",
     url: "https://rickandmortyfr.netlify.app/",
     github: "https://github.com/fred0727/rickandmortyapp-academlo",
@@ -29,7 +29,7 @@ export const projects = {
   weatherapp: {
     title: "Weather App",
     content:
-      "Pagina web creada con React consumiendo la API de OpenWeather para poder visualizar el clima en tiempo real y poder buscar por ciudad.",
+      "App creada con React consumiendo la API de OpenWeather para poder visualizar el clima en tiempo real y poder buscar por ciudad.",
     img: "/captureprojects/weatherapp.png",
     url: "https://weatherappreactfr.netlify.app/",
     github: "https://github.com/fred0727/weatherapp-react-academlo",
@@ -80,9 +80,9 @@ export const projects = {
     codes: ["html", "js", "css3", "reactjs", "tailwind"],
   },
   ecomercereact: {
-    title: "Ecommerce React",
+    title: "Ecommerce",
     content:
-      "Ecomerce creado con React y Tailwind CSS con funciones de inicio de sesión y registro, podremos agregar productos a nuestro carrito de compras, realizar el checkout y otras opciones.",
+      "Proyect creado con React y Tailwind CSS con funciones de inicio de sesión y registro, carrito de compras, checkout y otras opciones.",
     img: "/captureprojects/ecomerce.png",
     url: "https://ecomercefr.netlify.app/",
     github: "https://github.com/fred0727/e-comercefr",
