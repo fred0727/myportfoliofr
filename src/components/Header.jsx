@@ -15,7 +15,7 @@ const Header = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isDarkShow, setisDarkShow] = useState(true);
 
-  const theme = JSON.parse(localStorage.getItem("Theme")) || false;
+  const theme = JSON.parse(localStorage.getItem("Theme")) || true;
 
   const handleChangeTheme = () => {
     setisDarkShow(!isDarkShow);
