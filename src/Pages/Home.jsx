@@ -94,7 +94,7 @@ const Home = () => {
             className="rounded-full w-[200px] h-[250px] xmd:w-[250px] xmd:h-[300px] xlg:w-[400px] xlg:h-[450px] xxl:w-[500px] xxl:h-[550px]"
           />
           <div className="xlg:hidden">
-            <a href="../../public/docs/FreddyMCV.pdf" target="_blank">
+            <a href="/docs/FreddyMCV.pdf" target="_blank">
               <button className="flex justify-center items-center border border-indigo-950 text-indigo-950 hover:bg-indigo-950 hover:text-white px-4 py-1 text-xl xmd:text-2xl font-medium hover:px-5 rounded-sm transition-all duration-300 dark:border-emerald-300 dark:text-emerald-300 dark:hover:bg-emerald-300 dark:hover:text-black">
                 Descargar CV
               </button>
