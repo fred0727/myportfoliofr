@@ -101,7 +101,7 @@ const Home = () => {
             <img
               src="/images/fotoopt.png"
               alt=""
-              className="rounded-full w-[200px] h-[250px] xmd:w-[250px] xmd:h-[300px] xlg:w-[400px] xlg:h-[450px] xxl:w-[500px] xxl:h-[550px]"
+              className="rounded-full w-[200px] h-[250px] xmd:w-[250px] xmd:h-[300px] xlg:w-[350px] xlg:h-[450px] xxl:w-[450px] xxl:h-[550px]"
             />
             <div className="xlg:hidden">
               <a href="/docs/FreddyMCV.pdf" target="_blank">
