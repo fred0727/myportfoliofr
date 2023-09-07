@@ -122,24 +122,36 @@ const Header = () => {
           isShowMenu ? "opacity-100 visible" : "opacity-0 invisible"
         } transition-opacity-0 duration-500`}
       >
-        <ul className="flex flex-col gap-2 w-full py-2">
-          <li className="w-full text-center cursor-pointer xxs:text-xl xmd:text-2xl">
-            <a href="#home">Inicio</a>
-          </li>
-          <li className="w-full text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl">
-            <a href="#aboutme">Sobre mi</a>
-          </li>
-          <li className="w-full text-center cursor-pointer xxs:text-xl xmd:text-2xl">
-            <a href="#projects">Proyectos</a>
-          </li>
-          <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer text-xl xxs:text-2xl xmd:text-3xl">
-            {isDarkShow ? (
-              <BsSunFill onClick={handleChangeTheme} />
-            ) : (
-              <BsSunFill onClick={handleChangeTheme} />
-            )}
-          </li>
-        </ul>
+        {context.isPageProject ? (
+          <ul className="flex flex-col gap-2 w-full py-2">
+            <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer text-xl xxs:text-2xl xmd:text-3xl">
+              {isDarkShow ? (
+                <BsSunFill onClick={handleChangeTheme} />
+              ) : (
+                <BsSunFill onClick={handleChangeTheme} />
+              )}
+            </li>
+          </ul>
+        ) : (
+          <ul className="flex flex-col gap-2 w-full py-2">
+            <li className="w-full text-center cursor-pointer xxs:text-xl xmd:text-2xl">
+              <a href="#home">Inicio</a>
+            </li>
+            <li className="w-full text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl">
+              <a href="#aboutme">Sobre mi</a>
+            </li>
+            <li className="w-full text-center cursor-pointer xxs:text-xl xmd:text-2xl">
+              <a href="#projects">Proyectos</a>
+            </li>
+            <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer text-xl xxs:text-2xl xmd:text-3xl">
+              {isDarkShow ? (
+                <BsSunFill onClick={handleChangeTheme} />
+              ) : (
+                <BsSunFill onClick={handleChangeTheme} />
+              )}
+            </li>
+          </ul>
+        )}
       </div>
     </div>
   );
