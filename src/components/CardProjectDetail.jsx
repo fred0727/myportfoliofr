@@ -13,17 +13,25 @@ import { SiVite } from "react-icons/si";
 
 const CardProjectDetail = ({ project }) => {
   const imagescode = {
-    html: "/logos/html5.png",
-    bootstrap: "/logos/bootstrap.png",
-    css3: "/logos/css3.png",
-    git: "/logos/git.png",
-    github: "/logos/github.png",
-    js: "/logos/js.png",
-    mysql: "/logos/mysql.png",
-    php: "/logos/php.png",
-    reactjs: "/logos/reactjs.png",
-    tailwind: "/logos/tailwind.png",
-    vite: "/logos/vite.svg",
+    html: <BiLogoHtml5 className="text-black dark:text-emerald-300 text-4xl" />,
+    bootstrap: (
+      <BsBootstrapFill className="text-black dark:text-emerald-300 text-4xl" />
+    ),
+    css3: <BiLogoCss3 className="text-black dark:text-emerald-300 text-4xl" />,
+    git: <BsGit className="text-black dark:text-emerald-300 text-4xl" />,
+    github: <BsGithub className="text-black dark:text-emerald-300 text-4xl" />,
+    js: (
+      <BiLogoJavascript className="text-black dark:text-emerald-300 text-4xl" />
+    ),
+    mysql: <DiMysql className="text-black dark:text-emerald-300 text-4xl" />,
+    php: <BiLogoPhp className="text-black dark:text-emerald-300 text-4xl" />,
+    reactjs: (
+      <BiLogoReact className="text-black dark:text-emerald-300 text-4xl" />
+    ),
+    tailwind: (
+      <BiLogoTailwindCss className="text-black dark:text-emerald-300 text-4xl" />
+    ),
+    vite: <SiVite className="text-black dark:text-emerald-300 text-4xl" />,
   };
 
   return (
@@ -35,9 +43,9 @@ const CardProjectDetail = ({ project }) => {
           className="w-full h-full object-cover transition-all duration-500"
         />
       </div>
-      <div className="flex flex-col gap-4 justify-center xxl:justify-between pb-6 py-2 px-4 xlg:w-[275px] xxl:w-[325px] xlg:py-12 xxl:py-6 xxl:gap-2 xxl:pr-6 xxl:ps-0">
+      <div className="flex flex-col gap-4 justify-center xxl:justify-between pb-6 py-2 px-4 xlg:w-[300px] xxl:w-[325px] xlg:py-12 xxl:py-4 xxl:gap-2 xxl:pr-6 xlg:ps-0">
         <div className="flex flex-col xxl:gap-3">
-          <h3 className="text-md font-semibold text-[#1e1a4f] dark:text-white xmd:text-xl xxl:text-2xl">
+          <h3 className="text-md font-medium text-[#1e1a4f] dark:text-white xmd:text-xl xxl:text-2xl">
             {projects[project].title}
           </h3>
           <p className="text-sm dark:text-white xmd:text-base xxl:text-lg">
@@ -46,11 +54,7 @@ const CardProjectDetail = ({ project }) => {
         </div>
         <div className="flex gap-2 py-2">
           {projects[project].codes.map((img) => (
-            <img
-              src={imagescode[img]}
-              alt=""
-              className="w-[24px] xxs:w-[32px] opacity-60 dark:opacity-100 hover:opacity-100 transition-opacity duration-200"
-            />
+            <span>{imagescode[img]}</span>
           ))}
         </div>
         <div className="flex gap-3 justify-end items-center xxl:gap-3">
