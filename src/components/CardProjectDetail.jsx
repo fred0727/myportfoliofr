@@ -8,7 +8,7 @@ import {
 } from "react-icons/bi";
 import { projects } from "../utlis/projectsdb";
 import { BsGithub, BsBootstrapFill, BsGit } from "react-icons/bs";
-import { DiMysql } from "react-icons/di";
+import { DiMysql, DiCodeigniter } from "react-icons/di";
 import { SiVite } from "react-icons/si";
 
 const CardProjectDetail = ({ project }) => {
@@ -24,6 +24,9 @@ const CardProjectDetail = ({ project }) => {
       <BiLogoJavascript className="text-black dark:text-emerald-300 text-4xl" />
     ),
     mysql: <DiMysql className="text-black dark:text-emerald-300 text-4xl" />,
+    codeig: (
+      <DiCodeigniter className="text-black dark:text-emerald-300 text-4xl" />
+    ),
     php: <BiLogoPhp className="text-black dark:text-emerald-300 text-4xl" />,
     reactjs: (
       <BiLogoReact className="text-black dark:text-emerald-300 text-4xl" />

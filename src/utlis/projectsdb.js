@@ -88,4 +88,13 @@ export const projects = {
     github: "https://github.com/fred0727/e-comercefr",
     codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
+  crudcodeigniter: {
+    title: "Crud PHP | Codeigniter",
+    content:
+      "CRUD de registro de personas utilizando el Framework Codeigniter, PHP, Ajax, JQuery y MYSQL",
+    img: "/captureprojects/crudcodeigniter.png",
+    url: "https://freddymhhost.000webhostapp.com/crud-codeigniter-php/",
+    github: "https://github.com/fred0727/project-crud-codeigniterphp",
+    codes: ["html", "js", "php", "mysql", "codeig"],
+  },
 };
