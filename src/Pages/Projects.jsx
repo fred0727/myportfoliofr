@@ -28,7 +28,7 @@ const Projects = () => {
           <CardProjectDetail project="ecomercereact" />
         </div>
         <div data-aos="zoom-in">
-          <CardProjectDetail project="ecomercereact" />
+          <CardProjectDetail project="appnotesphp" />
         </div>
         <div data-aos="zoom-in">
           <CardProjectDetail project="pokedex" />

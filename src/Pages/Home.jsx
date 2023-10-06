@@ -265,7 +265,9 @@ const Home = () => {
               <CardProject project="crudcodeigniter" />
               <CardProject project="weatherapp" />
               <CardProject project="ecomercereact" />
+              <CardProject project="appnotesphp" />
               <CardProject project="academlostore" />
+              <CardProject project="moviessearch" />
             </section>
             <Link to="/projects" className="w-full flex justify-center pt-12">
               <button

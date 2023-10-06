@@ -97,4 +97,13 @@ export const projects = {
     github: "https://github.com/fred0727/project-crud-codeigniterphp",
     codes: ["html", "js", "php", "mysql", "codeig"],
   },
+  appnotesphp: {
+    title: "APP Notes",
+    content:
+      "App de notas creada con Codeigniter, PHP, Ajax, JQuery y MYSQL. Integrando sesiones y password encriptado.",
+    img: "/captureprojects/appnotecodeigniter.png",
+    url: "https://freddymhhost.000webhostapp.com/app-notes-php/",
+    github: "https://github.com/fred0727/project-appnotes-codeigniterphp",
+    codes: ["html", "js", "php", "mysql", "codeig"],
+  },
 };
