@@ -111,7 +111,7 @@ export const projects = {
     content:
       "API FullRest creada con NodeJS y Express. Permite la creación de notas, archivado y funciones crud. Formulario de login y registro",
     img: "/captureprojects/apinotesnodejs.png",
-    url: "",
+    url: "https://github.com/fred0727/project-apinotes-nodejs",
     github: "https://github.com/fred0727/project-apinotes-nodejs",
     codes: ["js", "nodejs", "express", "postgres"],
   },
