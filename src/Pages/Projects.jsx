@@ -57,6 +57,9 @@ const Projects = () => {
         <div data-aos="fade-up">
           <CardProjectDetail project="cruduser" />
         </div>
+        <div data-aos="fade-up">
+          <CardProjectDetail project="apinotesnodejs" />
+        </div>
       </section>
       <Footer />
     </div>

@@ -9,7 +9,8 @@ import {
 import { projects } from "../utlis/projectsdb";
 import { BsGithub, BsBootstrapFill, BsGit } from "react-icons/bs";
 import { DiMysql, DiCodeigniter } from "react-icons/di";
-import { SiVite } from "react-icons/si";
+import { SiVite, SiPostgresql, SiExpress } from "react-icons/si";
+import { FaPhp, FaNodeJs } from "react-icons/fa";
 
 const CardProjectDetail = ({ project }) => {
   const imagescode = {
@@ -35,6 +36,13 @@ const CardProjectDetail = ({ project }) => {
       <BiLogoTailwindCss className="text-black dark:text-emerald-300 text-4xl" />
     ),
     vite: <SiVite className="text-black dark:text-emerald-300 text-4xl" />,
+    express: (
+      <SiExpress className="text-black dark:text-emerald-300 text-4xl" />
+    ),
+    postgres: (
+      <SiPostgresql className="text-black dark:text-emerald-300 text-4xl" />
+    ),
+    nodejs: <FaNodeJs className="text-black dark:text-emerald-300 text-4xl" />,
   };
 
   return (
