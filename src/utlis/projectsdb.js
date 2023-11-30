@@ -118,7 +118,7 @@ export const projects = {
   appnotesreact: {
     title: "Notes App React",
     content:
-      "App creada con ReactJS consumiendo mi propia Api FullRest creada. Formulario de Login y Registro con funcionalidades de creación de notas, edición, archivado y eliminación.",
+      "App creada consumiendo Api FullRest creada. Login y Registro con funcionalidades de creación de notas, edición, archivado y eliminación.",
     img: "/captureprojects/notesappreact.png",
     url: "https://incomparable-mousse-80d428.netlify.app/",
     github: "https://github.com/fred0727/project-appnotes-reactjs",
