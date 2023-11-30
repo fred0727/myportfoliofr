@@ -263,11 +263,11 @@ const Home = () => {
             </h2>
             <section className="w-full grid grid-cols-[repeat(auto-fill,_250px)] xxm:grid-cols-[repeat(auto-fill,_280px)] xxs:grid-cols-[repeat(auto-fill,325px)] xmd:grid-cols-[repeat(auto-fill,600px)] xlg:grid-cols-[repeat(auto-fill,425px)] xxl:grid-cols-[repeat(auto-fill,550px)] pt-6 gap-8 justify-center mx-auto xlg:gap-12">
               <CardProject project="apinotesnodejs" />
+              <CardProject project="appnotesreact" />
               <CardProject project="weatherapp" />
               <CardProject project="ecomercereact" />
               <CardProject project="appnotesphp" />
               <CardProject project="academlostore" />
-              <CardProject project="moviessearch" />
             </section>
             <Link to="/projects" className="w-full flex justify-center pt-12">
               <button

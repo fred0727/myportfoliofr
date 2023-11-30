@@ -109,10 +109,19 @@ export const projects = {
   apinotesnodejs: {
     title: "API FullRest NodeJS",
     content:
-      "API FullRest creada con NodeJS y Express. Permite la creación de notas, archivado y funciones crud. Formulario de login y registro",
+      "API FullRest creada con NodeJS y Express. Usando el ORM Sequelize y Patrón MVC.",
     img: "/captureprojects/apinotesnodejs.png",
     url: "https://github.com/fred0727/project-apinotes-nodejs",
     github: "https://github.com/fred0727/project-apinotes-nodejs",
     codes: ["js", "nodejs", "express", "postgres"],
+  },
+  appnotesreact: {
+    title: "Notes App React",
+    content:
+      "App creada con ReactJS consumiendo mi propia Api FullRest creada. Permite la creación de notas, archivado y funciones crud. Formulario de login y registro",
+    img: "/captureprojects/notesappreact.png",
+    url: "https://incomparable-mousse-80d428.netlify.app/",
+    github: "https://github.com/fred0727/project-appnotes-reactjs",
+    codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
 };
