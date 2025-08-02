@@ -32,7 +32,7 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: "Inicio", href: "#home" },
+    { name: "Inicio", href: "/" },
     { name: "Soluciones", href: "#solutions" },
     { name: "Proyectos", href: "#projects" },
     { name: "Contacto", href: "#contact" },
@@ -78,7 +78,7 @@ const Header = () => {
           </a>
           <BsSunFill
             onClick={() => setIsDark(!isDark)}
-            className="cursor-pointer text-xl hover:text-primary dark:hover:text-secondary transition"
+            className="cursor-pointer text-xl text-primary hover:text-primary dark:hover:text-secondary transition"
           />
         </div>
 
@@ -119,7 +119,7 @@ const Header = () => {
           <div className="flex justify-center pt-4">
             <BsSunFill
               onClick={() => setIsDark(!isDark)}
-              className="cursor-pointer text-xl hover:text-primary dark:hover:text-secondary transition"
+              className="cursor-pointer text-xl text-primary hover:text-primary dark:hover:text-secondary transition"
             />
           </div>
         </nav>

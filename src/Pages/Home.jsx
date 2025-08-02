@@ -61,7 +61,7 @@ const Home = () => {
 
         <section
           id="contact"
-          className="bg-white pt-[80px] xlg:pt-[110px] dark:bg-transparent dark:text-white xxl:flex xxl:p-10 xxl:px-10 xxl:flex-row-reverse xxl:w-[1440px] mx-auto mb-16"
+          className="min-w-full bg-white pt-[80px] xlg:pt-[110px] dark:bg-transparent text-black dark:text-white xxl:flex xxl:p-10 xxl:px-10 xxl:flex-row-reverse xxl:w-[1440px] mx-auto mb-16"
         >
           {/* CONTENEDOR DEL FORMULARIO */}
           <div className="flex flex-col justify-center items-center p-6 gap-4 xmd:w-[650px] mx-auto">

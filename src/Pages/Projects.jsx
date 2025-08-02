@@ -17,10 +17,10 @@ const Projects = () => {
 
   return (
     <div className="w-full flex flex-col gap-6 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950 xmd::h-[400px]">
-      <h2 className="text-center text-2xl xlg:text-4xl mt-6 dark:text-white">
+      {/* <h2 className="text-center text-2xl xlg:text-4xl mt-24 dark:text-white">
         Mis Proyectos
-      </h2>
-      <section className="w-full grid grid-cols-[repeat(auto-fill,_250px)] xxs:grid-cols-[repeat(auto-fill,325px)] xlg:grid-cols-[repeat(auto-fill,600px)] xlg:px-10 pt-10 pb-10 gap-10 xlg:gap-14 xxl:gap-20 justify-center mx-auto xlg:max-w-[1000px] xxl:max-w-[1440px] xxl:grid-cols-[repeat(auto-fill,600px)] ">
+      </h2> */}
+      <section className="min-w-full pt-32 bg-white grid grid-cols-[repeat(auto-fill,_250px)] xxs:grid-cols-[repeat(auto-fill,325px)] xlg:grid-cols-[repeat(auto-fill,600px)] xlg:px-10 pb-16 gap-10 xlg:gap-14 xxl:gap-20 justify-center mx-auto xlg:max-w-[1000px] xxl:max-w-[1440px] xxl:grid-cols-[repeat(auto-fill,600px)] ">
         <div data-aos="zoom-in">
           <CardProjectDetail project="appnotesreact" />
         </div>

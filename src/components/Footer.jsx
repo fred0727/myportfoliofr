@@ -10,7 +10,7 @@ import { HiMail } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-white py-12 px-6">
+    <footer className="py-12 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         {/* Contacto directo */}
         <div>
