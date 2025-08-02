@@ -1,159 +1,130 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { AiFillCloseCircle, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { BsSunFill } from "react-icons/bs";
-import { AiFillCode } from "react-icons/ai";
-import { useContext, useEffect, useState } from "react";
-import { NavigatePagesContext } from "../Context";
 
 const Header = () => {
-  const [isShowMenu, setIsShowMenu] = useState(false);
-  const [isDarkShow, setisDarkShow] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
 
-  const theme = JSON.parse(localStorage.getItem("Theme")) || false;
-
-  const context = useContext(NavigatePagesContext);
-
-  const handleChangeTheme = () => {
-    setisDarkShow(!isDarkShow);
-    localStorage.setItem("Theme", Boolean(!isDarkShow));
-  };
-
-  const handleShowMenu = () => {
-    setIsShowMenu(!isShowMenu);
-  };
-
-  const navigatePageHome = () => {
-    context.setIsPageProject(false);
-  };
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 0) {
-      setIsScroll(true);
-    } else {
-      setIsScroll(false);
-    }
-  });
-
+  // Leer tema guardado en localStorage
   useEffect(() => {
-    if (isDarkShow) {
+    const savedTheme = JSON.parse(localStorage.getItem("Theme"));
+    if (savedTheme) setIsDark(savedTheme);
+  }, []);
+
+  // Aplicar modo oscuro y guardar en localStorage
+  useEffect(() => {
+    if (isDark) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [isDarkShow]);
+    localStorage.setItem("Theme", JSON.stringify(isDark));
+  }, [isDark]);
 
+  // Detectar scroll para aplicar sombra y fondo fijo
   useEffect(() => {
-    if (theme) {
-      setisDarkShow(theme);
-    }
+    const handleScroll = () => setIsScroll(window.scrollY > 0);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navLinks = [
+    { name: "Inicio", href: "#home" },
+    { name: "Soluciones", href: "#solutions" },
+    { name: "Proyectos", href: "#projects" },
+    { name: "Contacto", href: "#contact" },
+  ];
+
   return (
-    <div
-      className={`${
+    <header
+      className={`fixed top-0 w-full z-50 transition-all ${
         isScroll
-          ? "bg-white shadow-md dark:bg-slate-950"
-          : "bg-gradient-to-r from-white to-white dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950"
-      }  fixed w-full flex justify-between items-center p-3 xmd:px-10 xlg:px-20 xxl:-mb-1 xxl:px-32 mx-auto z-50`}
+          ? "bg-lightBg shadow-md dark:bg-darkBg"
+          : "bg-lightBg dark:bg-darkBg"
+      }`}
     >
-      <Link to="/" title="Inicio">
-        <AiFillCode
-          className="text-4xl text-black  xxs:text-5xl dark:text-emerald-300 xmd:text-5xl xlg:text-6xl"
-          onClick={navigatePageHome}
-        />
-      </Link>
-      <span onClick={handleShowMenu} className="xlg:hidden">
-        {isShowMenu ? (
-          <AiFillCloseCircle className="text-2xl text-indigo-950 dark:text-white cursor-pointer xmd:text-4xl xlg:text-6xl" />
-        ) : (
-          <AiOutlineMenu className="text-2xl text-indigo-950 cursor-pointer xxs:text-4xl dark:text-white xmd:text-4xl xlg:text-6xl" />
-        )}
-      </span>
-      <nav className="hidden xlg:flex xlg:w-[475px] xxl:w-[600px] justify-end">
-        {context.isPageProject ? (
-          <ul className="flex w-full items-center gap-6 xxl:gap-10 dark:text-white">
-            <li className="w-full text-center flex justify-end gap-2 items-center cursor-pointer xxs:text-2xl xmd:text-3xl xlg:text-4xl">
-              {isDarkShow ? (
-                <BsSunFill
-                  onClick={handleChangeTheme}
-                  className="text-white transition-all duration-300"
-                />
-              ) : (
-                <BsSunFill
-                  onClick={handleChangeTheme}
-                  className="text-black transition-all duration-300"
-                />
-              )}
-            </li>
-          </ul>
-        ) : (
-          <ul className="flex w-full items-center gap-6 xxl:gap-10 dark:text-white">
-            <li className="w-full text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl xxl:text-3xl">
-              <a href="#home">Inicio</a>
-            </li>
-            <li className="text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl xxl:text-3xl w-full">
-              <a href="#aboutme">Sobre mi</a>
-            </li>
-            <li className="w-full text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl xxl:text-3xl">
-              <a href="#projects">Proyectos</a>
-            </li>
-            <li className="w-full text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl xxl:text-3xl">
-              <a href="#contact">Contacto</a>
-            </li>
-            <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer xxs:text-2xl xmd:text-3xl xlg:text-4xl">
-              {isDarkShow ? (
-                <BsSunFill
-                  onClick={handleChangeTheme}
-                  className="text-white transition-all duration-300"
-                />
-              ) : (
-                <BsSunFill
-                  onClick={handleChangeTheme}
-                  className="text-black transition-all duration-300"
-                />
-              )}
-            </li>
-          </ul>
-        )}
-      </nav>
-      <div
-        className={`absolute z-50 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-950 dark:shadow-md dark:text-white dark:border-b-[1px] dark:border-white/20 flex flex-col justify-end items-end w-full gap-2 p-4 top-[60px] xmd:top-[72px] xxl:top-[104px] right-0 bg-white shadow-md ${
-          isShowMenu ? "opacity-100 visible" : "opacity-0 invisible"
-        } transition-opacity-0 duration-500`}
-      >
-        {context.isPageProject ? (
-          <ul className="flex flex-col gap-2 w-full py-2">
-            <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer text-xl xxs:text-2xl xmd:text-3xl">
-              {isDarkShow ? (
-                <BsSunFill onClick={handleChangeTheme} />
-              ) : (
-                <BsSunFill onClick={handleChangeTheme} />
-              )}
-            </li>
-          </ul>
-        ) : (
-          <ul className="flex flex-col gap-2 w-full py-2">
-            <li className="w-full text-center cursor-pointer xxs:text-xl xmd:text-2xl">
-              <a href="#home">Inicio</a>
-            </li>
-            <li className="w-full text-center cursor-pointer xxs:text-lg xmd:text-xl xlg:text-2xl">
-              <a href="#aboutme">Sobre mi</a>
-            </li>
-            <li className="w-full text-center cursor-pointer xxs:text-xl xmd:text-2xl">
-              <a href="#projects">Proyectos</a>
-            </li>
-            <li className="w-full text-center flex justify-center gap-2 items-center cursor-pointer text-xl xxs:text-2xl xmd:text-3xl">
-              {isDarkShow ? (
-                <BsSunFill onClick={handleChangeTheme} />
-              ) : (
-                <BsSunFill onClick={handleChangeTheme} />
-              )}
-            </li>
-          </ul>
-        )}
+      <div className="max-w-[1440px] mx-auto flex justify-between items-center px-6 xmd:px-12 xlg:px-16 py-4">
+        {/* Logo */}
+        <Link
+          to="/"
+          className="text-2xl font-heading font-semibold text-textDark dark:text-textLight outline-none"
+        >
+          Freddy<span className="text-primary">Dev</span>
+        </Link>
+
+        {/* Menu Desktop */}
+        <nav className="hidden xmd:flex gap-8 text-textDark dark:text-gray-200 font-medium font-body">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="hover:text-primary dark:hover:text-secondary transition"
+            >
+              {link.name}
+            </a>
+          ))}
+        </nav>
+
+        {/* CTA + Dark Mode */}
+        <div className="hidden xmd:flex items-center gap-6">
+          <a
+            href="#contact"
+            className="bg-gradient-to-r from-primary to-indigo-600 text-white px-5 py-2 rounded-lg hover:opacity-90 transition font-medium font-body"
+          >
+            Contáctame
+          </a>
+          <BsSunFill
+            onClick={() => setIsDark(!isDark)}
+            className="cursor-pointer text-xl hover:text-primary dark:hover:text-secondary transition"
+          />
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="xmd:hidden text-2xl"
+          aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+          title={isOpen ? "Cerrar menú" : "Abrir menú"}
+        >
+          {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
+        </button>
       </div>
-    </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`xmd:hidden fixed top-[64px] left-0 w-full bg-lightBg dark:bg-darkBg shadow-md transition-all duration-300 ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        <nav className="flex flex-col gap-4 p-6 text-textDark dark:text-gray-200">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-lg font-medium hover:text-primary dark:hover:text-secondary"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.name}
+            </a>
+          ))}
+          <a
+            href="#contact"
+            className="bg-gradient-to-r from-primary to-indigo-600 text-white px-5 py-2 rounded-lg hover:opacity-90 transition font-medium text-center"
+          >
+            Contáctame
+          </a>
+          <div className="flex justify-center pt-4">
+            <BsSunFill
+              onClick={() => setIsDark(!isDark)}
+              className="cursor-pointer text-xl hover:text-primary dark:hover:text-secondary transition"
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
   );
 };
 

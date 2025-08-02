@@ -1,16 +1,99 @@
-import React from 'react'
+import React from "react";
+import {
+  BsTwitter,
+  BsFacebook,
+  BsLinkedin,
+  BsGithub,
+  BsWhatsapp,
+} from "react-icons/bs";
+import { HiMail } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <section className="pb-8 py-4 bg-white dark:bg-transparent dark:text-white xlg:pb-16 xlg:mt-4">
-    <h3 className="text-center text-gray-600 xxs:text-xl dark:text-gray-300 xlg:text-2xl">
-      Hecho por &copy;
-      <span className="text-black dark:text-white xlg:text-2xl">
-        Freddy Muñoz - 2023
-      </span>
-    </h3>
-  </section>
-  )
-}
+    <footer className="bg-neutral-900 text-white py-12 px-6">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+        {/* Contacto directo */}
+        <div>
+          <h2 className="text-3xl font-bold mb-6 text-primary">Contáctame</h2>
+          <ul className="space-y-4 text-lg">
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=51924471461&text=Hola!%20Quiero%20contactarme%20contigo!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-primary transition"
+              >
+                <BsWhatsapp className="text-2xl" />
+                +51 924 471 461
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:freddymh07952023@gmail.com"
+                className="flex items-center gap-3 hover:text-primary transition"
+              >
+                <HiMail className="text-2xl" />
+                freddymh07952023@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
 
-export default Footer
+        {/* Redes sociales */}
+        <div>
+          <h2 className="text-3xl font-bold mb-6 text-primary">Sígueme</h2>
+          <ul className="flex gap-6 text-3xl">
+            <li>
+              <a
+                href="https://twitter.com/freddy_mh95"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition"
+              >
+                <BsTwitter />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/freddy.munoz.338658"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition"
+              >
+                <BsFacebook />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/freddy-mh/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition"
+              >
+                <BsLinkedin />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/fred0727"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition"
+              >
+                <BsGithub />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Divider y créditos */}
+      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-sm">
+        Hecho por &copy;{" "}
+        <span className="text-white font-semibold">Freddy Muñoz - 2025</span>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

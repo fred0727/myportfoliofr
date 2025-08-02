@@ -1,125 +1,125 @@
 export const projects = {
   pokedex: {
-    title: "Pokédex Interactiva",
+    title: "Pokedex",
     content:
-      "Explora el universo Pokémon con búsqueda por nombre, filtrado por tipo y acceso instantáneo a datos. Una app interactiva que consume una API externa.",
+      "Explora todo el mundo Pokémon: busca por nombre, filtra por tipo y descubre datos en segundos. Ejemplo de app interactiva con datos externos.",
     img: "/captureprojects/pokeapi.png",
     url: "https://poke-apifr.netlify.app/",
     github: "https://github.com/fred0727/pokeapi-app",
     codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
   academlostore: {
-    title: "Tienda Virtual | Academlo Store",
+    title: "Academlo Store",
     content:
-      "Aplicación de e-commerce con catálogo de productos, carrito de compras y simulación de flujo de pago. Ideal para demostrar lógica comercial.",
+      "Mini-tienda con catálogo, carrito y flujo de compra simulado. Ideal para mostrar venta de productos y experiencia de e-commerce.",
     img: "/captureprojects/academlostore.png",
     url: "https://academlostorefr.netlify.app/",
     github: "https://github.com/fred0727/cart-academlo",
     codes: ["html", "js", "css3"],
   },
   rickandmorty: {
-    title: "Rick & Morty Explorer",
+    title: "Rick and Morty App",
     content:
-      "Galería dinámica que permite filtrar y explorar personajes por universo. Ejemplo claro de consumo de API pública y UI responsiva.",
+      "Galería dinámica de personajes con filtros por universo. Demuestra consumo de API pública y experiencia rápida de exploración.",
     img: "/captureprojects/rickandmortyapp.png",
     url: "https://rickandmortyfr.netlify.app/",
     github: "https://github.com/fred0727/rickandmortyapp-academlo",
     codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
   weatherapp: {
-    title: "Weather Live App",
+    title: "Weather App",
     content:
-      "Consulta el clima en tiempo real por ciudad. Interfaz intuitiva y responsiva con datos externos actualizados.",
+      "Consulta el clima en tiempo real por ciudad para planificar tu día sin sorpresas. Datos actualizados y diseño claro en cualquier dispositivo.",
     img: "/captureprojects/weatherapp.png",
     url: "https://weatherappreactfr.netlify.app/",
     github: "https://github.com/fred0727/weatherapp-react-academlo",
     codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
   pharserandom: {
-    title: "Frases Aleatorias",
+    title: "Phrase Random",
     content:
-      "App que muestra frases motivadoras al azar. Perfecta para secciones de inspiración, landings o dashboards personales.",
+      "Frases motivadoras al azar para inspirar a tus usuarios. Útil en landings, dashboards o apps de contenido.",
     img: "/captureprojects/infogalax.png",
     url: "https://phraserandomfr.netlify.app/",
     github: "https://github.com/fred0727/phraserandom-academlo",
     codes: ["html", "js", "reactjs", "vite"],
   },
   fraremsac: {
-    title: "Landing Corporativa | Frarem",
+    title: "Frarem",
     content:
-      "Página de presentación para empresa industrial. Diseño enfocado en la conversión, servicios destacados y contacto directo.",
+      "Landing page orientada a conversión para negocio industrial (llantas y aros). Presentación de servicios + contacto directo.",
     img: "/captureprojects/frarem.png",
     url: "https://frarem-sacfr.netlify.app/",
     github: "https://github.com/fred0727/fraremsac",
     codes: ["html", "js", "css3", "php"],
   },
   moviessearch: {
-    title: "Buscador de Películas",
+    title: "Movies App",
     content:
-      "Aplicación para buscar películas por nombre y visualizar información relevante. Basada en consumo de API externa y búsqueda en tiempo real.",
+      "Buscador de películas con datos en vivo: encuentra títulos por nombre y explora información de manera rápida y sencilla.",
     img: "/captureprojects/moviessearch.png",
     url: "https://friendly-crisp-a9c214.netlify.app/",
     github: "https://github.com/fred0727/movies-react",
     codes: ["html", "js", "css3", "reactjs"],
   },
   petblog: {
-    title: "Pet Blog | Blog de Mascotas",
+    title: "Pet Blog",
     content:
-      "Blog informativo enfocado en mascotas: artículos, consejos y secciones para comunidad o marcas aliadas.",
+      "Blog ligero para contenido de mascotas: artículos, tips y espacio para marcas o comunidades pet-friendly.",
     img: "/captureprojects/petblog.png",
     url: "https://petblogfr.netlify.app/",
     github: "https://github.com/fred0727/pet-blog-academlo",
     codes: ["html", "js", "css3"],
   },
   cruduser: {
-    title: "CRUD de Usuarios",
+    title: "Crud User",
     content:
-      "Sistema para gestión de usuarios: creación, edición y eliminación con una interfaz accesible. Ideal como base para paneles administrativos.",
+      "Gestor de usuarios en línea: crea, edita y elimina registros desde una interfaz simple. Base ideal para paneles administrativos.",
     img: "/captureprojects/cruduser.png",
     url: "https://app.netlify.com/sites/crud-usersfr/overview",
     github: "https://github.com/fred0727/crud-users-app",
     codes: ["html", "js", "css3", "reactjs", "tailwind"],
   },
   ecomercereact: {
-    title: "E-commerce Completo",
+    title: "Ecommerce",
     content:
-      "Tienda online con funcionalidades completas: login, registro, catálogo, carrito y checkout. Listo para proyectos comerciales.",
+      "Tienda en línea funcional: login, registro, carrito, checkout y catálogo responsive. Base ideal para proyectos comerciales reales.",
     img: "/captureprojects/ecomerce.png",
     url: "https://ecomercefr.netlify.app/",
     github: "https://github.com/fred0727/e-comercefr",
     codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
   crudcodeigniter: {
-    title: "CRUD con PHP & CodeIgniter",
+    title: "Crud PHP | CodeIgniter",
     content:
-      "Gestión de registros con conexión a base de datos MySQL. Ideal como backend básico para aplicaciones internas.",
+      "Gestión de registros de personas con base de datos MySQL. Ejemplo de sistema administrativo rápido en PHP/CodeIgniter.",
     img: "/captureprojects/crudcodeigniter.png",
     url: "https://freddymhhost.000webhostapp.com/crud-codeigniter-php/",
     github: "https://github.com/fred0727/project-crud-codeigniterphp",
     codes: ["html", "js", "php", "mysql", "codeig"],
   },
   appnotesphp: {
-    title: "Notas en la Nube | PHP",
+    title: "APP Notes PHP",
     content:
-      "Aplicación para tomar notas con autenticación y persistencia en base de datos. Backend con CodeIgniter y MySQL.",
+      "Notas en la nube con inicio de sesión: crea, edita y organiza apuntes con seguridad en PHP/CodeIgniter + MySQL.",
     img: "/captureprojects/appnotecodeigniter.png",
     url: "https://freddymhhost.000webhostapp.com/app-notes-php/",
     github: "https://github.com/fred0727/project-appnotes-codeigniterphp",
     codes: ["html", "js", "php", "mysql", "codeig"],
   },
   apinotesnodejs: {
-    title: "API REST para Notas",
+    title: "API FullRest NodeJS",
     content:
-      "API robusta para CRUD de notas y usuarios. Arquitectura RESTful con Node.js, Express y base de datos PostgreSQL.",
+      "API escalable para gestión de notas y datos de usuario. Lista para integrarse con aplicaciones web o móviles.",
     img: "/captureprojects/apinotesnodejs.png",
     url: "https://github.com/fred0727/project-apinotes-nodejs",
     github: "https://github.com/fred0727/project-apinotes-nodejs",
     codes: ["js", "nodejs", "express", "postgres"],
   },
   appnotesreact: {
-    title: "App de Notas | React",
+    title: "Notes App React",
     content:
-      "Aplicación web para tomar notas con funcionalidades CRUD, autenticación y una experiencia fluida desde cualquier navegador.",
+      "Aplicación de notas con autenticación: crea, edita, archiva y elimina contenido desde cualquier navegador.",
     img: "/captureprojects/notesappreact.png",
     url: "https://incomparable-mousse-80d428.netlify.app/",
     github: "https://github.com/fred0727/project-appnotes-reactjs",

@@ -1,125 +1,124 @@
 export const projects = {
   pokedex: {
-    title: "Pokédex Interactiva",
+    title: "Pokedex",
     content:
-      "Explora el universo Pokémon con búsqueda por nombre, filtrado por tipo y acceso instantáneo a datos. Una app interactiva que consume una API externa.",
+      "Web desarrollada consumiendo la Api de Pokemon que permite ver por tipo y realizar busqueda por su nombre.",
     img: "/captureprojects/pokeapi.png",
     url: "https://poke-apifr.netlify.app/",
     github: "https://github.com/fred0727/pokeapi-app",
     codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
   academlostore: {
-    title: "Tienda Virtual | Academlo Store",
+    title: "Academlo Store",
     content:
-      "Aplicación de e-commerce con catálogo de productos, carrito de compras y simulación de flujo de pago. Ideal para demostrar lógica comercial.",
+      "Proyecto Store de Academlo, simulacion de carrito de compras y checkout.",
     img: "/captureprojects/academlostore.png",
     url: "https://academlostorefr.netlify.app/",
     github: "https://github.com/fred0727/cart-academlo",
     codes: ["html", "js", "css3"],
   },
   rickandmorty: {
-    title: "Rick & Morty Explorer",
+    title: "Rick and Morty App",
     content:
-      "Galería dinámica que permite filtrar y explorar personajes por universo. Ejemplo claro de consumo de API pública y UI responsiva.",
+      "Pagina web donde podras visualizar los personajes de la serie Rick and Morty y permite filtrar por universos.",
     img: "/captureprojects/rickandmortyapp.png",
     url: "https://rickandmortyfr.netlify.app/",
     github: "https://github.com/fred0727/rickandmortyapp-academlo",
     codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
   weatherapp: {
-    title: "Weather Live App",
+    title: "Weather App",
     content:
-      "Consulta el clima en tiempo real por ciudad. Interfaz intuitiva y responsiva con datos externos actualizados.",
+      "App creada con React consumiendo la API de OpenWeather para poder visualizar el clima en tiempo real y poder buscar por ciudad.",
     img: "/captureprojects/weatherapp.png",
     url: "https://weatherappreactfr.netlify.app/",
     github: "https://github.com/fred0727/weatherapp-react-academlo",
     codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
   pharserandom: {
-    title: "Frases Aleatorias",
+    title: "Pharse Random",
     content:
-      "App que muestra frases motivadoras al azar. Perfecta para secciones de inspiración, landings o dashboards personales.",
+      "Pagina web creada con un objeto que contiene frases random celebres e inspiradoras",
     img: "/captureprojects/infogalax.png",
     url: "https://phraserandomfr.netlify.app/",
     github: "https://github.com/fred0727/phraserandom-academlo",
     codes: ["html", "js", "reactjs", "vite"],
   },
   fraremsac: {
-    title: "Landing Corporativa | Frarem",
+    title: "Frarem",
     content:
-      "Página de presentación para empresa industrial. Diseño enfocado en la conversión, servicios destacados y contacto directo.",
+      "Landing Page modelo para una empresa de ventas de llantas y aros industriales.",
     img: "/captureprojects/frarem.png",
     url: "https://frarem-sacfr.netlify.app/",
     github: "https://github.com/fred0727/fraremsac",
     codes: ["html", "js", "css3", "php"],
   },
   moviessearch: {
-    title: "Buscador de Películas",
+    title: "Movies App",
     content:
-      "Aplicación para buscar películas por nombre y visualizar información relevante. Basada en consumo de API externa y búsqueda en tiempo real.",
+      "Pagina web que Consume una API de peliculas donde se puede visualizar y buscar por nombre.",
     img: "/captureprojects/moviessearch.png",
     url: "https://friendly-crisp-a9c214.netlify.app/",
     github: "https://github.com/fred0727/movies-react",
     codes: ["html", "js", "css3", "reactjs"],
   },
   petblog: {
-    title: "Pet Blog | Blog de Mascotas",
-    content:
-      "Blog informativo enfocado en mascotas: artículos, consejos y secciones para comunidad o marcas aliadas.",
+    title: "Pet Blog",
+    content: "Web creada para un blog de mascotas con Javascript, Html y CSS",
     img: "/captureprojects/petblog.png",
     url: "https://petblogfr.netlify.app/",
     github: "https://github.com/fred0727/pet-blog-academlo",
     codes: ["html", "js", "css3"],
   },
   cruduser: {
-    title: "CRUD de Usuarios",
+    title: "Crud User",
     content:
-      "Sistema para gestión de usuarios: creación, edición y eliminación con una interfaz accesible. Ideal como base para paneles administrativos.",
+      "CRUD de usuarios, consumiendo una API para registrar la información de los mismos.",
     img: "/captureprojects/cruduser.png",
     url: "https://app.netlify.com/sites/crud-usersfr/overview",
     github: "https://github.com/fred0727/crud-users-app",
     codes: ["html", "js", "css3", "reactjs", "tailwind"],
   },
   ecomercereact: {
-    title: "E-commerce Completo",
+    title: "Ecommerce",
     content:
-      "Tienda online con funcionalidades completas: login, registro, catálogo, carrito y checkout. Listo para proyectos comerciales.",
+      "Proyect creado con React y Tailwind CSS con funciones de inicio de sesión y registro, carrito de compras, checkout y otras opciones.",
     img: "/captureprojects/ecomerce.png",
     url: "https://ecomercefr.netlify.app/",
     github: "https://github.com/fred0727/e-comercefr",
     codes: ["html", "js", "reactjs", "tailwind", "vite"],
   },
   crudcodeigniter: {
-    title: "CRUD con PHP & CodeIgniter",
+    title: "Crud PHP | Codeigniter",
     content:
-      "Gestión de registros con conexión a base de datos MySQL. Ideal como backend básico para aplicaciones internas.",
+      "CRUD de registro de personas utilizando el Framework Codeigniter, PHP, Ajax, JQuery y MYSQL",
     img: "/captureprojects/crudcodeigniter.png",
     url: "https://freddymhhost.000webhostapp.com/crud-codeigniter-php/",
     github: "https://github.com/fred0727/project-crud-codeigniterphp",
     codes: ["html", "js", "php", "mysql", "codeig"],
   },
   appnotesphp: {
-    title: "Notas en la Nube | PHP",
+    title: "APP Notes",
     content:
-      "Aplicación para tomar notas con autenticación y persistencia en base de datos. Backend con CodeIgniter y MySQL.",
+      "App de notas creada con Codeigniter, PHP, Ajax, JQuery y MYSQL. Integrando sesiones y password encriptado.",
     img: "/captureprojects/appnotecodeigniter.png",
     url: "https://freddymhhost.000webhostapp.com/app-notes-php/",
     github: "https://github.com/fred0727/project-appnotes-codeigniterphp",
     codes: ["html", "js", "php", "mysql", "codeig"],
   },
   apinotesnodejs: {
-    title: "API REST para Notas",
+    title: "API FullRest NodeJS",
     content:
-      "API robusta para CRUD de notas y usuarios. Arquitectura RESTful con Node.js, Express y base de datos PostgreSQL.",
+      "API FullRest creada con NodeJS y Express. Usando el ORM Sequelize y Patrón MVC.",
     img: "/captureprojects/apinotesnodejs.png",
     url: "https://github.com/fred0727/project-apinotes-nodejs",
     github: "https://github.com/fred0727/project-apinotes-nodejs",
     codes: ["js", "nodejs", "express", "postgres"],
   },
   appnotesreact: {
-    title: "App de Notas | React",
+    title: "Notes App React",
     content:
-      "Aplicación web para tomar notas con funcionalidades CRUD, autenticación y una experiencia fluida desde cualquier navegador.",
+      "App creada consumiendo Api FullRest creada. Login y Registro con funcionalidades de creación de notas, edición, archivado y eliminación.",
     img: "/captureprojects/notesappreact.png",
     url: "https://incomparable-mousse-80d428.netlify.app/",
     github: "https://github.com/fred0727/project-appnotes-reactjs",
