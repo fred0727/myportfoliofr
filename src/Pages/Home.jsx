@@ -45,7 +45,7 @@ const SEOTags = () => {
     // Meta description
     const metaDescription = document.querySelector('meta[name="description"]') || document.createElement('meta');
     metaDescription.name = "description";
-    metaDescription.content = "Desarrollador Full Stack especializado en React, PHP, Laravel y Python. Creo aplicaciones web modernas y soluciones digitales para empresas. ¡Contacta para tu proyecto!";
+    metaDescription.content = "Desarrollador web freelance Perú, programador Odoo, desarrollo en PHP y Python, experto en React, Laravel y soluciones digitales modernas. ¡Contacta para tu proyecto!";
     if (!document.querySelector('meta[name="description"]')) {
       document.head.appendChild(metaDescription);
     }
@@ -53,7 +53,7 @@ const SEOTags = () => {
     // Keywords
     const metaKeywords = document.querySelector('meta[name="keywords"]') || document.createElement('meta');
     metaKeywords.name = "keywords";
-    metaKeywords.content = "desarrollador freelance, programador web, React developer, PHP developer, Laravel, full stack developer, desarrollo web, aplicaciones web";
+    metaKeywords.content = "desarrollador web freelance Perú, programador Odoo, desarrollo en PHP, desarrollo en Python, React developer, Laravel, full stack developer, desarrollo web, aplicaciones web";
     if (!document.querySelector('meta[name="keywords"]')) {
       document.head.appendChild(metaKeywords);
     }
@@ -452,7 +452,7 @@ const Home = () => {
                 Freelance
               </span></span>
             </h1>
-            
+
             <p className="text-lg text-gray-600 mb-6 max-w-lg leading-relaxed" itemProp="description">
               {personalInfo.description}
             </p>

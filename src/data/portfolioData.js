@@ -3,7 +3,7 @@ export const personalInfo = {
   name: 'Freddy Muñoz',
   title: 'Especialista en Tecnologías Web',
   subtitle: 'Especializado en soluciones web y móviles con tecnologías modernas',
-  description: 'Especialista en tecnologías web apasionado por crear soluciones digitales que realmente funcionen. Me especializo en transformar ideas complejas en aplicaciones intuitivas y sistemas robustos, combinando diseño atractivo con funcionalidad sólida.',
+  description: 'Creo sitios web y sistemas que hacen tu vida más fácil y tu negocio más productivo. Con experiencia en Odoo, PHP, Python y tecnologías actuales, puedo ayudarte a optimizar procesos, mejorar la experiencia de tus clientes y llevar tu proyecto al siguiente nivel, sin complicaciones y con resultados visibles desde el primer día.',
   email: 'freddymunoz.dev@gmail.com',
   phone: '+51 924 471 461',
   location: 'Perú',
