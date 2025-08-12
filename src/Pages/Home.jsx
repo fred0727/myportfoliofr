@@ -40,7 +40,7 @@ const SEOTags = () => {
 
   React.useEffect(() => {
     // Meta tags básicos
-    document.title = "Freddy Muñoz - Desarrollador Full Stack Freelance | Experto en React, PHP, Laravel";
+    document.title = "Freddy Muñoz - Desarrollador Full Stack Freelance | Experto en Python, PHP, Laravel";
     
     // Meta description
     const metaDescription = document.querySelector('meta[name="description"]') || document.createElement('meta');
