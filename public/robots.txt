@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://freddymunoz-dev.netlify.app/sitemap.xml
+
+# Archivos importantes
+Allow: /logos/
+Allow: /images/
+Allow: /captureprojects/
+
+# Bloquear archivos innecesarios
+Disallow: /docs/
