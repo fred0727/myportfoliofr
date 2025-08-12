@@ -7,7 +7,7 @@ export const personalInfo = {
   email: 'freddymunoz.dev@gmail.com',
   phone: '+51 924 471 461',
   location: 'Perú',
-  avatar: '/images/mifotonew.png',
+  avatar: '/images/mifotonew.webp',
   cv: '/docs/FreddyMCV.pdf',
   social: {
     github: 'https://github.com/fred0727',

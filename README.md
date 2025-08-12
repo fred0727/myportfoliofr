@@ -1,4 +1,4 @@
-# 🚀 Portfolio Moderno - Freddy Mamani
+# 🚀 Portfolio Moderno - Freddy Muñoz
 
 ## 📋 Descripción
 
@@ -49,7 +49,7 @@ Portfolio personal profesional desarrollado con **React + TailwindCSS + Vite**, 
 
 ### 1. Clonar el repositorio
 \`\`\`bash
-git clone https://github.com/freddymamani/myportfoliofr.git
+git clone https://github.com/freddymunoz/myportfoliofr.git
 cd myportfoliofr
 \`\`\`
 
@@ -274,10 +274,10 @@ Este proyecto está bajo la Licencia MIT. Ver \`LICENSE\` para más detalles.
 
 ## 👨‍💻 Autor
 
-**Freddy Mamani Callo**
-- 📧 Email: freddymamani05@gmail.com
-- 💼 LinkedIn: [freddymamani](https://linkedin.com/in/freddymamani)
-- 🐙 GitHub: [freddymamani](https://github.com/freddymamani)
+**Freddy munoz Callo**
+- 📧 Email: freddymunoz05@gmail.com
+- 💼 LinkedIn: [freddymunoz](https://linkedin.com/in/freddymunoz)
+- 🐙 GitHub: [freddymunoz](https://github.com/freddymunoz)
 - 📱 WhatsApp: [+51 936 096 341](https://wa.me/51936096341)
 
 ---
@@ -298,8 +298,8 @@ Si necesitas ayuda con la implementación o quieres contratar servicios de desar
 
 ### 💬 Contacto Directo
 - **WhatsApp**: [Enviar mensaje](https://wa.me/51936096341?text=Hola%20Freddy,%20necesito%20ayuda%20con%20mi%20portfolio)
-- **Email**: freddymamani05@gmail.com
-- **LinkedIn**: [freddymamani](https://linkedin.com/in/freddymamani)
+- **Email**: freddymunoz05@gmail.com
+- **LinkedIn**: [freddymunoz](https://linkedin.com/in/freddymunoz)
 
 ### 🛠️ Servicios Disponibles
 - ✅ Personalización completa del portfolio
