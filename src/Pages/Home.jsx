@@ -409,7 +409,7 @@ const Home = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="#inicio" className="flex items-center hover:opacity-80 transition-opacity">
+          <a href="#inicio" className="flex items-center hover:opacity-80 transition-opacity outline-none">
             <img 
               src="/logos/logo.png" 
               alt="FM Logo" 
