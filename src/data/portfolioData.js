@@ -94,6 +94,16 @@ export const projects = [
     github: 'https://github.com/fred0727/pet-blog-academlo',
     featured: true
   },
+  {
+    id: 'crm-saas',
+    title: 'CRM SaaS | Frontend en React',
+    description: 'Aplicación web para la gestión de clientes y ventas, con un enfoque en la usabilidad y el rendimiento.',
+    image: '/captureprojects/saas-crm.png',
+    technologies: ['React', 'JavaScript', 'CSS3'],
+    demo: 'https://keen-swan-134193.netlify.app/',
+    github: 'https://github.com/fred0727/sass-crm',
+    featured: true
+  },
 ];
 
 // Testimonios
