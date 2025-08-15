@@ -88,7 +88,7 @@ export const projects = [
     id: 'petblog',
     title: 'Pet Blog | Blog de Mascotas',
     description: 'Blog informativo enfocado en mascotas: artículos, consejos y secciones para comunidad o marcas aliadas.',
-    image: '/captureprojects/petblog.png',
+    image: '/captureprojects/blogpet.png',
     technologies: ['HTML', 'JavaScript', 'CSS3'],
     demo: 'https://petblogfr.netlify.app/',
     github: 'https://github.com/fred0727/pet-blog-academlo',
