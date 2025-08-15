@@ -104,6 +104,16 @@ export const projects = [
     github: 'https://github.com/fred0727/sass-crm',
     featured: true
   },
+  {
+    id: 'trello-clone',
+    title: 'Trello Clone | Frontend en React',
+    description: 'Aplicación web para la gestión de proyectos y tareas, inspirada en Trello. Offline',
+    image: '/captureprojects/trello-clone.png',
+    technologies: ['React', 'JavaScript', 'CSS3'],
+    demo: 'https://glistening-otter-0de53c.netlify.app/',
+    github: 'https://github.com/fred0727/trello-clone',
+    featured: true
+  },
 ];
 
 // Testimonios
