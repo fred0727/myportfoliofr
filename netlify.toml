@@ -1,0 +1,63 @@
+[build]
+  # Comando de build para Vite
+  command = "npm run build"
+  
+  # Directorio donde se genera el build
+  publish = "dist"
+  
+  # Imagen de build actualizada (Ubuntu Jammy 22.04 LTS)
+  # Reemplaza la imagen Focal deprecada
+  base = ""
+
+[build.environment]
+  # Node.js versión LTS recomendada
+  NODE_VERSION = "18"
+  
+  # NPM cache para builds más rápidos
+  NPM_FLAGS = "--prefix=/opt/buildhome/.npm-global"
+
+# Configuración para SPA (Single Page Application)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers de seguridad y performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
