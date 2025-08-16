@@ -4,17 +4,10 @@
   
   # Directorio donde se genera el build
   publish = "dist"
-  
-  # Imagen de build actualizada (Ubuntu Jammy 22.04 LTS)
-  # Reemplaza la imagen Focal deprecada
-  base = ""
 
 [build.environment]
   # Node.js versión LTS recomendada
   NODE_VERSION = "18"
-  
-  # NPM cache para builds más rápidos
-  NPM_FLAGS = "--prefix=/opt/buildhome/.npm-global"
 
 # Configuración para SPA (Single Page Application)
 [[redirects]]
