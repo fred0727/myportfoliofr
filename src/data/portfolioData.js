@@ -120,7 +120,7 @@ export const projects = [
     description: 'Aplicación web para la gestión de inventarios y control de stock.',
     image: '/captureprojects/gestion-almacen.png',
     technologies: ['HTML','JavaScript', 'CSS3'],
-    demo: 'https://glistening-otter-0de53c.netlify.app/',
+    demo: 'https://earnest-concha-28cd31.netlify.app/',
     github: 'https://github.com/fred0727/gestion-almacen',
     featured: true
   },
