@@ -114,6 +114,16 @@ export const projects = [
     github: 'https://github.com/fred0727/trello-clone',
     featured: true
   },
+  {
+    id: 'gestion-almacen',
+    title: 'Gestión de Almacén',
+    description: 'Aplicación web para la gestión de inventarios y control de stock.',
+    image: '/captureprojects/gestion-almacen.png',
+    technologies: ['HTML','JavaScript', 'CSS3'],
+    demo: 'https://glistening-otter-0de53c.netlify.app/',
+    github: 'https://github.com/fred0727/gestion-almacen',
+    featured: true
+  },
 ];
 
 // Testimonios
