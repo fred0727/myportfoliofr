@@ -409,7 +409,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <a href="#inicio" className="flex items-center hover:opacity-80 transition-opacity outline-none">
             <img 
-              src="/logos/fk-logo.png" 
+              src="/logos/fk-mark.png" 
               alt="FK Logo - Factory Kode" 
               className="h-8 md:h-10 w-auto"
             />
@@ -964,9 +964,9 @@ const Home = () => {
               <div className="lg:col-span-2">
                 <div className="flex items-center mb-6 rounded-md">
                   <img 
-                    src="/logos/fk-logo.png" 
+                    src="/logos/fk-mark-white.png" 
                     alt="FK Logo - Factory Kode" 
-                    className="h-14 md:h-16 w-auto rounded-md brightness-0 invert"
+                    className="h-14 md:h-16 w-auto rounded-md"
                     loading="lazy"
                   />
                 </div>
