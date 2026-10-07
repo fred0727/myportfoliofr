@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 import { FiMail, FiPhone, FiMapPin, FiExternalLink, FiGithub, FiStar, FiUsers, FiTrendingUp, FiCode, FiSmartphone, FiDatabase, FiTool } from 'react-icons/fi';
 import { FaLaptopCode, FaMobile, FaCogs, FaServer } from 'react-icons/fa';
 import { BsWhatsapp, BsLinkedin } from 'react-icons/bs';
@@ -14,7 +13,7 @@ const SEOTags = () => {
     "name": personalInfo.name,
     "url": "https://freddymunoz-dev.netlify.app",
     "image": personalInfo.avatar,
-    "jobTitle": "Desarrollador Full Stack Freelance",
+    "jobTitle": personalInfo.title,
     "description": personalInfo.description,
     "address": {
       "@type": "PostalAddress",
@@ -40,12 +39,12 @@ const SEOTags = () => {
 
   React.useEffect(() => {
     // Meta tags básicos
-    document.title = "Freddy Muñoz - Desarrollador Full Stack Freelance | Experto en Python, PHP, Laravel";
+    document.title = "Freddy Muñoz - Odoo, automatización y sistemas empresariales";
     
     // Meta description
     const metaDescription = document.querySelector('meta[name="description"]') || document.createElement('meta');
     metaDescription.name = "description";
-    metaDescription.content = "Desarrollador web freelance Perú, programador Odoo, desarrollo en PHP y Python, experto en React, Laravel y soluciones digitales modernas. ¡Contacta para tu proyecto!";
+    metaDescription.content = "Implementación de Odoo, automatización y desarrollo de sistemas empresariales para organizar procesos y hacer crecer tu negocio.";
     if (!document.querySelector('meta[name="description"]')) {
       document.head.appendChild(metaDescription);
     }
@@ -135,7 +134,7 @@ const SEOTags = () => {
   return null;
 };
 
-// Contact Form Component
+if (false) { // Legacy contact form removed: WhatsApp is now the direct contact channel.
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -295,12 +294,10 @@ ${formData.message}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300"
           >
             <option value="">Selecciona un servicio</option>
-            <option value="Desarrollo Web">Desarrollo Web</option>
-            <option value="SEO y Landing Pages">SEO y Landing Pages</option>
-            <option value="Backend & APIs">Backend & APIs</option>
-            <option value="Automatización & ERP">Automatización & ERP</option>
-            <option value="Desarrollo Full Stack">Desarrollo Full Stack</option>
-            <option value="DevOps & Cloud">DevOps & Cloud</option>
+            <option value="Implementación y personalización de Odoo">Implementación y personalización de Odoo</option>
+            <option value="Integraciones con IA y automatizaciones">Integraciones con IA y automatizaciones</option>
+            <option value="Desarrollo de sistemas y páginas web">Desarrollo de sistemas y páginas web</option>
+            <option value="Soporte y capacitación mensual">Soporte y capacitación mensual</option>
             <option value="Consultoría">Consultoría Técnica</option>
           </select>
         </div>
@@ -394,6 +391,7 @@ ${formData.message}
     </form>
   );
 };
+}
 
 const Home = () => {
   return (
@@ -411,8 +409,8 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <a href="#inicio" className="flex items-center hover:opacity-80 transition-opacity outline-none">
             <img 
-              src="/logos/logo.png" 
-              alt="FM Logo" 
+              src="/logos/fk-logo.png" 
+              alt="FK Logo - Factory Kode" 
               className="h-8 md:h-10 w-auto"
             />
           </a>
@@ -420,16 +418,7 @@ const Home = () => {
             <a href="#inicio" className="text-gray-600 hover:text-blue-600 transition-colors">Inicio</a>
             <a href="#servicios" className="text-gray-600 hover:text-blue-600 transition-colors">Servicios</a>
             <a href="#proyectos" className="text-gray-600 hover:text-blue-600 transition-colors">Proyectos</a>
-            <a href="#contacto" className="text-gray-600 hover:text-blue-600 transition-colors">Contacto</a>
           </nav>
-          <motion.a
-            href="#contacto"
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Contratar
-          </motion.a>
         </div>
       </motion.header>
       
@@ -441,15 +430,15 @@ const Home = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm mb-6">
-              <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-              Listo para impulsar tu próximo proyecto 🚀
+            <div className="inline-flex items-center bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm mb-6 border border-slate-200">
+              <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
+              Soluciones para procesos más ordenados y conectados
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              <span itemProp="jobTitle">Desarrollador{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                Freelance
+              <span itemProp="jobTitle">Odoo, automatización y{' '}
+              <span className="text-blue-700">
+                sistemas empresariales
               </span></span>
             </h1>
 
@@ -460,59 +449,35 @@ const Home = () => {
             {/* Stats Freelance */}
             <div className="grid grid-cols-3 gap-4 mb-8">
               <motion.div 
-                className="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
+                className="text-center p-4 bg-white/90 rounded-lg border border-blue-100 shadow-sm hover:shadow-md transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
               >
-                <div className="text-2xl font-bold text-blue-600">20+</div>
+                <div className="text-2xl font-bold text-slate-800">20+</div>
                 <div className="text-sm text-gray-600">Proyectos</div>
               </motion.div>
               <motion.div 
-                className="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
+                className="text-center p-4 bg-white/90 rounded-lg border border-blue-100 shadow-sm hover:shadow-md transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
-                <div className="text-2xl font-bold text-green-600">8+</div>
+                <div className="text-2xl font-bold text-blue-700">8+</div>
                 <div className="text-sm text-gray-600">Tecnologías</div>
               </motion.div>
               <motion.div 
-                className="text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
+                className="text-center p-4 bg-white/90 rounded-lg border border-blue-100 shadow-sm hover:shadow-md transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7, duration: 0.6 }}
               >
-                <div className="text-2xl font-bold text-slate-700">3+</div>
+                <div className="text-2xl font-bold text-slate-800">5+</div>
                 <div className="text-sm text-gray-600">Años Exp.</div>
               </motion.div>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <motion.button
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-lg"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                <FiMail size={20} />
-                Iniciar mi proyecto
-              </motion.button>
-              
-              <motion.a
-                href={personalInfo.social.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-green-500 text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition-all duration-300 flex items-center justify-center gap-2 text-lg"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <BsWhatsapp size={20} />
-                Contactame
-              </motion.a>
             </div>
             
             {/* Social Links */}
@@ -536,16 +501,6 @@ const Home = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <FiGithub size={24} />
-              </motion.a>
-              <motion.a 
-                href={personalInfo.social.whatsapp} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-3 bg-gray-100 rounded-lg hover:bg-green-100 hover:text-green-600 transition-colors"
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <BsWhatsapp size={24} />
               </motion.a>
             </div>
           </motion.div>
@@ -633,7 +588,7 @@ const Home = () => {
               Mis <span className="text-blue-600">Servicios</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Ofrezco soluciones tecnológicas completas para hacer crecer tu negocio
+              Ayudo a empresas a trabajar con menos tareas manuales y mejor control
             </p>
           </motion.div>
 
@@ -683,11 +638,11 @@ const Home = () => {
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                SEO y Landing Pages
+                Integraciones con IA y automatizaciones
               </h3>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Páginas optimizadas para SEO y landing pages de alta conversión para tu marca personal o negocio
+                Integro asistentes y herramientas de IA con tus aplicaciones para automatizar tareas repetitivas y agilizar tu operación
               </p>
               
               <div className="flex flex-wrap gap-2">
@@ -715,11 +670,11 @@ const Home = () => {
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Backend & APIs
+                Desarrollo de sistemas y páginas web
               </h3>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Sistemas backend escalables y APIs REST robustas para conectar aplicaciones
+                Sistemas internos, páginas web y APIs diseñados para las necesidades de tu negocio
               </p>
               
               <div className="flex flex-wrap gap-2">
@@ -747,11 +702,11 @@ const Home = () => {
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Automatización & ERP
+                Implementación y personalización de Odoo
               </h3>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Sistemas empresariales y automatización de procesos con frameworks modernos
+                Organiza ventas, inventario y operaciones con Odoo adaptado a tus procesos
               </p>
               
               <div className="flex flex-wrap gap-2">
@@ -766,7 +721,7 @@ const Home = () => {
               </div>
             </motion.div>
 
-            {/* Full Stack Development */}
+            {/* Integraciones con IA */}
             <motion.div
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
               initial={{ opacity: 0, y: 30 }}
@@ -779,15 +734,15 @@ const Home = () => {
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Desarrollo Full Stack
+                Integraciones con IA
               </h3>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Soluciones completas desde el frontend hasta el backend con arquitectura moderna
+                Integro asistentes y herramientas de IA con tus aplicaciones para automatizar tareas y mejorar la operación
               </p>
               
               <div className="flex flex-wrap gap-2">
-                {['Frontend', 'Backend', 'APIs', 'Bases de Datos', 'DevOps'].map((skill, index) => (
+                {['IA', 'APIs', 'Python', 'Automatización', 'Odoo'].map((skill, index) => (
                   <span
                     key={index}
                     className="bg-indigo-100 text-indigo-700 text-xs px-3 py-1 rounded-full font-medium"
@@ -798,9 +753,9 @@ const Home = () => {
               </div>
             </motion.div>
 
-            {/* DevOps & Deployment */}
+            {/* DevOps & Deployment - integrado dentro de los servicios principales */}
             <motion.div
-              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
+              className="hidden bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -833,7 +788,7 @@ const Home = () => {
 
           {/* CTA Servicios */}
           <motion.div
-            className="mt-16 text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-white"
+            className="mt-16 text-center bg-slate-900 rounded-2xl p-8 md:p-12 text-white border border-slate-800 shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -842,31 +797,65 @@ const Home = () => {
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               ¿Necesitas una solución personalizada?
             </h3>
-            <p className="text-xl mb-8 opacity-90">
-              Combinemos estas tecnologías para crear la solución perfecta para tu proyecto
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-                whileHover={{ scale: 1.05 }}
-              >
-                Solicitar cotización
-              </motion.button>
-              
+              <p className="text-xl mb-8 opacity-90">
+                Cuéntame qué proceso quieres mejorar y te propongo un siguiente paso claro
+              </p>
+              <p className="text-slate-300 mb-8">También puedes contratar soporte y capacitación mensual para mantener tu sistema funcionando y aprovecharlo mejor.</p>
+
               <motion.a
                 href={personalInfo.social.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2"
-                whileHover={{ scale: 1.05 }}
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-green-700"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
               >
                 <BsWhatsapp size={20} />
-                WhatsApp directo
+                Hablemos por WhatsApp
               </motion.a>
-            </div>
+            
           </motion.div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section id="proceso" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <motion.div
+            className="text-center mb-14"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Cómo <span className="text-blue-600">trabajo</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Un proceso claro para transformar una necesidad de tu negocio en una solución útil y sostenible.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { number: '01', title: 'Entendemos tu proceso', text: 'Revisamos tus objetivos, tareas actuales y herramientas para detectar qué conviene mejorar.', color: 'blue' },
+              { number: '02', title: 'Diseñamos la solución', text: 'Definimos el alcance, las integraciones y las prioridades antes de empezar a desarrollar.', color: 'indigo' },
+              { number: '03', title: 'Implementamos y acompañamos', text: 'Construimos, probamos y te acompañamos con capacitación o soporte mensual.', color: 'slate' }
+            ].map((step, index) => (
+              <motion.div
+                key={step.number}
+                className="relative rounded-xl border border-gray-200 bg-gray-50 p-8"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <span className="text-4xl font-bold text-blue-600/25">{step.number}</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-4 mb-3">{step.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{step.text}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -952,35 +941,18 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section id="contacto" className="py-20 bg-white" itemScope itemType="https://schema.org/ContactPage">
-        <div className="max-w-4xl mx-auto px-4">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Cuéntame sobre <span className="text-blue-600">tu proyecto</span>
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Completa el formulario y te responderé en menos de 24 horas con una propuesta personalizada
-            </p>
-          </motion.div>
-
-          <motion.div
-            className="bg-gray-50 rounded-2xl p-8 md:p-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <ContactForm />
-          </motion.div>
-        </div>
-      </section>
+      <motion.a
+        href={personalInfo.social.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+        className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-green-600 px-4 py-3 text-white shadow-xl hover:bg-green-700 sm:bottom-6 sm:right-6"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <BsWhatsapp size={24} />
+        <span className="hidden sm:inline font-semibold">WhatsApp</span>
+      </motion.a>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white" itemScope itemType="https://schema.org/Person">
@@ -992,15 +964,15 @@ const Home = () => {
               <div className="lg:col-span-2">
                 <div className="flex items-center mb-6 rounded-md">
                   <img 
-                    src="/logos/logo.png" 
-                    alt="FM Logo" 
-                    className="h-14 md:h-16 w-auto rounded-md"
+                    src="/logos/fk-logo.png" 
+                    alt="FK Logo - Factory Kode" 
+                    className="h-14 md:h-16 w-auto rounded-md brightness-0 invert"
                     loading="lazy"
                   />
                 </div>
                 <p className="text-gray-400 mb-6 leading-relaxed" itemProp="description">
-                  Desarrollador Freelance especializado en crear soluciones digitales modernas para empresas. 
-                  Combinando tecnología de vanguardia con diseño intuitivo para impulsar tu negocio.
+                  Desarrollador freelance especializado en crear soluciones digitales para empresas. 
+                  Desarrollo sistemas, automatizaciones e integraciones con Odoo e IA para mejorar procesos e impulsar tu negocio.
                 </p>
                 
                 {/* Información de contacto destacada */}
@@ -1017,7 +989,7 @@ const Home = () => {
                     <BsWhatsapp className="text-green-400" size={20} />
                     <div>
                       <p className="text-white font-medium" itemProp="telephone">{personalInfo.phone}</p>
-                      <p className="text-gray-400 text-sm">Respuesta inmediata</p>
+                      <p className="text-gray-400 text-sm">Consulta por proyectos y soporte mensual</p>
                     </div>
                   </div>
                   
@@ -1066,11 +1038,10 @@ const Home = () => {
               <div>
                 <h4 className="font-semibold mb-6 text-lg">Servicios</h4>
                 <ul className="space-y-3 text-gray-400">
-                  <li className="hover:text-white transition-colors cursor-pointer">Desarrollo Web</li>
-                  <li className="hover:text-white transition-colors cursor-pointer">SEO & Landing Pages</li>
-                  <li className="hover:text-white transition-colors cursor-pointer">Backend & APIs</li>
-                  <li className="hover:text-white transition-colors cursor-pointer">Automatización & ERP</li>
-                  <li className="hover:text-white transition-colors cursor-pointer">DevOps & Cloud</li>
+                  <li className="hover:text-white transition-colors cursor-pointer">Implementación de Odoo</li>
+                  <li className="hover:text-white transition-colors cursor-pointer">Integraciones con IA y automatizaciones</li>
+                  <li className="hover:text-white transition-colors cursor-pointer">Sistemas y páginas web</li>
+                  <li className="hover:text-white transition-colors cursor-pointer">Soporte y capacitación mensual</li>
                 </ul>
               </div>
               
@@ -1094,7 +1065,7 @@ const Home = () => {
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-center md:text-left">
-                &copy; 2025 {personalInfo.name}. Todos los derechos reservados.
+                &copy; {new Date().getFullYear()} {personalInfo.name}. Todos los derechos reservados.
               </p>
               <div className="flex items-center gap-6 mt-4 md:mt-0">
                 <span className="text-gray-400 text-sm">Desarrollador Freelance</span>

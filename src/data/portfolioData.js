@@ -1,9 +1,9 @@
 // Información personal
 export const personalInfo = {
   name: 'Freddy Muñoz',
-  title: 'Especialista en Tecnologías Web',
-  subtitle: 'Especializado en soluciones web y móviles con tecnologías modernas',
-  description: 'Creo sitios web y sistemas que hacen tu vida más fácil y tu negocio más productivo. Con experiencia en Odoo, PHP, Python y tecnologías actuales, puedo ayudarte a optimizar procesos, mejorar la experiencia de tus clientes y llevar tu proyecto al siguiente nivel, sin complicaciones y con resultados visibles desde el primer día.',
+  title: 'Odoo, automatización y sistemas empresariales',
+  subtitle: 'Soluciones digitales para ordenar y hacer crecer tu negocio',
+  description: 'Te ayudo a organizar ventas e inventario, conectar aplicaciones y reducir tareas manuales con soluciones adaptadas a tu negocio.',
   email: 'freddymunoz.dev@gmail.com',
   phone: '+51 924 471 461',
   location: 'Perú',
@@ -59,6 +59,20 @@ export const services = [
     technologies: ['Odoo', 'Docker', 'Python', 'PostgreSQL', 'Linux'],
     price: 'Desde $500',
     icon: '🏢'
+  },
+  {
+    id: 'ia-automatizaciones',
+    title: 'Integraciones con IA y automatizaciones',
+    description: 'Conecta herramientas de IA con tus aplicaciones y automatiza tareas repetitivas para ahorrar tiempo y operar mejor.',
+    features: [
+      'Asistentes de IA para atención y operaciones',
+      'Automatización de tareas y flujos de trabajo',
+      'Integración con APIs y herramientas existentes',
+      'Procesamiento y clasificación de información'
+    ],
+    technologies: ['IA', 'Python', 'APIs', 'Automatización', 'Odoo'],
+    price: 'Consultar',
+    icon: '🤖'
   }
 ];
 
@@ -66,8 +80,8 @@ export const services = [
 export const projects = [
   {
     id: 'agroverde',
-    title: 'AgroVerde Landing',
-    description: 'Página web para una empresa agrícola con información sobre productos y servicios.',
+    title: 'AgroVerde | Presencia digital',
+    description: 'Landing page para presentar productos y servicios agrícolas, facilitar el contacto y comunicar la propuesta de valor.',
     image: '/captureprojects/agroverde.png',
     technologies: ['HTML', 'JavaScript', 'TailwindCSS', 'Vite'],
     demo: 'https://agrowebsite.netlify.app/',
@@ -76,8 +90,8 @@ export const projects = [
   },
   {
     id: 'llantassac',
-    title: 'Landing Corporativa',
-    description: 'Página de presentación para empresa industrial. Diseño enfocado en la conversión, servicios destacados y contacto directo.',
+    title: 'Landing corporativa industrial',
+    description: 'Sitio orientado a conversión para destacar servicios, generar confianza y llevar prospectos al contacto directo.',
     image: '/captureprojects/frarem.png',
     technologies: ['HTML', 'JavaScript', 'CSS3', 'PHP'],
     demo: 'https://frarem-sacfr.netlify.app/',
@@ -96,8 +110,8 @@ export const projects = [
   },
   {
     id: 'crm-saas',
-    title: 'CRM SaaS | Frontend en React',
-    description: 'Aplicación web para la gestión de clientes y ventas, con un enfoque en la usabilidad y el rendimiento.',
+    title: 'CRM para clientes y ventas',
+    description: 'Interfaz de gestión comercial para centralizar clientes y oportunidades con una experiencia clara y rápida.',
     image: '/captureprojects/crm-sass.png',
     technologies: ['React', 'JavaScript', 'CSS3'],
     demo: 'https://keen-swan-134193.netlify.app/',
