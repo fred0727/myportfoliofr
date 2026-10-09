@@ -592,7 +592,7 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {/* Desarrollo Web */}
             <motion.div
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
@@ -606,11 +606,11 @@ const Home = () => {
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Desarrollo Web
+                Sistemas y páginas web
               </h3>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Aplicaciones web modernas y responsivas con interfaces atractivas y funcionalidad robusta
+                Desarrollo de páginas web, sistemas internos y aplicaciones adaptadas a los procesos de tu empresa
               </p>
               
               <div className="flex flex-wrap gap-2">
@@ -625,7 +625,7 @@ const Home = () => {
               </div>
             </motion.div>
 
-            {/* SEO y Landing Pages */}
+            {/* IA y automatizaciones */}
             <motion.div
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
               initial={{ opacity: 0, y: 30 }}
@@ -646,7 +646,7 @@ const Home = () => {
               </p>
               
               <div className="flex flex-wrap gap-2">
-                {['SEO Técnico', 'Landing Pages', 'WordPress', 'Analytics', 'Conversión', 'Marketing'].map((skill, index) => (
+                {['IA', 'Python', 'APIs', 'Automatización', 'Odoo'].map((skill, index) => (
                   <span
                     key={index}
                     className="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full font-medium"
@@ -657,7 +657,7 @@ const Home = () => {
               </div>
             </motion.div>
 
-            {/* Backend & APIs */}
+            {/* Soporte y capacitación */}
             <motion.div
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
               initial={{ opacity: 0, y: 30 }}
@@ -670,15 +670,15 @@ const Home = () => {
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Desarrollo de sistemas y páginas web
+                Soporte y capacitación mensual
               </h3>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Sistemas internos, páginas web y APIs diseñados para las necesidades de tu negocio
+                Acompañamiento para resolver incidencias, mantener tus sistemas y capacitar a tu equipo
               </p>
               
               <div className="flex flex-wrap gap-2">
-                {['Node.js', 'Python', 'FastAPI', 'MySQL', 'PostgreSQL', 'APIs REST'].map((skill, index) => (
+                {['Soporte técnico', 'Capacitación', 'Mantenimiento', 'Documentación'].map((skill, index) => (
                   <span
                     key={index}
                     className="bg-slate-100 text-slate-700 text-xs px-3 py-1 rounded-full font-medium"
@@ -689,9 +689,9 @@ const Home = () => {
               </div>
             </motion.div>
 
-            {/* ERP & Automation */}
+            {/* ERP & Automation - reemplazado por la tarjeta de Odoo */}
             <motion.div
-              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
+              className="hidden bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -721,9 +721,9 @@ const Home = () => {
               </div>
             </motion.div>
 
-            {/* Integraciones con IA */}
+            {/* Implementación de Odoo */}
             <motion.div
-              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
+              className="order-first bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
@@ -734,15 +734,15 @@ const Home = () => {
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Integraciones con IA
+                Implementación y personalización de Odoo
               </h3>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Integro asistentes y herramientas de IA con tus aplicaciones para automatizar tareas y mejorar la operación
+                Organiza ventas, inventario y operaciones con Odoo adaptado a tus procesos
               </p>
               
               <div className="flex flex-wrap gap-2">
-                {['IA', 'APIs', 'Python', 'Automatización', 'Odoo'].map((skill, index) => (
+                {['Odoo', 'Python', 'PostgreSQL', 'Procesos', 'Integración'].map((skill, index) => (
                   <span
                     key={index}
                     className="bg-indigo-100 text-indigo-700 text-xs px-3 py-1 rounded-full font-medium"
@@ -753,9 +753,9 @@ const Home = () => {
               </div>
             </motion.div>
 
-            {/* DevOps & Deployment - integrado dentro de los servicios principales */}
+            {/* Docker e infraestructura cloud */}
             <motion.div
-              className="hidden bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
+              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -766,15 +766,15 @@ const Home = () => {
               </div>
               
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                DevOps & Cloud
+                Docker e infraestructura cloud
               </h3>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Despliegue y gestión de aplicaciones con contenedores y mejores prácticas
+                Preparo entornos estables y despliegues reproducibles para tus aplicaciones y sistemas empresariales
               </p>
               
               <div className="flex flex-wrap gap-2">
-                {['Docker', 'Linux', 'Git', 'CI/CD', 'Deployment'].map((skill, index) => (
+                {['Docker', 'Linux', 'Cloud', 'CI/CD', 'Despliegues'].map((skill, index) => (
                   <span
                     key={index}
                     className="bg-red-100 text-red-700 text-xs px-3 py-1 rounded-full font-medium"

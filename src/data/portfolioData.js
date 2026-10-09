@@ -73,6 +73,20 @@ export const services = [
     technologies: ['IA', 'Python', 'APIs', 'Automatización', 'Odoo'],
     price: 'Consultar',
     icon: '🤖'
+  },
+  {
+    id: 'docker-cloud',
+    title: 'Docker e infraestructura cloud',
+    description: 'Entornos estables y despliegues reproducibles para aplicaciones y sistemas empresariales.',
+    features: [
+      'Contenedores Docker para desarrollo y producción',
+      'Configuración de servidores Linux',
+      'Despliegues y ambientes reproducibles',
+      'Mantenimiento de infraestructura y aplicaciones'
+    ],
+    technologies: ['Docker', 'Linux', 'Cloud', 'Git', 'CI/CD'],
+    price: 'Consultar',
+    icon: '☁️'
   }
 ];
 
